@@ -2541,9 +2541,10 @@ function RotationRoutineBegin(snapshot) {
     
     
     //rotationSpeed = (0.1 / nr);
-    if (nr === 1) {rotationSpeed = 0.02};//{rotationSpeed = 0.026};
-    if (nr === 2) {rotationSpeed = 0.04};//{rotationSpeed = 0.04};
-    console.log('R', nr);
+    //if (nr === 1) {rotationSpeed = 0.02};//{rotationSpeed = 0.026};
+    //if (nr === 2) {rotationSpeed = 0.04};//{rotationSpeed = 0.04};
+    rotationSpeed = 0.025
+    //console.log('R', nr);
     oscillationSpeed = (rotationSpeed * 2);
     minDist = (17.5 / 250);
     blueDotPositions = [];
@@ -3696,9 +3697,10 @@ function MaskRoutineBegin(snapshot) {
     //var circlePositions = [];
     var circleDirections = [];
     var angles = [];
-    console.log('M', nm);
-    if (nm === 1) {rotationSpeed = 0.0015}
-    if (nm === 2) {rotationSpeed = 0.0025}//{rotationSpeed = 0.0022}
+    rotationSpeed = 0.002
+    //console.log('M', nm);
+    //if (nm === 1) {rotationSpeed = 0.0015}
+    //if (nm === 2) {rotationSpeed = 0.0025}//{rotationSpeed = 0.0022}
     Mstarted = false
     Mended = false
     
