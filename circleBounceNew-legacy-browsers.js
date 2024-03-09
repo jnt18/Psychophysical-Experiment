@@ -3813,7 +3813,7 @@ function MaskRoutineEachFrame() {
     frameCount = Math.round((t_now-t1)*60);
     frameDifferenceFrac = (t_now-t_previous)*60;
     frameDelta = frameCount-frameCountPrevious;  
-    z=frameCount
+    z=t_now
     if (defineVars) {
     var angless = (function () {
         var _pj_a = [], _pj_b = util.range(circleCount);
