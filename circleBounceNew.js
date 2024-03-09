@@ -2538,7 +2538,7 @@ function RotationRoutineBegin(snapshot) {
     //rotationSpeed = (0.1 / nr);
     //if (nr === 1) {rotationSpeed = 0.02};//{rotationSpeed = 0.026};
     //if (nr === 2) {rotationSpeed = 0.04};//{rotationSpeed = 0.04};
-    rotationSpeed = 0.025
+    rotationSpeed = 0.028
     //console.log('R', nr);
     oscillationSpeed = (rotationSpeed * 2);
     minDist = (17.5 / 250);
