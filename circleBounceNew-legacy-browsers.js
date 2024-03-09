@@ -3500,9 +3500,13 @@ function Halo_3RoutineEnd(snapshot) {
     circle2.autoDraw = false;
     circle3.autoDraw = false;
     
-    for (var i, _pj_c = 0, _pj_a = util.range(c), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
-        i = _pj_a[_pj_c];
-        circles[i].autoDraw = false;
+    //for (var i, _pj_c = 0, _pj_a = util.range(c), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
+        //i = _pj_a[_pj_c];
+        //circles[i].autoDraw = false;
+    //}
+    for (var circle, _pj_c = 0, _pj_a = circles, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
+        circle = _pj_a[_pj_c];
+        circle.autoDraw = false;
     }
     
     console.log('managed to end Halo_3');
