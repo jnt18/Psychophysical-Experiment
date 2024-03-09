@@ -1,0 +1,1617 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2023.2.3">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s' % (expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="" valType="str" updates="None" name="End Message"/>
+    <Param val="{'Age*': ''}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="False" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="False" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="False" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1440, 900]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="fill" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
+    <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="circleBounce" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="Pyglet" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="neon.local" valType="str" updates="None" name="plCompanionAddress"/>
+    <Param val="scene_camera.json" valType="file" updates="None" name="plCompanionCameraCalibration"/>
+    <Param val="8080" valType="num" updates="None" name="plCompanionPort"/>
+    <Param val="True" valType="bool" updates="None" name="plCompanionRecordingEnabled"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="time" valType="str" updates="None" name="sortColumns"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="Instructions">
+      <RoutineSettingsComponent name="Instructions" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Instructions" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_8" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="l5.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="l5.autoDraw = True&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_8" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="text_5" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_5" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0,0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome to this experiment! &amp;#10;&amp;#10;You can control the red dot by moving the mouse.&amp;#10; &amp;#10;Moving towards the top right corner of the screen will rotate the dot clockwise . &amp;#10;&amp;#10;Moving towards the bottom left corner of the screen will move it anti-clockwise.&amp;#10;&amp;#10;Try completing one clockwise rotation and one anticlockwise rotation. " valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_8" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_8" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="Instruction_Animation">
+      <RoutineSettingsComponent name="Instruction_Animation" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Instruction_Animation" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_9" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="radius = 0.4" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="l5.autoDraw = true;&amp;#10;averageCircle = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: dotRadius, &quot;edges&quot;: 99, &quot;fillColor&quot;: black, &quot;lineColor&quot;: black});&amp;#10;averageCircle.autoDraw = true;&amp;#10;rotationSpeed = 0.1;&amp;#10;angle = (Math.PI / 3);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="l5.autoDraw = True&amp;#10;averageCircle = visual.Polygon(win, radius = dotRadius, edges = 99, fillColor=black, lineColor=black)&amp;#10;averageCircle.autoDraw = True&amp;#10;rotationSpeed = 0.1&amp;#10;angle = pi/3" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="avgX = radius * cos(angle) &amp;#10;avgY = radius * sin(angle) - 0.28&amp;#10;angle += rotationSpeed/5&amp;#10;&amp;#10;averageCircle.pos = (avgX, avgY)" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="avgX = (radius * Math.cos(angle));&amp;#10;avgY = ((radius * Math.sin(angle)) - 0.28);&amp;#10;angle += (rotationSpeed / 5);&amp;#10;averageCircle.pos = [avgX, avgY];&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="l5.autoDraw = false;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_9" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_11" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_11" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="Instructions2">
+      <RoutineSettingsComponent name="Instructions2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Instructions2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_11" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="white=[1,1,1]&amp;#10;grey=[.2,.2,.2]&amp;#10;yellow=[1,1,0]&amp;#10;green=[-1,0,-1]&amp;#10;black=[-1,-1,-1]&amp;#10;red=[1,0,0]&amp;#10;transparent = None&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="white = new util.Color([1, 1, 1]);&amp;#10;grey = new util.Color([.2, .2, .2]);&amp;#10;yellow = new util.Color([1, 1, 0]);&amp;#10;green = new util.Color([-1, 0, -1]);&amp;#10;black = new util.Color([-1, -1, -1]);&amp;#10;red = new util.Color([1, 0, 0]);&amp;#10;transparent = null&amp;#10;&amp;#10;win=psychoJS.window &amp;#10;&amp;#10;console.log('Welcome to the experiment');" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="l5.autoDraw = true;&amp;#10;Practice = true;&amp;#10;Condition = 0;&amp;#10;&amp;#10;&amp;#10;console.log('Welcome to the experiment');" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="l5.autoDraw = True&amp;#10;Practice = True&amp;#10;Condition = 0&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="l5.autoDraw = false" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_11" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="text_7" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_7" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="In the following practice trials there will be&amp;#10;more than one dot to see. &amp;#10;You only need to focus on the first one. &amp;#10;All questions refer to the dot that was &amp;#10;the first to cross the circle lines.&amp;#10;Sometimes it might be a very close call which dot is the first, in that case pick any dot to follow.&amp;#10;&amp;#10;Click to continue!" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_10" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_10" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="Line0">
+      <RoutineSettingsComponent name="Line0" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Line0" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_14" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="mouse_angle = ((0 + ((2.5 * Math.PI) / 15)) + Math.PI);&amp;#10;&amp;#10;start = [((0.7 * radius) * Math.cos((0 + ((2.5 * Math.PI) / 15)))), ((0.7 * radius) * Math.sin((0 + ((2.5 * Math.PI) / 15))))];&amp;#10;end = [((0.7 * radius) * Math.cos(((0 + ((2.5 * Math.PI) / 15)) + Math.PI))), ((0.7 * radius) * Math.sin(((0 + ((2.5 * Math.PI) / 15)) + Math.PI)))];&amp;#10;Line.pos = start;&amp;#10;l5.autoDraw = true;&amp;#10;Line.autoDraw = true;&amp;#10;circle0 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle0.opacity = 1;&amp;#10;//circle0.autoDraw = true;&amp;#10;&amp;#10;console.log('start=', start)" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="mouse_angle = 0+2.5*pi/15 + pi&amp;#10;#circle0 = visual.Circle(win, radius=0.015/2, fillColor='red', lineColor='red')&amp;#10;circle0.opacity = 1  # make the circle invisible&amp;#10;&amp;#10;start = [0.7*radius * cos(0+2.5*pi/15), 0.7*radius * sin(0+2.5*pi/15)]&amp;#10;end = (0.7*radius * cos(0+2.5*pi/15+pi), 0.7*radius * sin(0+2.5*pi/15+pi))&amp;#10;Line.pos = start&amp;#10;Line.autoDraw = True&amp;#10;circle0.autoDraw = True" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="change = -sum(mouse.getRel())&amp;#10;&amp;#10;mouse_angle += 3*change &amp;#10;xposition = 0.28 * cos(mouse_angle) &amp;#10;yposition = 0.28 * sin(mouse_angle)&amp;#10;&amp;#10;circle0.pos = (xposition, yposition) &amp;#10;circle0.pos += start  # update the position of the circle" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="//change = (- util.sum(mouse_15.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2((position[1]-start[1]), (position[0]-start[0]))&amp;#10;xposition = ((0.7*radius) * Math.cos(mouse_angle)) + start[0];&amp;#10;yposition = ((0.7*radius) * Math.sin(mouse_angle)) + start[1];&amp;#10;circle0.pos = [xposition, yposition];&amp;#10;circle0.draw()" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="l5.autoDraw = false;&amp;#10;Line.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="Line.autoDraw = False" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_14" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_15" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_15" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_12" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_12" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.8*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Where did the dot cross the black line?" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Halo_01">
+      <RoutineSettingsComponent name="Halo_01" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Halo_01" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_15" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="mouse_angle = ((0 + ((2.5 * Math.PI) / 15)) + Math.PI);&amp;#10;//mouse = new psychoJS.eventManager.Mouse({&quot;win&quot;: psychoJS.window});&amp;#10;&amp;#10;circle1 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle1.opacity = 1;&amp;#10;l5.autoDraw = true;&amp;#10;circle0.autoDraw = true;&amp;#10;//circle1.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="mouse_angle = 0+2.5*pi/15 +pi&amp;#10;&amp;#10;mouse = event.Mouse(win=win)&amp;#10;&amp;#10;#for i in range(circleCount):&amp;#10;#circles[i].opacity= 1&amp;#10;&amp;#10;# create a circle (initially not displayed)&amp;#10;circle1 = visual.Polygon(win, radius=0.015/2, edges = 99, fillColor=red, lineColor=red)&amp;#10;circle1.opacity = 1  # make the circle invisible&amp;#10;&amp;#10;circle1.autoDraw = True" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="change = -sum(mouse.getRel())&amp;#10;mouse_angle += 3*change &amp;#10;&amp;#10;xposition = 0.28 * cos(mouse_angle) &amp;#10;yposition = 0.28 * sin(mouse_angle)&amp;#10;&amp;#10;circle1.pos = (xposition, yposition) # update the position of the circle&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="//change = (- util.sum(mouse.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2(position[1], position[0])&amp;#10;xposition = ((0.7*radius) * Math.cos(mouse_angle));&amp;#10;yposition = ((0.7*radius) * Math.sin(mouse_angle));&amp;#10;circle1.pos = [xposition, yposition];&amp;#10;circle1.draw()&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="l5.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;circle1.autoDraw = false;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_15" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_16" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_16" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_13" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_13" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.8*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Where did the dot leave the circle" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Halo_02">
+      <RoutineSettingsComponent name="Halo_02" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Halo_02" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_16" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="mouse_angle = ((0 + ((2.5 * Math.PI) / 15)) + (0.9 * Math.PI));&amp;#10;circle2 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle2.opacity = 1;&amp;#10;l3.autoDraw = true;&amp;#10;l5.autoDraw = true;&amp;#10;circle0.autoDraw = true;&amp;#10;circle1.autoDraw = true;&amp;#10;//circle2.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="#l3.autoDraw = True &amp;#10;mouse_angle = 0+2.5*pi/15 + 0.9*pi&amp;#10;# create a circle (initially not displayed)&amp;#10;circle2 = visual.Polygon(win, radius=0.015/2, edges = 99, fillColor=red, lineColor=red)&amp;#10;circle2.opacity = 1  # make the circle invisible&amp;#10;&amp;#10;circle2.autoDraw = True" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="l3.draw()&amp;#10;l5.draw()&amp;#10;#l4.draw()&amp;#10;#N.draw()&amp;#10;change = -sum(mouse.getRel())&amp;#10;mouse_angle += 3*change &amp;#10;xposition = 0.9775*radius * cos(mouse_angle) &amp;#10;yposition = 0.9775*radius * sin(mouse_angle)&amp;#10;&amp;#10;circle2.pos = (xposition, yposition)" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="//l3.draw();&amp;#10;//l5.draw();&amp;#10;//change = (- util.sum(mouse.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2(position[1], position[0])&amp;#10;xposition = ((0.9775 * radius) * Math.cos(mouse_angle));&amp;#10;yposition = ((0.9775 * radius) * Math.sin(mouse_angle));&amp;#10;circle2.pos = [xposition, yposition];&amp;#10;circle2.draw()&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="l3.autoDraw = false;&amp;#10;l5.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;circle1.autoDraw = false;&amp;#10;circle2.autoDraw = false;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_16" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_17" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_17" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_14" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_14" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.9*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Assuming that the dot continues its trajectory after leaving the circle, where would the dot have &amp;#10;crossed the line of this ring?" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Halo_03">
+      <RoutineSettingsComponent name="Halo_03" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Halo_03" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_17" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="mouse_angle = ((0 + ((2.5 * Math.PI) / 15)) + Math.PI);&amp;#10;circle3 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle3.opacity = 1;&amp;#10;l1.autoDraw = true;&amp;#10;l3.autoDraw = true;&amp;#10;l5.autoDraw = true;&amp;#10;circle0.autoDraw = true;&amp;#10;circle1.autoDraw = true;&amp;#10;circle2.autoDraw = true;&amp;#10;//circle3.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="#l1.autoDraw = True &amp;#10;mouse_angle = 0+2.5*pi/15 + pi&amp;#10;# create a circle (initially not displayed)&amp;#10;circle3 = visual.Polygon(win, radius=0.015/2, edges = 99, fillColor=red, lineColor=red)&amp;#10;circle3.opacity = 1  # make the circle invisible&amp;#10;circle3.autoDraw = True" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="l1.draw()&amp;#10;l3.draw()&amp;#10;l5.draw()&amp;#10;&amp;#10;change = -sum(mouse.getRel())&amp;#10;mouse_angle += 3*change &amp;#10;xposition = 1.25*radius * cos(mouse_angle) &amp;#10;yposition = 1.25*radius * sin(mouse_angle)&amp;#10;&amp;#10;circle3.pos = (xposition, yposition)" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="//l1.draw();&amp;#10;//l3.draw();&amp;#10;//l5.draw();&amp;#10;//change = (- util.sum(mouse.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2(position[1], position[0])&amp;#10;xposition = ((1.25 * radius) * Math.cos(mouse_angle));&amp;#10;yposition = ((1.25 * radius) * Math.sin(mouse_angle));&amp;#10;circle3.pos = [xposition, yposition];&amp;#10;circle3.draw()&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;l1.autoDraw = false;&amp;#10;l3.autoDraw = false;&amp;#10;l5.autoDraw = false;&amp;#10;l5.lineColor = &quot;white&quot;;&amp;#10;Line.autoDraw = false;&amp;#10;circle1.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;circle2.autoDraw = false;&amp;#10;circle3.autoDraw = false;&amp;#10;averageCircle.autDraw = false&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="l1.autoDraw = False&amp;#10;l3.autoDraw = False&amp;#10;l5.autoDraw = False&amp;#10;&amp;#10;l5.lineColor = 'white'&amp;#10;Line.autoDraw = False&amp;#10;circle1.autoDraw = False&amp;#10;circle0.autoDraw = False&amp;#10;circle2.autoDraw = False&amp;#10;circle3.autoDraw = False&amp;#10;&amp;#10;averageCircle.autDraw = False&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_17" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_18" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_18" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_15" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_15" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.8*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Assuming that the dot continues its trajectory after leaving the circle, where would the dot have &amp;#10;crossed the line of the second ring?" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="text_19" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_19" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.25*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="During the experiment, clicking on this screen&amp;#10;will immediatly cause moving dots to appear! " valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Start">
+      <RoutineSettingsComponent name="Start" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Start" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_13" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="Practice = false;&amp;#10;l5.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="Practice = False&amp;#10;l5.autoDraw = True" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_13" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_9" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_9" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_6" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_6" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Those were the practice trials. &amp;#10;Click to start the experiment!" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Rotation">
+      <RoutineSettingsComponent name="Rotation" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Rotation" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="import math &amp;#10;radius = 0.4&amp;#10;#win = visual.Window(size=(800, 600), color=black)&amp;#10;win.setColor(black) &amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;Progress = 0 &amp;#10;bar = visual.Progress(win, pos = (0.5, 0.45), size = (0.2, 0.1))&amp;#10;bar.opacity = 0&amp;#10;&amp;#10;bar.autoDraw = True &amp;#10;Condition = 0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="//var dx;&amp;#10;//var dy;&amp;#10;//var _pj;&amp;#10;//var blueDotAngle;&amp;#10;//var t1;&amp;#10;//var t2;&amp;#10;//var t_now;&amp;#10;//var frameCount;&amp;#10;//var frameCountPrevious;&amp;#10;&amp;#10;Math.floor();&amp;#10;//radius = 0.375;&amp;#10;psychoJS.window.setColor(black);&amp;#10;Progress = 0;&amp;#10;//bar = new visual.Progress({&quot;win&quot;: psychoJS.window, &quot;pos&quot;: [0.5, 0.45], &quot;size&quot;: [0.2, 0.1]});&amp;#10;bar = new visual.Progress({&quot;win&quot;: psychoJS.window, &quot;pos&quot;: [0, 0], &quot;size&quot;: [0.2, 0.1], &quot;backColor&quot;: green});&amp;#10;bar.opacity = 0;&amp;#10;//bar.autoDraw = true;&amp;#10;Condition = 0;&amp;#10;barground = new visual.Rect({&quot;win&quot;: psychoJS.window, &quot;pos&quot;: [0.65, 0.45], &quot;size&quot;: [0.2, 0.1], &quot;lineColor&quot;: white, &quot;fillColor&quot;: null, &quot;lineWidth&quot;: 5});&amp;#10;barfor = new visual.Rect({&quot;win&quot;: psychoJS.window, &quot;pos&quot;: [0.61, 0.45], &quot;size&quot;: [0.16, 0.08], &quot;fillColor&quot;: white});&amp;#10;barfor.opacity = 0;&amp;#10;barground.opacity = 0;&amp;#10;barground.autoDraw = true;&amp;#10;barfor.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="var dx;&amp;#10;var dy;&amp;#10;var _pj;&amp;#10;var blueDotAngle;&amp;#10;var t1;&amp;#10;var t2;&amp;#10;var t_now;&amp;#10;var frameCount;&amp;#10;var frameCountPrevious;&amp;#10;var t_previous;&amp;#10;&amp;#10;&amp;#10;//rotationSpeed = (0.1 / nr);&amp;#10;if (nr === 1) {rotationSpeed = 0.02};//{rotationSpeed = 0.026};&amp;#10;if (nr === 2) {rotationSpeed = 0.04};//{rotationSpeed = 0.04};&amp;#10;console.log('R', nr);&amp;#10;oscillationSpeed = (rotationSpeed * 2);&amp;#10;minDist = (17.5 / 250);&amp;#10;blueDotPositions = [];&amp;#10;angle = s;&amp;#10;circleCount = c;&amp;#10;bluecirclePosition = (- 0.6);&amp;#10;circles = [];&amp;#10;averageCircle.opacity = 0;&amp;#10;started = false;&amp;#10;ended = false;&amp;#10;l5.autoDraw = true;&amp;#10;bar.autoDraw = true;&amp;#10;for (var i, _pj_c = 0, _pj_a = util.range(circleCount), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    i = _pj_a[_pj_c];&amp;#10;    circles.push(new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: dotRadius, &quot;edges&quot;: v, &quot;fillColor&quot;: black, &quot;lineColor&quot;: black}));&amp;#10;    circles[i].autoDraw = true;&amp;#10;}&amp;#10;frameCount = 0;&amp;#10;d = (180 / Math.PI);&amp;#10;//barground.opacity = 1;&amp;#10;//barfor.opacity = 1;&amp;#10;if ((Practice !== true)) {&amp;#10;    Progress += 1;}&amp;#10;    barground.opacity = 1;&amp;#10;    barfor.opacity = 1;&amp;#10;xpro = barfor.pos[0];&amp;#10;ypro = barfor.pos[1];&amp;#10;barfor.pos = [xpro+(Progress*0.0016 / 48), ypro];&amp;#10;barfor.size = [(Progress*0.16 / 48), 0.08];&amp;#10;//}&amp;#10;Condition = 2;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="rotationSpeed = 0.1/nr&amp;#10;oscillationSpeed = rotationSpeed * 2  # 2 oscillations per revolution&amp;#10;minDist = 17.5/250  # Minimum distance from the center&amp;#10;blueDotPositions = []&amp;#10;angle = s&amp;#10;circleCount = c&amp;#10;bluecirclePosition = -0.6&amp;#10;circles = []&amp;#10;&amp;#10;#lR.autoDraw = True &amp;#10;l5.autoDraw = True&amp;#10;&amp;#10;#averageCircle = visual.Polygon(win, radius = dotRadius, edges = 99, fillColor=blue, lineColor=black)&amp;#10;#averageCircle.autoDraw = True&amp;#10;for i in range(circleCount):&amp;#10;    if v == 99:&amp;#10;        circles.append(visual.Polygon(win, radius = dotRadius, edges = v, fillColor=black, lineColor=black))&amp;#10;    else:&amp;#10;        circles.append(visual.GratingStim(win, tex=None, mask='circle', size=(2*dotRadius,3*dotRadius), color=black, texRes = 1024))&amp;#10;    circles[i].autoDraw = True&amp;#10;    &amp;#10;&amp;#10;frameCount = 0&amp;#10;d = 180/pi&amp;#10;if not Practice == True:&amp;#10;    Progress += 1&amp;#10;    #barground.opacity = 1&amp;#10;    #barfor.opacity = 1&amp;#10;    bar.progress = Progress / 48&amp;#10;&amp;#10;Condition = 2&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="rotation = frameCount * rotationSpeed&amp;#10;oscillation = 0.5 * (1 - cos(frameCount * oscillationSpeed))  # Oscillation factor&amp;#10;  &amp;#10;avgX = radius/2 * cos(angle)&amp;#10;avgY = radius/2 * sin(angle)&amp;#10;angle += rotationSpeed&amp;#10;&amp;#10;# Calculate the number of rotations&amp;#10;num_rotations = (angle-s) / (2 * pi)&amp;#10;&amp;#10;&amp;#10;# Calculate the vector from the average position to the closest point on the yellow circle&amp;#10;vecX = avgX - minDist * cos(np.arctan2(avgY, avgX))&amp;#10;vecY = avgY - minDist * sin(np.arctan2(avgY, avgX))&amp;#10;&amp;#10;oscX = avgX + (vecX - avgX) * oscillation&amp;#10;oscY = avgY + (vecY - avgY) * oscillation&amp;#10;  &amp;#10;averageCircle.pos = (avgX, avgY)&amp;#10;# Store the position of the blue dot&amp;#10;blueDotPos = [oscX, oscY]&amp;#10;blueDotPositions.append(blueDotPos)&amp;#10;&amp;#10;# Calculate the distance between the blue dot and the center of the big circle&amp;#10;dist = np.sqrt((oscX - 0)**2 + (oscY - 0)**2)&amp;#10;&amp;#10;if l &gt; 1:&amp;#10;    avgX = radius * cos(s-pi/2) + bluecirclePosition * cos(s-pi/2)&amp;#10;    avgY = radius * sin(s-pi/2) + bluecirclePosition * sin(s-pi/2)&amp;#10;    bluecirclePosition += rotationSpeed/5&amp;#10;    avgY += minDist&amp;#10;    oscX = avgX&amp;#10;    oscY = avgY&amp;#10;    dist = np.sqrt((oscX - 0.14)**2 + (oscY - 0)**2)&amp;#10;&amp;#10;# Draw 6 dots around the center of the yellow circle&amp;#10;for i in range(circleCount):&amp;#10;    tangle = np.interp(i, [0, circleCount], [s, pi/q+s])&amp;#10;    if num_rotations &gt;= 0.5:&amp;#10;        circles[i].autoDraw = False&amp;#10;        #l5.lineColor = 'grey'&amp;#10;        l5.lineWidth = 150&amp;#10;        #win.flip()&amp;#10;        &amp;#10;        continueRoutine = False&amp;#10;    else: &amp;#10;        #tangle = np.interp(i, [0, circleCount], [0, np.pi/3])  # Use TWO_PI for a full circle&amp;#10;        dotPos = np.array([cos(tangle - rotation), sin(tangle - rotation)]) * dist  # Add rotation to the angle&amp;#10;        # Adjust the position of the yellow dots to follow the same path as the yellow circle&amp;#10;        dotPos[0] += oscX&amp;#10;        dotPos[1] += oscY&amp;#10;        circles[i].pos = dotPos&amp;#10;        # Calculate the angle between the blue dot and each polygon&amp;#10;        dx = blueDotPos[0] - dotPos[0]&amp;#10;        dy = blueDotPos[1] - dotPos[1]&amp;#10;        blueDotAngle = np.arctan2(dy, dx) - pi / 2&amp;#10;        # Set the orientation of each polygon to this angle&amp;#10;        circles[i].ori = blueDotAngle * d * r&amp;#10;        circles[i].draw()&amp;#10;&amp;#10;if 'escape' in event.getKeys():&amp;#10;            continueRoutine = False&amp;#10;            &amp;#10;frameCount += 1" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var dx;&amp;#10;var dy;&amp;#10;//var _pj;&amp;#10;var blueDotAngle;&amp;#10;//var t1;&amp;#10;var t2;&amp;#10;&amp;#10;//var t_now;&amp;#10;//var frameCount;&amp;#10;//var frameCountPrevious;&amp;#10;&amp;#10;if (started === false) {&amp;#10;            console.log('t1 =',RotationClock.getTime());&amp;#10;            t1 = RotationClock.getTime();&amp;#10;            t_previous = t1;&amp;#10;            frameCountPrevious=0;&amp;#10;            started = true};&amp;#10;//function _pj_snippets(container) {&amp;#10;    //function in_es6(left, right) {&amp;#10;        //if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            //return (right.indexOf(left) &gt; (- 1));&amp;#10;        //} else {&amp;#10;            //if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                //return right.has(left);&amp;#10;            //} else {&amp;#10;                //return (left in right);&amp;#10;            //}&amp;#10;        //}&amp;#10;    //}&amp;#10;    //container[&quot;in_es6&quot;] = in_es6;&amp;#10;    //return container;&amp;#10;//}&amp;#10;//_pj = {};&amp;#10;//_pj_snippets(_pj);&amp;#10;&amp;#10;t_now = RotationClock.getTime();&amp;#10;//console.log('t_now =',t_now);&amp;#10;//console.log('t1 =',t1);&amp;#10;&amp;#10;frameCount = Math.round((t_now-t1)*60);&amp;#10;&amp;#10;frameDifferenceFrac = (t_now-t_previous)*60;&amp;#10;frameDelta = frameCount-frameCountPrevious;&amp;#10;//console.log('frameDelta =',frameDelta);&amp;#10;//console.log('frameDifferenceFrac =',frameDifferenceFrac);&amp;#10;&amp;#10;rotation = (frameCount * rotationSpeed);&amp;#10;oscillation = (0.5 * (1 - Math.cos((frameCount * oscillationSpeed))));&amp;#10;avgX = ((radius / 2) * Math.cos(angle));&amp;#10;avgY = ((radius / 2) * Math.sin(angle));&amp;#10;angle += rotationSpeed;&amp;#10;num_rotations = ((angle - s) / (2 * Math.PI));&amp;#10;vecX = (avgX - (minDist * Math.cos(Math.atan2(avgY, avgX))));&amp;#10;vecY = (avgY - (minDist * Math.sin(Math.atan2(avgY, avgX))));&amp;#10;oscX = (avgX + ((vecX - avgX) * oscillation));&amp;#10;oscY = (avgY + ((vecY - avgY) * oscillation));&amp;#10;averageCircle.pos = [avgX, avgY];&amp;#10;blueDotPos = [oscX, oscY];&amp;#10;blueDotPositions.push(blueDotPos);&amp;#10;dist = Math.sqrt((Math.pow((oscX - 0), 2) + Math.pow((oscY - 0), 2)));&amp;#10;if ((l &gt; 0)) {&amp;#10;    avgX = ((radius * Math.cos((s - (Math.PI / 2)))) + (bluecirclePosition * Math.cos((s - (Math.PI / 2)))));&amp;#10;    avgY = ((radius * Math.sin((s - (Math.PI / 2)))) + (bluecirclePosition * Math.sin((s - (Math.PI / 2)))));&amp;#10;    bluecirclePosition += (rotationSpeed / 5);&amp;#10;    avgY += minDist;&amp;#10;    oscX = avgX;&amp;#10;    oscY = avgY;&amp;#10;    dist = Math.sqrt((Math.pow((oscX - 0.14), 2) + Math.pow((oscY - 0), 2)));&amp;#10;}&amp;#10;&amp;#10;function map(value, inMin, inMax, outMin, outMax) {&amp;#10;    return (value - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;&amp;#10;}&amp;#10;&amp;#10;for (var i, _pj_c = 0, _pj_a = util.range(circleCount), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    i = _pj_a[_pj_c];&amp;#10;    var tangle = map(i, 0, circleCount, s, Math.PI / q + s);&amp;#10;    if ((num_rotations &gt;= 0.5)) {&amp;#10;        if (ended === false) {&amp;#10;            t2 = RotationClock.getTime();&amp;#10;            console.log('R time taken:', nr, t2, t1)&amp;#10;            ended = true};&amp;#10;        circles[i].autoDraw = false;&amp;#10;        continueRoutine = false;&amp;#10;    } else {&amp;#10;        var dotPos = [Math.cos(tangle - rotation) * dist, Math.sin(tangle - rotation) * dist];&amp;#10;        dotPos[0] += oscX;&amp;#10;        dotPos[1] += oscY;&amp;#10;        circles[i].pos = dotPos;&amp;#10;        dx = (blueDotPos[0] - dotPos[0]);&amp;#10;        dy = (blueDotPos[1] - dotPos[1]);&amp;#10;        blueDotAngle = (Math.atan2(dy, dx) - (Math.PI / 2));&amp;#10;        //circles[i].ori = ((blueDotAngle * d) * r);&amp;#10;        circles[i].draw();&amp;#10;    }&amp;#10;}&amp;#10;//if (_pj.in_es6(&quot;escape&quot;, psychoJS.eventManager.getKeys())) {&amp;#10;    //continueRoutine = false;&amp;#10;//}&amp;#10;//frameCount += 1;&amp;#10;t_previous = t_now;&amp;#10;frameCountPrevious = frameCount;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="l5.autoDraw = false;&amp;#10;bar.autoDraw = false;&amp;#10;&amp;#10;for (var i, _pj_c = 0, _pj_a = util.range(circleCount), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    i = _pj_a[_pj_c];&amp;#10;    circles[i].autoDraw = false;&amp;#10;}&amp;#10;&amp;#10;var angles = (function () {&amp;#10;    var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var i = _pj_b[_pj_c];&amp;#10;        _pj_a.push(((((((i / circleCount) * 0.5) * Math.PI) / q) + s) - Math.PI));&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;})();" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="for i in range(circleCount):&amp;#10;    circles[i].autoDraw = False&amp;#10;    &amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="Mask">
+      <RoutineSettingsComponent name="Mask" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Mask" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_3" plugin="None">
+        <Param val="radius = 0.4" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="&amp;#10;radius = 0.4&amp;#10;#win.setColor(black') &amp;#10;&amp;#10;&amp;#10;l1 = visual.Polygon(win, radius = 1.25*radius, edges = 99, lineWidth = 60, lineColor=white, fillColor=black)&amp;#10;lR = visual.Polygon(win, radius = radius, edges = 99, lineColor=grey, fillColor=grey)&amp;#10;#l2 = visual.Circle(win, 1.2*radius, lineColor='black', fillColor='black')&amp;#10;l3 = visual.Polygon(win, radius = 0.9775*radius, edges = 99, lineWidth = 60, lineColor=white, fillColor=black)&amp;#10;#l4 = visual.Circle(win, 0.9*radius, lineColor='black', fillColor='black')&amp;#10;l5 = visual.Polygon(win, radius = 0.7*radius, edges = 99, lineColor=black, fillColor=white)&amp;#10;Line = visual.Polygon(win, radius = 0.7*radius, edges = 99, lineWidth = 60, lineColor = black, fillColor=black)&amp;#10;Line.setFillColor(None)&amp;#10;#text = visual.TextStim(win, text='Hello World', pos=(-0.5, 0.0))&amp;#10;#times = visual.TextStim(win, text='Hello World', pos=(0.0, 0.25))&amp;#10;dotRadius = 0.015/2&amp;#10;circle_1 = visual.Polygon(win, radius=0.015/2, edges = 99, lineColor=red, fillColor=red)&amp;#10;circle0 = visual.Polygon(win, radius=0.015/2, edges = 99, lineColor=red, fillColor=red)&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="//var initializationClock = new util.Clock();&amp;#10;defineVars = true;&amp;#10;//circlePositions = [-0.03333333333333333, -0.06666666666666667,-0.1,-0.13333333333333333,-0.16666666666666666,-0.2];&amp;#10;circlePositions = []&amp;#10;//radius = 0.4;&amp;#10;dotRadius = (0.015 / 2);&amp;#10;l1 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;units&quot;: psychoJS.window.units, &quot;lineWidth&quot;: 15/2, &quot;lineColor&quot;: white, &quot;fillColor&quot;: black, &quot;edges&quot;: 99, &quot;radius&quot;: (1.25*radius)});&amp;#10;//&quot;radius&quot;: (1.25 * radius)&amp;#10;lR = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;units&quot;: psychoJS.window.units, &quot;radius&quot;: radius, &quot;edges&quot;: 99, &quot;lineColor&quot;: black, &quot;fillColor&quot;: black});&amp;#10;l3 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;units&quot;: psychoJS.window.units, &quot;radius&quot;: (0.9775 * radius), &quot;edges&quot;: 99, &quot;lineWidth&quot;: 15/2, &quot;lineColor&quot;: white, &quot;fillColor&quot;: black});&amp;#10;l5 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;units&quot;: psychoJS.window.units, &quot;radius&quot;: (0.7 * radius), &quot;edges&quot;: 99, &quot;lineColor&quot;: black, &quot;fillColor&quot;: white});&amp;#10;Line = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;units&quot;: psychoJS.window.units, &quot;radius&quot;: (0.7 * radius), &quot;edges&quot;: 99, &quot;lineWidth&quot;: 15/2, &quot;lineColor&quot;: null, &quot;fillColor&quot;: null});&amp;#10;//Line.setFillColor(null);&amp;#10;//Line.setLineColor(null); //this is just to see if the line mouse works&amp;#10;&amp;#10;//circle_1 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;lineColor&quot;: red, &quot;fillColor&quot;: red});&amp;#10;//circle0 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;lineColor&quot;: red, &quot;fillColor&quot;: red});&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="&amp;#10;//initializationClock.reset();&amp;#10;var circles = [];&amp;#10;var bounces = [];&amp;#10;//var circlePositions = [];&amp;#10;var circleDirections = [];&amp;#10;var angles = [];&amp;#10;console.log('M', nm);&amp;#10;if (nm === 1) {rotationSpeed = 0.0015}&amp;#10;if (nm === 2) {rotationSpeed = 0.0025}//{rotationSpeed = 0.0022}&amp;#10;Mstarted = false&amp;#10;Mended = false&amp;#10;&amp;#10;//rotationSpeed = (0.0035 * nm);&amp;#10;var circleCount;&amp;#10;circleCount = c;&amp;#10;iterationS = 4;&amp;#10;&amp;#10;startDelay = ((radius / circleCount) / 2);&amp;#10;&amp;#10;circles = [];&amp;#10;bounces = [];&amp;#10;//var circlePositions = (function () {&amp;#10;    //var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    //for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        //var i = _pj_b[_pj_c];&amp;#10;        //console.log('i:', i);  // Add this line&amp;#10;        //console.log('startDelay:', startDelay);  // Add this line&amp;#10;        //_pj_a.push(((- (i + 1)) * startDelay));&amp;#10;    //}&amp;#10;    //return _pj_a;&amp;#10;//})();&amp;#10;//circlePositions = [-0.03333333333333333, -0.06666666666666667,-0.1,-0.13333333333333333,-0.16666666666666666,-0.2]&amp;#10;&amp;#10;l5.autoDraw = true;&amp;#10;bar.autoDraw = true;&amp;#10;dif_trajectory = [];&amp;#10;for (var iDot, _pj_c = 0, _pj_a = util.range(circleCount), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    iDot = _pj_a[_pj_c];&amp;#10;    circles.push(new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;units&quot;: psychoJS.window.units, &quot;radius&quot;: dotRadius, &quot;edges&quot;: 99, &quot;lineWidth&quot;: (1.0 / 2), &quot;lineColor&quot;: black, &quot;fillColor&quot;: black}));&amp;#10;    circles[iDot].opacity = 1;&amp;#10;    //circles[iDot].autoDraw = true;&amp;#10;}&amp;#10;var angles = (function () {&amp;#10;    var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var i = _pj_b[_pj_c];&amp;#10;        _pj_a.push(((((((i / circleCount) * 0.5) * Math.PI) / q) + s) - Math.PI));&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;})();&amp;#10;&amp;#10;&amp;#10;&amp;#10;//let circleDirections = new Array(circleCount).fill(1);&amp;#10;&amp;#10;&amp;#10;&amp;#10;//averageCircle = visual.Polygon(win, radius = dotRadius, edges = 99, fillColor='black', lineColor='black')&amp;#10;&amp;#10;if (((Practice === false))) {&amp;#10;    Progress += 1;}&amp;#10;xpro = barfor.pos[0];&amp;#10;ypro = barfor.pos[1];&amp;#10;barfor.pos = [xpro+(Progress*0.0016 / 48), ypro];&amp;#10;barfor.size = [(Progress*0.16 / 48), 0.08];&amp;#10;//}&amp;#10;Condition = 1;&amp;#10;&amp;#10;continueCondition = true;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="&amp;#10;#rotationSpeed = (0.1/n) *0.055&amp;#10;#rotationSpeed = 0.017174/n&amp;#10;#rotationSpeed = 0.005822784810126582*n&amp;#10;rotationSpeed = 0.0035*nm&amp;#10;&amp;#10;circleCount = c  # You can set this to any number&amp;#10;iterations = 4 #circleCount#/n&amp;#10;&amp;#10;startDelay = (radius / circleCount)/2  # Calculate start delay based on radius and circle count&amp;#10;circles = []&amp;#10;bounces = []&amp;#10;#win = visual.Window([800, 800])&amp;#10;&amp;#10;#l4.autoDraw = True &amp;#10;l5.autoDraw = True &amp;#10;&amp;#10;#text.autoDraw = True&amp;#10;#times.autoDraw = True&amp;#10;&amp;#10;dif_trajectory = []&amp;#10;&amp;#10;&amp;#10;for iDot in range(circleCount):&amp;#10;    circles.append(visual.Polygon(win, radius = dotRadius, edges = 99, lineWidth=1.0/2, lineColor=black, fillColor=black))&amp;#10;    circles[iDot].autoDraw = True&amp;#10;&amp;#10;circlePositions = [-(i+1) * startDelay for i in range(circleCount)]&amp;#10;#circlePositions = [-i * startDelay for i in range(circleCount)]&amp;#10;circleDirections = [1] * circleCount&amp;#10;&amp;#10;angle = [((i / circleCount) * 0.5*pi/q +s -pi) for i in range(circleCount)]&amp;#10;&amp;#10;#averageCircle = visual.Polygon(win, radius = dotRadius, edges = 99, fillColor='black', lineColor='black')&amp;#10;&amp;#10;&amp;#10;if not Practice == True:&amp;#10;    Progress += 1&amp;#10;    bar.progress = Progress / 48&amp;#10;&amp;#10;Condition = 1" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="# Reduce rotationSpeed and increase number of iterations&amp;#10;&amp;#10;for _ in range(int(iterations)):&amp;#10;    for i in range(circleCount):&amp;#10;        x = radius * cos(angle[i]) + circlePositions[i] * cos(angle[i])&amp;#10;        y = radius * sin(angle[i]) + circlePositions[i] * sin(angle[i])&amp;#10;        circles[i].pos = [x, y]&amp;#10;        circlePositions[i] += circleDirections[i] * rotationSpeed&amp;#10;        if math.sqrt((x)**2 + (y)**2) &gt; (radius-0.005):&amp;#10;            circleDirections[i] *= -1  # Flip direction&amp;#10;            bounces.append(1)&amp;#10;            if circleDirections[i] == -1:&amp;#10;                circlePositions[i] =  (-dotRadius) / math.sqrt(2)  # Position just inside the circle line&amp;#10;            else:&amp;#10;                circlePositions[i] =  -0.8+(dotRadius) / math.sqrt(2)  # Position just inside the circle line&amp;#10;        if len(bounces) &lt;= 0.5*circleCount:&amp;#10;            for iDot in range(circleCount):&amp;#10;                circles[iDot].opacity = 0&amp;#10;        if len(bounces) &gt; 0.5*circleCount:&amp;#10;            for iDot in range(circleCount):&amp;#10;                if circles[iDot].opacity == 0:&amp;#10;                    circles[iDot].opacity= 1&amp;#10;        if len(bounces) &gt;= 1.5*circleCount:&amp;#10;            for iDot in range(circleCount):&amp;#10;                circles[iDot].opacity = 0&amp;#10;                l5.lineWidth = 150   &amp;#10;                circles[iDot].autoDraw = False&amp;#10;                &amp;#10;                continueRoutine = False&amp;#10;        &amp;#10;        if 'escape' in event.getKeys():&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;&amp;#10;&amp;#10;   &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var _pj;&amp;#10;var x;&amp;#10;var y; &amp;#10;var t1;&amp;#10;var t2;&amp;#10;&amp;#10;if (defineVars) {&amp;#10;var angless = (function () {&amp;#10;    var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var i = _pj_b[_pj_c];&amp;#10;        _pj_a.push(((((((i / circleCount) * 0.5) * Math.PI) / q) + s) - Math.PI));&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;})();&amp;#10;var circlePositionss = (function () {&amp;#10;    var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var i = _pj_b[_pj_c];&amp;#10;        _pj_a.push(((- (i + 1)) * startDelay));&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;})();&amp;#10;circleDirections = new Array(circleCount).fill(1);&amp;#10;bouncess = 0;&amp;#10;bounces = bouncess&amp;#10;angles = angless&amp;#10;circlePositions = circlePositionss&amp;#10;defineVars = false;&amp;#10;}&amp;#10;//console.log(circlePositions, angles)&amp;#10;//_pj = {};&amp;#10;//_pj_snippets(_pj);&amp;#10;&amp;#10;for (var _, _pj_c = 0, _pj_a = util.range(Number.parseInt(iterationS)), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    _ = _pj_a[_pj_c];&amp;#10;    for (var i, _pj_f = 0, _pj_d = util.range(circleCount), _pj_e = _pj_d.length; (_pj_f &lt; _pj_e); _pj_f += 1) {&amp;#10;        i = _pj_d[_pj_f];&amp;#10;        x = ((radius * Math.cos(angles[i])) + (circlePositions[i] * Math.cos(angles[i])));&amp;#10;        //console.log(circles[0].pos, circlePositions[0], angles[0], circleDirection[0])&amp;#10;        //x = ((radius * Math.cos(angles[0])) + (circlePositions[0] * Math.cos(angles[0])));&amp;#10;        y = ((radius * Math.sin(angles[i])) + (circlePositions[i] * Math.sin(angles[i])));&amp;#10;        circles[i].pos = [x, y];&amp;#10;        circlePositions[i] += (circleDirections[i] * rotationSpeed);&amp;#10;        &amp;#10;        if ((Math.sqrt((Math.pow(x, 2) + Math.pow(y, 2))) &gt; (radius - 0.005))) {&amp;#10;            circleDirections[i] *= (- 1);&amp;#10;            bounces += 1;&amp;#10;            if ((circleDirections[i] === (- 1))) {&amp;#10;                circlePositions[i] = ((- dotRadius) / Math.sqrt(2));&amp;#10;            } else {&amp;#10;                circlePositions[i] = ((- 0.8) + (dotRadius / Math.sqrt(2)));&amp;#10;            }&amp;#10;        }&amp;#10;        if ((bounces &lt;= (0.5 * circleCount))) {&amp;#10;            for (var iDot, _pj_i = 0, _pj_g = util.range(circleCount), _pj_h = _pj_g.length; (_pj_i &lt; _pj_h); _pj_i += 1) {&amp;#10;                iDot = _pj_g[_pj_i];&amp;#10;                circles[iDot].opacity = 0;&amp;#10;            }&amp;#10;        }&amp;#10;        if ((bounces &gt; (0.5 * circleCount))) {&amp;#10;            if (Mstarted === false) {&amp;#10;            console.log('t1 =',MaskClock.getTime());&amp;#10;            t1 = MaskClock.getTime();&amp;#10;            Mstarted = true};&amp;#10;            for (var iDot, _pj_i = 0, _pj_g = util.range(circleCount), _pj_h = _pj_g.length; (_pj_i &lt; _pj_h); _pj_i += 1) {&amp;#10;                iDot = _pj_g[_pj_i];&amp;#10;                if ((circles[iDot].opacity === 0)) {&amp;#10;                    circles[iDot].opacity = 1;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;        if ((bounces &gt;= (1.5 * circleCount))) {&amp;#10;            if (Mended === false) {&amp;#10;            t2 = MaskClock.getTime();&amp;#10;            console.log('M time taken:', nm, t2, t1)&amp;#10;            Mended = true};&amp;#10;            for (var iDot, _pj_i = 0, _pj_g = util.range(circleCount), _pj_h = _pj_g.length; (_pj_i &lt; _pj_h); _pj_i += 1) {&amp;#10;                iDot = _pj_g[_pj_i];&amp;#10;                circles[iDot].opacity = 0;&amp;#10;                circles[iDot].autoDraw = false;&amp;#10;                continueRoutine = false;&amp;#10;            }&amp;#10;        }&amp;#10;    circles[i].draw();&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="console.log('managed to end each frame tab of Mask')&amp;#10;defineVars = true;&amp;#10;bar.autoDraw = false;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="#core.wait(0.125)&amp;#10;#for i in range(circleCount):&amp;#10;    #circles[i].autoDraw = False&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_3" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_5" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_5" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="Line">
+      <RoutineSettingsComponent name="Line" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Line" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_7" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="s2 = (s + (Condition * Math.PI));&amp;#10;mouse_angle = ((s2 + ((2.5 * Math.PI) / 15)) + Math.PI);&amp;#10;&amp;#10;start = [((0.7 * radius) * Math.cos((s2 + ((2.5 * Math.PI) / 15)))), ((0.7 * radius) * Math.sin((s2 + ((2.5 * Math.PI) / 15))))];&amp;#10;end = [((0.7 * radius) * Math.cos(((s2 + ((2.5 * Math.PI) / 15)) + Math.PI))), ((0.7 * radius) * Math.sin(((s2 + ((2.5 * Math.PI) / 15)) + Math.PI)))];&amp;#10;Line.pos = start;&amp;#10;l5.autoDraw = true;&amp;#10;Line.autoDraw = true;&amp;#10;bar.autoDraw = true;&amp;#10;circle0 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle0.opacity = 1;&amp;#10;//circle0.autoDraw = true;&amp;#10;&amp;#10;console.log('start=', start)" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="s2 = s + Condition * pi&amp;#10;mouse_angle = s2+2.5*pi/15 + pi&amp;#10;#circle0 = visual.Circle(win, radius=0.015/2, fillColor='red', lineColor='red')&amp;#10;circle0.opacity = 1  # make the circle invisible&amp;#10;&amp;#10;start = [0.7*radius * cos(s2+2.5*pi/15), 0.7*radius * sin(s2+2.5*pi/15)]&amp;#10;end = (0.7*radius * cos(s2+2.5*pi/15+pi), 0.7*radius * sin(s2+2.5*pi/15+pi))&amp;#10;Line.pos = start&amp;#10;&amp;#10;Line.autoDraw = True&amp;#10;circle0.autoDraw = True&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="change = -sum(mouse.getRel())&amp;#10;&amp;#10;mouse_angle += 3*change &amp;#10;xposition = 0.28 * cos(mouse_angle) &amp;#10;yposition = 0.28 * sin(mouse_angle)&amp;#10;&amp;#10;circle0.pos = (xposition, yposition) &amp;#10;circle0.pos += start  # update the position of the circle&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="//change = (- util.sum(mouse.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2((position[1]-start[1]), (position[0]-start[0]))&amp;#10;xposition = ((0.7*radius) * Math.cos(mouse_angle)) + start[0];&amp;#10;yposition = ((0.7*radius) * Math.sin(mouse_angle)) + start[1];&amp;#10;circle0.pos = [xposition, yposition];&amp;#10;circle0.draw()&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="bar.autoDraw = false;&amp;#10;l5.autoDraw = false;&amp;#10;Line.autoDraw = false;&amp;#10;circle0.autoDraw = false;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="#l5.lineColor = 'grey'&amp;#10;Line.autoDraw = False" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_7" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_7" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_7" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.8*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Where did the first dot cross the black line?" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Halo_1">
+      <RoutineSettingsComponent name="Halo_1" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Halo_1" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_4" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="var s2;&amp;#10;var mouse_angle&amp;#10;&amp;#10;s2 = (s + (Condition * Math.PI));&amp;#10;mouse_angle = ((s2 + ((2.5 * Math.PI) / 15)) + Math.PI);&amp;#10;//mouse = new psychoJS.eventManager.Mouse({&quot;win&quot;: psychoJS.window});&amp;#10;l5.autoDraw = true;&amp;#10;bar.autoDraw = true;&amp;#10;circle0.autoDraw = true;&amp;#10;&amp;#10;circle1 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle1.opacity = 1;&amp;#10;//circle1.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="s2 = s + Condition * pi&amp;#10;mouse_angle = s2+2.5*pi/15 + pi&amp;#10;&amp;#10;mouse = event.Mouse(win=win)&amp;#10;core.wait(0.25)&amp;#10;#for i in range(circleCount):&amp;#10;#circles[i].opacity= 1&amp;#10;&amp;#10;# create a circle (initially not displayed)&amp;#10;circle1 = visual.Polygon(win, radius=0.015/2, edges = 99, fillColor=red, lineColor=red)&amp;#10;circle1.opacity = 1  # make the circle invisible&amp;#10;circle1.autoDraw = True" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="change = -sum(mouse.getRel())&amp;#10;mouse_angle += 3*change &amp;#10;&amp;#10;xposition = 0.28 * cos(mouse_angle) &amp;#10;yposition = 0.28 * sin(mouse_angle)&amp;#10;&amp;#10;circle1.pos = (xposition, yposition) # update the position of the circle&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var xposition;&amp;#10;var yposition;&amp;#10;var change;&amp;#10;//change = (- util.sum(mouse.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2(position[1], position[0])&amp;#10;xposition = ((0.7*radius) * Math.cos(mouse_angle));&amp;#10;yposition = ((0.7*radius) * Math.sin(mouse_angle));&amp;#10;circle1.pos = [xposition, yposition];&amp;#10;circle1.draw()&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="bar.autoDraw = false;&amp;#10;l5.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;circle1.autoDraw = false;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_4" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_2" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_2" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_2" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.8*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Where did the first dot leave the circle&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Halo_2">
+      <RoutineSettingsComponent name="Halo_2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Halo_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_5" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="var s2;&amp;#10;var mouse_angle;&amp;#10;s2 = (s + (Condition * Math.PI));&amp;#10;mouse_angle = ((s2 + ((2.5 * Math.PI) / 15)) + (0.9 * Math.PI));&amp;#10;circle2 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle2.opacity = 1;&amp;#10;l3.autoDraw = true;&amp;#10;l5.autoDraw = true;&amp;#10;bar.autoDraw = true;&amp;#10;circle0.autoDraw = true;&amp;#10;circle1.autoDraw = true;&amp;#10;//circle2.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="s2 = s + Condition * pi&amp;#10;#l3.autoDraw = True &amp;#10;mouse_angle = s2+2.5*pi/15 + 0.9*pi&amp;#10;# create a circle (initially not displayed)&amp;#10;circle2 = visual.Polygon(win, radius=0.015/2, edges = 99, fillColor=red, lineColor=red)&amp;#10;circle2.opacity = 1  # make the circle invisible&amp;#10;circle2.autoDraw = True&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="&amp;#10;l3.draw()&amp;#10;l5.draw()&amp;#10;&amp;#10;change = -sum(mouse.getRel())&amp;#10;mouse_angle += 3*change &amp;#10;xposition = 0.9775*radius * cos(mouse_angle) &amp;#10;yposition = 0.9775*radius * sin(mouse_angle)&amp;#10;&amp;#10;circle2.pos = (xposition, yposition)&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var change;&amp;#10;var xposition;&amp;#10;var yposition;&amp;#10;//change = (- util.sum(mouse.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2(position[1], position[0])&amp;#10;xposition = ((0.9775 * radius) * Math.cos(mouse_angle));&amp;#10;yposition = ((0.9775 * radius) * Math.sin(mouse_angle));&amp;#10;circle2.pos = [xposition, yposition];&amp;#10;circle2.draw()&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="bar.autoDraw = false;&amp;#10;l5.autoDraw = false;&amp;#10;l3.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;circle1.autoDraw = false;&amp;#10;circle2.autoDraw = false;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_5" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_3" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_3" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_3" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_3" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.8*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Where would the first dot have &amp;#10;crossed the line of this ring?" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Halo_3">
+      <RoutineSettingsComponent name="Halo_3" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Halo_3" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_6" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="var s2;&amp;#10;var mouse_angle&amp;#10;s2 = (s + (Condition * Math.PI));&amp;#10;mouse_angle = ((s2 + ((2.5 * Math.PI) / 15)) + Math.PI);&amp;#10;circle3 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle3.opacity = 1;&amp;#10;l1.autoDraw = true;&amp;#10;l3.autoDraw = true;&amp;#10;l5.autoDraw = true;&amp;#10;bar.autoDraw = true;&amp;#10;circle0.autoDraw = true;&amp;#10;circle1.autoDraw = true;&amp;#10;circle2.autoDraw = true;&amp;#10;//circle3.autoDraw = true;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="s2 = s + Condition * pi&amp;#10;#l1.autoDraw = True &amp;#10;mouse_angle = s2+2.5*pi/15 + pi&amp;#10;# create a circle (initially not displayed)&amp;#10;circle3 = visual.Polygon(win, radius=0.015/2, edges = 99, fillColor=red, lineColor=red)&amp;#10;circle3.opacity = 1  # make the circle invisible&amp;#10;circle3.autoDraw = True&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="l1.draw()&amp;#10;l3.draw()&amp;#10;l5.draw()&amp;#10;&amp;#10;change = -sum(mouse.getRel())&amp;#10;mouse_angle += 3*change &amp;#10;xposition = 1.25*radius * cos(mouse_angle) &amp;#10;yposition = 1.25*radius * sin(mouse_angle)&amp;#10;&amp;#10;circle3.pos = (xposition, yposition)&amp;#10;&amp;#10;#win.flip()" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="&amp;#10;var change;&amp;#10;var xposition;&amp;#10;var yposition;&amp;#10;//change = (- util.sum(mouse.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2(position[1], position[0])&amp;#10;xposition = ((1.25 * radius) * Math.cos(mouse_angle));&amp;#10;yposition = ((1.25 * radius) * Math.sin(mouse_angle));&amp;#10;circle3.pos = [xposition, yposition];&amp;#10;circle3.draw()&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="console.log('managed to start End Routine of Halo_3');&amp;#10;var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;l1.autoDraw = false;&amp;#10;l3.autoDraw = false;&amp;#10;l5.autoDraw = false;&amp;#10;bar.autoDraw = false;&amp;#10;Line.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;circle1.autoDraw = false;&amp;#10;circle2.autoDraw = false;&amp;#10;circle3.autoDraw = false;&amp;#10;&amp;#10;for (var i, _pj_c = 0, _pj_a = util.range(c), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    i = _pj_a[_pj_c];&amp;#10;    circles[i].autoDraw = false;&amp;#10;}&amp;#10;&amp;#10;console.log('managed to end Halo_3');" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="l1.autoDraw = False&amp;#10;l3.autoDraw = False&amp;#10;l5.autoDraw = False&amp;#10;&amp;#10;l5.lineColor = 'white'&amp;#10;Line.autoDraw = False&amp;#10;circle1.autoDraw = False&amp;#10;circle0.autoDraw = False&amp;#10;circle2.autoDraw = False&amp;#10;circle3.autoDraw = False&amp;#10;&amp;#10;for i in range(circleCount):&amp;#10;    circles[i].autoDraw = False&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_6" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_6" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_6" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_4" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_4" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.8*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Where would the first dot have &amp;#10;crossed the line of the second ring?" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Instructions_2">
+      <RoutineSettingsComponent name="Instructions_2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Instructions_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_10" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="import numpy as np" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="radius = 0.375;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="mouse_angle = 0;&amp;#10;//let mouse = new visual.Mouse({win: psychoJS.window,});&amp;#10;circle1 = new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: (0.015 / 2), &quot;edges&quot;: 99, &quot;fillColor&quot;: red, &quot;lineColor&quot;: red});&amp;#10;circle1.opacity = 1;&amp;#10;l5.autoDraw = true;&amp;#10;circle1.autoDraw = false;&amp;#10;Condition = 1;&amp;#10;&amp;#10;//changeStim = new visual.TextStim({&quot;win&quot;: psychoJS.window, &quot;color&quot;: black, &quot;height&quot;: 0.035});&amp;#10;//changeStim.autoDraw = true;&amp;#10;cum = 0;&amp;#10;fullRotation = 0&amp;#10;prev = 0.01" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="mouse_angle = 0&amp;#10;&amp;#10;mouse = event.Mouse(win=win)&amp;#10;core.wait(0.25)&amp;#10;#for i in range(circleCount):&amp;#10;#circles[i].opacity= 1&amp;#10;&amp;#10;# create a circle (initially not displayed)&amp;#10;circle1 = visual.Polygon(win, radius=0.015/2, edges = 99, fillColor=red, lineColor=red)&amp;#10;circle1.opacity = 1  # make the circle invisible&amp;#10;l5.autoDraw = True&amp;#10;circle1.autoDraw = True&amp;#10;&amp;#10;Condition = 1&amp;#10;fullRotation = []&amp;#10;print('began instructions_2')&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="print('began each frame')&amp;#10;positioon = mouse_12.getRel()&amp;#10;print('found relative mouse')&amp;#10;mouse_angle = np.cos(positioon[0]) + np.sin(positioon[1])&amp;#10;print('calculated mouse_angle')&amp;#10;xposition = 0.28 * np.cos(mouse_angle) &amp;#10;yposition = 0.28 * np.sin(mouse_angle)&amp;#10;&amp;#10;circle1.pos = (xposition, yposition) # update the position of the circle&amp;#10;&amp;#10;if change &gt;= 1:&amp;#10;    fullRotation += 1" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="//change = (- util.sum(mouse.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2(position[1], position[0])&amp;#10;xposition = (0.7*radius * Math.cos(mouse_angle));&amp;#10;yposition = (0.7*radius * Math.sin(mouse_angle));&amp;#10;circle1.pos = [xposition, yposition];&amp;#10;//if (Math.sign(change) === 0) {cum = 0};&amp;#10;&amp;#10;// Check if the signs of change and prev are different&amp;#10;//if (change * prev &lt; 0) {&amp;#10;    //cum = 0;&amp;#10;//}&amp;#10;//cum += change;&amp;#10;//changeStim.text = cum;&amp;#10;//console.log(cum);&amp;#10;//if ((Math.abs(cum) &gt;= 2)) {&amp;#10;    //fullRotation += 1;&amp;#10;    //cum = 0;&amp;#10;//}&amp;#10;//if ((change * prev) !== 0) {&amp;#10;    //prev = change;&amp;#10;//}&amp;#10;//if ((fullRotation &gt;= 2)) {&amp;#10;    //continueRoutine = false;&amp;#10;//};" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="circle1.autoDraw = false;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="circle1.autoDraw = False" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_10" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="text_8" plugin="None">
+        <Param val="black" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_8" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Welcome to this experiment! &amp;#10;&amp;#10;On the next screen, a black dot will appear &amp;#10;that moves through the white circle.&amp;#10;Your job is to remember the trajectory of this dot. &amp;#10;You will be asked to predict the path of the dot, assuming that it keeps its momentum on leaving the circle.&amp;#10;&amp;#10;Click to continue!&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_12" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_12" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="Debrief">
+      <RoutineSettingsComponent name="Debrief" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Debrief" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_12" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="rotationSpeed = (0.001);&amp;#10;circleCount = 6;&amp;#10;iterations = 4;&amp;#10;startDelay = ((radius / circleCount) / 2);&amp;#10;circles = [];&amp;#10;bounces = [];&amp;#10;l5.autoDraw = true;&amp;#10;dif_trajectory = [];&amp;#10;&amp;#10;barfor.pos = barground.pos&amp;#10;barfor.size = [(0.16), 0.08];&amp;#10;&amp;#10;for (var iDot, _pj_c = 0, _pj_a = util.range(circleCount), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    iDot = _pj_a[_pj_c];&amp;#10;    circles.push(new visual.Polygon({&quot;win&quot;: psychoJS.window, &quot;radius&quot;: dotRadius, &quot;edges&quot;: 99, &quot;lineWidth&quot;: (1.0 / 2), &quot;lineColor&quot;: black, &quot;fillColor&quot;: black}));&amp;#10;    circles[iDot].autoDraw = true;&amp;#10;    circles[iDot].opacity = 0;&amp;#10;}&amp;#10;circles[0].opacity = 1;&amp;#10;circlePositions = function () {&amp;#10;    var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var i = _pj_b[_pj_c];&amp;#10;        _pj_a.push(((- (i + 1)) * startDelay));&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;}&amp;#10;.call(this);&amp;#10;circleDirections = ([1] * circleCount);&amp;#10;angle = function () {&amp;#10;    var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var i = _pj_b[_pj_c];&amp;#10;        _pj_a.push((((((i / circleCount) * 0.5) * Math.PI) / 3) + s));&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;}&amp;#10;.call(this);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="rotationSpeed = 0.0035*n&amp;#10;&amp;#10;circleCount = 6  # You can set this to any number&amp;#10;iterations = 4 #circleCount#/n&amp;#10;&amp;#10;startDelay = (radius / circleCount)/2  # Calculate start delay based on radius and circle count&amp;#10;circles = []&amp;#10;bounces = []&amp;#10;#win = visual.Window([800, 800])&amp;#10;&amp;#10;#l4.autoDraw = True &amp;#10;l5.autoDraw = True &amp;#10;#text.autoDraw = True&amp;#10;#times.autoDraw = True&amp;#10;&amp;#10;dif_trajectory = []&amp;#10;&amp;#10;for iDot in range(circleCount):&amp;#10;    circles.append(visual.Polygon(win, radius = dotRadius, edges = 99, lineWidth=1.0/2, lineColor=black, fillColor=black))&amp;#10;    circles[iDot].autoDraw = True&amp;#10;    circles[iDot].opacity = 0&amp;#10;circles[0].opacity = 1&amp;#10;&amp;#10;circlePositions = [-(i+1) * startDelay for i in range(circleCount)]&amp;#10;#circlePositions = [-i * startDelay for i in range(circleCount)]&amp;#10;circleDirections = [1] * circleCount&amp;#10;&amp;#10;angle = [((i / circleCount) * 0.5*pi/3 + s) for i in range(circleCount)]" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="# Reduce rotationSpeed and increase number of iterations&amp;#10;    &amp;#10;for _ in range(int(iterations)):&amp;#10;    for i in range(circleCount):&amp;#10;        x = radius * cos(angle[i]) + circlePositions[i] * cos(angle[i])&amp;#10;        y = radius * sin(angle[i]) + circlePositions[i] * sin(angle[i])&amp;#10;        circles[i].pos = [x, y]&amp;#10;        circlePositions[i] += circleDirections[i] * rotationSpeed&amp;#10;        if math.sqrt((x)**2 + (y)**2) &gt; (radius-0.005):&amp;#10;            circleDirections[i] *= -1  # Flip direction&amp;#10;            bounces.append(1)&amp;#10;            if circleDirections[i] == -1:&amp;#10;                circlePositions[i] =  (-dotRadius) / math.sqrt(2)  # Position just inside the circle line&amp;#10;            else:&amp;#10;                circlePositions[i] =  -0.8+(dotRadius) / math.sqrt(2)  # Position just inside the circle line&amp;#10;        if len(bounces) &lt;= 0.5*circleCount:&amp;#10;            for iDot in range(circleCount):&amp;#10;                circles[i].opacity = 0&amp;#10;                circles[0].opacity = 1&amp;#10;&amp;#10;        if 'escape' in event.getKeys():&amp;#10;            break&amp;#10;&amp;#10;k = len(bounces)/circleCount&amp;#10;if (k).is_integer() and 0 &lt;= k &lt;=6:&amp;#10;    circles[int(k)].opacity = 1&amp;#10;if len(bounces) &gt;= circleCount*5:&amp;#10;    bounces = []&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var _pj;&amp;#10;var x;&amp;#10;var y; &amp;#10;if (defineVars) {&amp;#10;var angless = (function () {&amp;#10;    var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var i = _pj_b[_pj_c];&amp;#10;        _pj_a.push(((((((i / circleCount) * 0.5) * Math.PI) / q) + s) - Math.PI));&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;})();&amp;#10;var circlePositionss = (function () {&amp;#10;    var _pj_a = [], _pj_b = util.range(circleCount);&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var i = _pj_b[_pj_c];&amp;#10;        console.log('i:', i);  // Add this line&amp;#10;        console.log('startDelay:', startDelay);  // Add this line&amp;#10;        _pj_a.push(((- (i + 1)) * startDelay));&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;})();&amp;#10;circleDirections = new Array(circleCount).fill(1);&amp;#10;bouncess = 0;&amp;#10;bounces = bouncess&amp;#10;angles = angless&amp;#10;circlePositions = circlePositionss&amp;#10;defineVars = false;&amp;#10;}&amp;#10;for (var _, _pj_c = 0, _pj_a = util.range(Number.parseInt(iterations)), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;    _ = _pj_a[_pj_c];&amp;#10;    for (var i, _pj_f = 0, _pj_d = util.range(circleCount), _pj_e = _pj_d.length; (_pj_f &lt; _pj_e); _pj_f += 1) {&amp;#10;        i = _pj_d[_pj_f];&amp;#10;        x = ((radius * Math.cos(angles[i])) + (circlePositions[i] * Math.cos(angles[i])));&amp;#10;        y = ((radius * Math.sin(angles[i])) + (circlePositions[i] * Math.sin(angles[i])));&amp;#10;        circles[i].pos = [x, y];&amp;#10;        circlePositions[i] += (circleDirections[i] * rotationSpeed);&amp;#10;        if ((Math.sqrt((Math.pow(x, 2) + Math.pow(y, 2))) &gt; (radius - 0.005))) {&amp;#10;            circleDirections[i] *= (- 1);&amp;#10;            bounces += 1;&amp;#10;            if ((circleDirections[i] === (- 1))) {&amp;#10;                circlePositions[i] = ((- dotRadius) / Math.sqrt(2));&amp;#10;            } else {&amp;#10;                circlePositions[i] = ((- 0.8) + (dotRadius / Math.sqrt(2)));&amp;#10;            }&amp;#10;        }&amp;#10;        if ((bounces &lt;= (0.5 * circleCount))) {&amp;#10;            for (var iDot, _pj_i = 0, _pj_g = util.range(circleCount), _pj_h = _pj_g.length; (_pj_i &lt; _pj_h); _pj_i += 1) {&amp;#10;                iDot = _pj_g[_pj_i];&amp;#10;                circles[i].opacity = 0;&amp;#10;                circles[0].opacity = 1;&amp;#10;            }&amp;#10;        }&amp;#10;    circles[i].draw();&amp;#10;    }&amp;#10;}&amp;#10;var k = (bounces / circleCount);&amp;#10;if (Number.isInteger(k) &amp;&amp; 0 &lt; k &amp;&amp; k &lt; 8) {&amp;#10;    circles[parseInt(k)-1].opacity = 1;&amp;#10;}&amp;#10;if ((bounces &gt;= (circleCount * 5.5))) {&amp;#10;    bounces = 0;&amp;#10;}&amp;#10;circles[0].draw()&amp;#10;console.log(k)&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_12" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="mouse_14" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_14" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_9" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_9" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.9*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="In this experiment we wanted to investigate why it looks like the dots are moving in curves even though they are all moving in straight lines. &amp;#10;Feel free to contract jmt28@st-andrews.ac.uk if you have questions or are interested in the results of this study. " valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <TextComponent name="text_11" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_11" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, -0.8*radius)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Thank you for participating!&amp;#10;Click to exit the experiment" valType="str" updates="constant" name="text"/>
+        <Param val="height" valType="str" updates="None" name="units"/>
+        <Param val="0.5" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="PIS1">
+      <RoutineSettingsComponent name="PIS1" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="PIS1" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_10" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.025" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_10" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Participant Information Sheet&amp;#10;&amp;#10;What is the study about?&amp;#10;We invite you to participate in a research project about the visual processing of grouped objects. We are interested in the way different groupings affect the way we track composite movement.   &amp;#10;&amp;#10;Do I have to take part?&amp;#10;This information sheet has been written to help you decide if you would like to take part. It is up to you and you alone whether you wish to take part. If you do decide to take part, you will be free to withdraw at any time by pressing the escape key with no negative consequences.&amp;#10;&amp;#10;What would I be required to do?&amp;#10;The task involves viewing short clips of moving objects and after each clip indicating where you would expect an object to collide with a barrier. There are example trials and visual instructions, and the setup detailed there remains the same throughout the task. &amp;#10;&amp;#10;Informed consent&amp;#10;It is important that you can give your informed consent before taking part in this study. Feel free to ask questions about the research by contacting the researchers before you provide your consent.&amp;#10;&amp;#10;What information about me or recordings of me (‘my data’) will you be collecting?&amp;#10;Only your age and the position of the clicks you place to indicate where you expect stimuli to collide with a barrier will be recorded. This data will be anonymous which means that that no-one, including the researchers, could use any reasonably available means to identify you from the data. &amp;#10;&amp;#10;Click to continue to the next page.&amp;#10; &amp;#10;1/3" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_4" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_4" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="PIS2">
+      <RoutineSettingsComponent name="PIS2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="PIS2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_16" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.025" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_16" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Participant Information Sheet&amp;#10;&amp;#10;How will my data be stored and who will have access to it? &amp;#10;The data will be stored in OneDrive file to be accessible only by the participating researchers.&amp;#10;&amp;#10;How will my data be used and in what form will it be shared further?&amp;#10;The data will be analysed as part of the research study. It may then be published in my dissertation which will be finalised by April 2023. &amp;#10;&amp;#10;&amp;#10;When will my data be destroyed?&amp;#10;The data will be retained until I have fully completed my dissertation (including grading), and then destroyed. &amp;#10;&amp;#10;Will my participation be confidential?&amp;#10;Yes, we will use an anonymous recruitment policy in Pavlovia so your participation is not known to anyone. &amp;#10;&amp;#10;Use of your personal data for research and your data protection rights &amp;#10;The University of St Andrews (the ‘Data Controller’) is bound by the UK 2018 Data Protection Act and the General Data Protection Regulation (GDPR), which require a lawful basis for all processing of personal data (in this case it is the ‘performance of a task carried out in the public interest’ – namely, for research purposes) and an additional lawful basis for processing personal data containing special characteristics (in this case it is ‘public interest research’). You have a range of rights under data protection legislation. For more information on data protection legislation and your rights visit https://www.st-andrews.ac.uk/terms/data-protection/rights/. For any queries, email dataprot@st-andrews.ac.uk.&amp;#10;&amp;#10;Click to continue.&amp;#10;&amp;#10;2/3" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_13" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_13" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="Consent">
+      <RoutineSettingsComponent name="Consent" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="Consent" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_18" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.025" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_18" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Consent Form&amp;#10;&amp;#10;The University of St Andrews attaches high priority to the ethical conduct of research.  We therefore ask you to consider the following points before signing this form. Pressing the 'y'-key confirms that you are willing to participate in this study, however, it does not commit you to anything you do not wish to do and you are free to withdraw your participation at any time by pressing the 'escape'-key twice. &amp;#10;&amp;#10;Only press the 'y'-key if you understand and agree with the following statements:&amp;#10;&amp;#10;o I understand the contents of the Participant Information Sheet &amp;#10;&amp;#10;o I have been given the opportunity to ask questions about the study and have had them answered satisfactorily.&amp;#10;&amp;#10;o I understand that my participation is entirely voluntary and that I can withdraw from the study at any time without giving an explanation and with no disbenefit. &amp;#10;&amp;#10;o I understand who will have access to my data, how it will be stored, in what form it will be shared, and what will happen to it at the end of the study. &amp;#10;&amp;#10;o I understand that once the experiment is over my data cannot be withdrawn because it has been anonymised.&amp;#10;&amp;#10;o I agree to take part in the above study&amp;#10;&amp;#10;Press the 'y'-key if you understand and agree to start the experiment or press the 'escape'-key to exit." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp" plugin="None">
+        <Param val="'y'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="PIS3">
+      <RoutineSettingsComponent name="PIS3" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="PIS3" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_17" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.025" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_17" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Participant Information Sheet&amp;#10;&amp;#10;Withdrawing your data&amp;#10;Once data is collected it cannot be deleted because we will not know which data is yours. You can still withdraw from the experiment at any time by pressing the escape key or closing the browser. &amp;#10;&amp;#10;Ethics review&amp;#10;This experiment was granted ethical approval by the University of St Andrews Teaching and Research Ethics Committee. &amp;#10;&amp;#10;What should I do if I have concerns about this study?&amp;#10;In the first instance, you are encouraged to raise your concerns with the researcher. However, if you do not feel comfortable doing so, then you should contact Dr Justin Ales or the School Ethics Contact (contact details below). A full outline of the procedures governed by the University Teaching and Research Ethics Committee is available at https://www.st-andrews.ac.uk/research/integrity-ethics/humans/ethical-guidance/complaints/.&amp;#10;&amp;#10;Contact details&amp;#10;Feel free to ask addition questions using the following contact information.&amp;#10;&amp;#10;Researcher: Jan Thiel – jmt28@st-andrews.ac.uk&amp;#10;Supervisor: Dr Justin Ales – jma23@st-andrews.ac.uk &amp;#10;School ethics contact: psyethics@st-andrews.ac.uk &amp;#10;&amp;#10;Click to continue to the consent form.&amp;#10;&amp;#10;3/3" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_19" plugin="None">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="" valType="list" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_19" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="on click" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="PIS1"/>
+    <Routine name="PIS2"/>
+    <Routine name="PIS3"/>
+    <Routine name="Consent"/>
+    <Routine name="Instructions_2"/>
+    <Routine name="Instruction_Animation"/>
+    <Routine name="Line0"/>
+    <Routine name="Halo_01"/>
+    <Routine name="Halo_02"/>
+    <Routine name="Halo_03"/>
+    <Routine name="Instructions2"/>
+    <LoopInitiator loopType="TrialHandler" name="Pract">
+      <Param name="Selected rows" updates="None" val="1,2,3" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'nr': 1, 'nm': 2, 'v': 99, 'l': 0, 's': 0, 'q': 3, 'c': 6}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 0, 's': 1, 'q': 3, 'c': 6}, {'nr': 1, 'nm': 2, 'v': 3, 'l': 0, 's': 2, 'q': 3, 'c': 6}, {'nr': 2, 'nm': 1, 'v': 3, 'l': 0, 's': 3, 'q': 3, 'c': 6}, {'nr': 1, 'nm': 2, 'v': 99, 'l': 0, 's': 4, 'q': 2.5, 'c': 6}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 0, 's': 5, 'q': 2.5, 'c': 6}, {'nr': 1, 'nm': 2, 'v': 99, 'l': 0, 's': 6, 'q': 3, 'c': 6}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 0, 's': 0, 'q': 3, 'c': 6}, {'nr': 1, 'nm': 2, 'v': 99, 'l': 0, 's': 1, 'q': 3, 'c': 1}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 0, 's': 2, 'q': 3, 'c': 1}, {'nr': 1, 'nm': 2, 'v': 99, 'l': 1, 's': 3, 'q': 3, 'c': 15}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 1, 's': 4, 'q': 3, 'c': 15}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Book5.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="Pract" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Rotation"/>
+    <Routine name="Line"/>
+    <Routine name="Halo_1"/>
+    <Routine name="Halo_2"/>
+    <Routine name="Halo_3"/>
+    <LoopTerminator name="Pract"/>
+    <Routine name="Start"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'nr': 1, 'nm': 2, 'v': 99, 'l': 0, 's': 0, 'q': 3, 'c': 6}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 0, 's': 1, 'q': 3, 'c': 6}, {'nr': 1, 'nm': 2, 'v': 3, 'l': 0, 's': 2, 'q': 3, 'c': 6}, {'nr': 2, 'nm': 1, 'v': 3, 'l': 0, 's': 3, 'q': 3, 'c': 6}, {'nr': 1, 'nm': 2, 'v': 99, 'l': 0, 's': 4, 'q': 2.5, 'c': 6}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 0, 's': 5, 'q': 2.5, 'c': 6}, {'nr': 1, 'nm': 2, 'v': 99, 'l': 0, 's': 6, 'q': 3, 'c': 6}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 0, 's': 0, 'q': 3, 'c': 6}, {'nr': 1, 'nm': 2, 'v': 99, 'l': 0, 's': 1, 'q': 3, 'c': 1}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 0, 's': 2, 'q': 3, 'c': 1}, {'nr': 1, 'nm': 2, 'v': 99, 'l': 1, 's': 3, 'q': 3, 'c': 15}, {'nr': 2, 'nm': 1, 'v': 99, 'l': 1, 's': 4, 'q': 3, 'c': 15}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}, {'nr': None, 'nm': None, 'v': None, 'l': None, 's': None, 'q': None, 'c': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Book5.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="6" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="Rotation"/>
+    <Routine name="Line"/>
+    <Routine name="Halo_1"/>
+    <Routine name="Halo_2"/>
+    <Routine name="Halo_3"/>
+    <Routine name="Mask"/>
+    <Routine name="Line"/>
+    <Routine name="Halo_1"/>
+    <Routine name="Halo_2"/>
+    <Routine name="Halo_3"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="Debrief"/>
+  </Flow>
+</PsychoPy2experiment>
