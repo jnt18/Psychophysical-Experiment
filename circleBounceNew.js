@@ -14,7 +14,7 @@ const { round } = util;
 // store info about the experiment session:
 let expName = 'circleBounceNew';  // from the Builder filename that created this script
 let expInfo = {
-    'Age*': '',
+    '': '',
 };
 
 // Start code blocks for 'Before Experiment'
