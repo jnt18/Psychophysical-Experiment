@@ -1,10 +1,10 @@
-﻿/********************* 
- * Circlebounce *
- *********************/
+﻿/************************ 
+ * Circlebouncenew *
+ ************************/
 
 
 // store info about the experiment session:
-let expName = 'circleBounce';  // from the Builder filename that created this script
+let expName = 'circleBounceNew';  // from the Builder filename that created this script
 let expInfo = {
     'Age*': '',
 };
