@@ -2544,7 +2544,7 @@ function RotationRoutineBegin(snapshot) {
     minDist = (17.5 / 250);
     blueDotPositions = [];
     angle = s;
-    circleCount = cR;
+    circleCount = c;
     bluecirclePosition = (- 0.6);
     circles = [];
     averageCircle.opacity = 0;
@@ -2571,7 +2571,7 @@ function RotationRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 2;
-    console.log('l:', l, 's:', s, 'q:', q, 'cR:', cR )
+    console.log('l:', l, 's:', s, 'q:', q, 'c:', c )
     // setup some python lists for storing info about the mouse
     // current position of the mouse:
     mouse.x = [];
@@ -3698,7 +3698,7 @@ function MaskRoutineBegin(snapshot) {
     Mended = false
     //rotationSpeed = (0.0035 * nm);
     var circleCount;
-    circleCount = cMM;
+    circleCount = c;
     iterationS = 4;
     
     startDelay = ((radius / circleCount) / 2);
@@ -3751,7 +3751,7 @@ function MaskRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 1;
-    console.log('l:', l, 's:', s, 'q:', q, 'cMM:', cMM )
+    console.log('l:', l, 's:', s, 'q:', q, 'c:', c )
     continueCondition = true;
     // setup some python lists for storing info about the mouse_5
     // current position of the mouse:
