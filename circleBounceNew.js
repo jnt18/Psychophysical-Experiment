@@ -2566,8 +2566,8 @@ function RotationRoutineBegin(snapshot) {
         barfor.opacity = 1;
     xpro = barfor.pos[0];
     ypro = barfor.pos[1];
-    barfor.pos = [xpro+(Progress*0.0016 / 48), ypro];
-    barfor.size = [(Progress*0.16 / 48), 0.08];
+    barfor.pos = [xpro+(Progress*0.0016 / 96), ypro];
+    barfor.size = [(Progress*0.16 / 96), 0.08];
     //}
     Condition = 2;
     
@@ -3742,8 +3742,8 @@ function MaskRoutineBegin(snapshot) {
         Progress += 1;}
     xpro = barfor.pos[0];
     ypro = barfor.pos[1];
-    barfor.pos = [xpro+(Progress*0.0016 / 48), ypro];
-    barfor.size = [(Progress*0.16 / 48), 0.08];
+    barfor.pos = [xpro+(Progress*0.0016 / 96), ypro];
+    barfor.size = [(Progress*0.16 / 96), 0.08];
     //}
     Condition = 1;
     
