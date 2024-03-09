@@ -2420,7 +2420,7 @@ function trialsLoopBegin(trialsLoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     trials = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 4, method: TrialHandler.Method.RANDOM,
+      nReps: 2, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'Book5.xlsx',
       seed: undefined, name: 'trials'
@@ -2571,8 +2571,8 @@ function RotationRoutineBegin(snapshot) {
         barfor.opacity = 1;
     xpro = barfor.pos[0];
     ypro = barfor.pos[1];
-    barfor.pos = [xpro+(Progress*0.0016 / 96), ypro];
-    barfor.size = [(Progress*0.16 / 96), 0.08];
+    barfor.pos = [xpro+(Progress*0.0016 / 48), ypro];
+    barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 2;
     
@@ -3753,8 +3753,8 @@ function MaskRoutineBegin(snapshot) {
         Progress += 1;}
     xpro = barfor.pos[0];
     ypro = barfor.pos[1];
-    barfor.pos = [xpro+(Progress*0.0016 / 96), ypro];
-    barfor.size = [(Progress*0.16 / 96), 0.08];
+    barfor.pos = [xpro+(Progress*0.0016 / 48), ypro];
+    barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 1;
     
