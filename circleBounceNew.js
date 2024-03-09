@@ -2696,7 +2696,7 @@ function RotationRoutineEachFrame() {
         if ((num_rotations >= 0.5)) {
             if (ended === false) {
                 t2 = RotationClock.getTime();
-                console.log('R time taken:', nr, t2, t1)
+                console.log('R time taken:', t2, t1)
                 ended = true};
             circles[i].autoDraw = false;
             continueRoutine = false;
@@ -3870,7 +3870,7 @@ function MaskRoutineEachFrame() {
             if ((bounces >= (1.5 * circleCount))) {
                 if (Mended === false) {
                 t2 = MaskClock.getTime();
-                console.log('M time taken:', nm, t2, t1)
+                console.log('M time taken:', t2, t1)
                 Mended = true};
                 for (var iDot, _pj_i = 0, _pj_g = util.range(circleCount), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
                     iDot = _pj_g[_pj_i];
