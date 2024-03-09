@@ -2549,7 +2549,7 @@ function RotationRoutineBegin(snapshot) {
     minDist = (17.5 / 250);
     blueDotPositions = [];
     angle = s;
-    circleCount = c;
+    circleCount = cR;
     bluecirclePosition = (- 0.6);
     circles = [];
     averageCircle.opacity = 0;
@@ -3705,7 +3705,7 @@ function MaskRoutineBegin(snapshot) {
     Mended = false
     //rotationSpeed = (0.0035 * nm);
     var circleCount;
-    circleCount = c;
+    circleCount = cM;
     iterationS = 4;
     
     startDelay = ((radius / circleCount) / 2);
