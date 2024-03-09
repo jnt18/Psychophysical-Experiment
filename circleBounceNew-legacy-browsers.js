@@ -3850,10 +3850,10 @@ function MaskRoutineEachFrame() {
         _ = _pj_a[_pj_c];
         for (var i, _pj_f = 0, _pj_d = util.range(circleCount), _pj_e = _pj_d.length; (_pj_f < _pj_e); _pj_f += 1) {
             i = _pj_d[_pj_f];
-            x = ((radius * Math.cos(angles[i]+z)) + (circlePositions[i] * Math.cos(angles[i]+z)));
+            x = ((radius * Math.cos(angles[i]+l*z)) + (circlePositions[i] * Math.cos(angles[i]+l*z)));
             //console.log(circles[0].pos, circlePositions[0], angles[0], circleDirection[0])
             //x = ((radius * Math.cos(angles[0])) + (circlePositions[0] * Math.cos(angles[0])));
-            y = ((radius * Math.sin(angles[i]+z)) + (circlePositions[i] * Math.sin(angles[i]+z)));
+            y = ((radius * Math.sin(angles[i]+l*z)) + (circlePositions[i] * Math.sin(angles[i]+l*z)));
             circles[i].pos = [x, y];
             circlePositions[i] += (circleDirections[i] * rotationSpeed);
             
