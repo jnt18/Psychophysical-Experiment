@@ -3698,7 +3698,7 @@ function MaskRoutineBegin(snapshot) {
     Mended = false
     //rotationSpeed = (0.0035 * nm);
     var circleCount;
-    circleCount = cMM;
+    circleCount = cM;
     iterationS = 4;
     
     startDelay = ((radius / circleCount) / 2);
@@ -3751,7 +3751,7 @@ function MaskRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 1;
-    console.log('l:', l, 's:', s, 'q:', q, 'cMM:', cMM )
+    console.log('l:', l, 's:', s, 'q:', q, 'cM:', cM )
     continueCondition = true;
     // setup some python lists for storing info about the mouse_5
     // current position of the mouse:
