@@ -3730,7 +3730,7 @@ function MaskRoutineBegin(snapshot) {
     dif_trajectory = [];
     for (var iDot, _pj_c = 0, _pj_a = util.range(circleCount), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         iDot = _pj_a[_pj_c];
-        circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": 99, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
+        circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
         circles[iDot].opacity = 1;
         //circles[iDot].autoDraw = true;
     }
