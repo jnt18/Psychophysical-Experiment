@@ -2416,7 +2416,7 @@ function trialsLoopBegin(trialsLoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     trials = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 6, method: TrialHandler.Method.RANDOM,
+      nReps: 4, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'Book5.xlsx',
       seed: undefined, name: 'trials'
@@ -3673,7 +3673,12 @@ function MaskRoutineBegin(snapshot) {
     // update component parameters for each repeat
     psychoJS.experiment.addData('Mask.started', globalClock.getTime());
     // Run 'Begin Routine' code from code_3
-    
+    var t1;
+    var t2;
+    var t_now;
+    var frameCount;
+    var frameCountPrevious;
+    var t_previous;
     //initializationClock.reset();
     var circles = [];
     var bounces = [];
@@ -3780,6 +3785,19 @@ function MaskRoutineEachFrame() {
     var y; 
     var t1;
     var t2;
+    if (Mstarted === false) {
+                console.log('t1 =',RotationClock.getTime());
+                t1 = RotationClock.getTime();
+                t_previous = t1;
+                frameCountPrevious=0;
+                Mstarted = true};
+                
+    t_now = RotationClock.getTime();
+    //console.log('t_now =',t_now);
+    //console.log('t1 =',t1);
+    frameCount = Math.round((t_now-t1)*60);
+    frameDifferenceFrac = (t_now-t_previous)*60;
+    frameDelta = frameCount-frameCountPrevious;  
     
     if (defineVars) {
     var angless = (function () {
@@ -3862,6 +3880,8 @@ function MaskRoutineEachFrame() {
         circles[i].draw();
         }
     }
+    t_previous = t_now;
+    frameCountPrevious = frameCount;
     
     // *mouse_5* updates
     if (t >= 0.0 && mouse_5.status === PsychoJS.Status.NOT_STARTED) {
