@@ -2346,7 +2346,7 @@ function PractLoopBegin(PractLoopScheduler, snapshot) {
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
       extraInfo: expInfo, originPath: undefined,
-      trialList: TrialHandler.importConditions(psychoJS.serverManager, 'Book5.xlsx', '1,2,3'),
+      trialList: TrialHandler.importConditions(psychoJS.serverManager, 'Book5.xlsx', '0, 1, 2'),
       seed: undefined, name: 'Pract'
     });
     psychoJS.experiment.addLoop(Pract); // add the loop to the experiment
