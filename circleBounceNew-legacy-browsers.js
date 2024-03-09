@@ -371,7 +371,7 @@ async function experimentInit() {
   text_14 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_14',
-    text: 'Assuming that the dot continues its trajectory after leaving the circle, where would the dot have \ncrossed the line of this ring?',
+    text: 'Assuming that the dot continues\nits trajectory after leaving the circle, \nwhere would the dot have \ncrossed the line of this ring?',
     font: 'Open Sans',
     units: 'height', 
     pos: [0, (0.2 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -389,7 +389,7 @@ async function experimentInit() {
   text_15 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_15',
-    text: 'Assuming that the dot continues its trajectory \nafter leaving the circle, where would the dot have \ncrossed the line of the second ring?',
+    text: 'Assuming that the dot continues \nits trajectory after leaving the circle, \nwhere would the dot have \ncrossed the line of the second ring?',
     font: 'Open Sans',
     units: 'height', 
     pos: [0, (0.2 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -2576,7 +2576,7 @@ function RotationRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 2;
-    
+    console.log('l:', l, 's:', s, 'q:', q, 'cM:', cM )
     // setup some python lists for storing info about the mouse
     // current position of the mouse:
     mouse.x = [];
@@ -3762,7 +3762,7 @@ function MaskRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 1;
-    
+    console.log('l:', l, 's:', s, 'q:', q, 'cM:', cM )
     continueCondition = true;
     // setup some python lists for storing info about the mouse_5
     // current position of the mouse:
