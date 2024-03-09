@@ -2416,7 +2416,7 @@ function trialsLoopBegin(trialsLoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     trials = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 2, method: TrialHandler.Method.RANDOM,
+      nReps: 4, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'Book5.xlsx',
       seed: undefined, name: 'trials'
@@ -4141,6 +4141,8 @@ function DebriefRoutineEachFrame() {
           mouse_14.midButton.push(_mouseButtons[1]);
           mouse_14.rightButton.push(_mouseButtons[2]);
           mouse_14.time.push(mouse_14.mouseClock.getTime());
+          // end routine on response
+          continueRoutine = false;
         }
       }
     }
@@ -4201,12 +4203,12 @@ function DebriefRoutineEnd(snapshot) {
     }
     psychoJS.experiment.addData('Debrief.stopped', globalClock.getTime());
     // store data for psychoJS.experiment (ExperimentHandler)
-    psychoJS.experiment.addData('mouse_14.x', mouse_14.x);
-    psychoJS.experiment.addData('mouse_14.y', mouse_14.y);
-    psychoJS.experiment.addData('mouse_14.leftButton', mouse_14.leftButton);
-    psychoJS.experiment.addData('mouse_14.midButton', mouse_14.midButton);
-    psychoJS.experiment.addData('mouse_14.rightButton', mouse_14.rightButton);
-    psychoJS.experiment.addData('mouse_14.time', mouse_14.time);
+    if (mouse_14.x) {  psychoJS.experiment.addData('mouse_14.x', mouse_14.x[0])};
+    if (mouse_14.y) {  psychoJS.experiment.addData('mouse_14.y', mouse_14.y[0])};
+    if (mouse_14.leftButton) {  psychoJS.experiment.addData('mouse_14.leftButton', mouse_14.leftButton[0])};
+    if (mouse_14.midButton) {  psychoJS.experiment.addData('mouse_14.midButton', mouse_14.midButton[0])};
+    if (mouse_14.rightButton) {  psychoJS.experiment.addData('mouse_14.rightButton', mouse_14.rightButton[0])};
+    if (mouse_14.time) {  psychoJS.experiment.addData('mouse_14.time', mouse_14.time[0])};
     
     // the Routine "Debrief" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
