@@ -364,9 +364,9 @@ async function experimentInit() {
     text: 'Where did the dot leave the circle',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, (0.8 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
+    pos: [0, (0.2 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
     languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: 1.0,
+    color: new util.Color('black'),  opacity: 1.0,
     depth: -2.0 
   });
   
@@ -382,9 +382,9 @@ async function experimentInit() {
     text: 'Assuming that the dot continues its trajectory after leaving the circle, where would the dot have \ncrossed the line of this ring?',
     font: 'Open Sans',
     units: 'height', 
-    pos: [0, (0.9 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
+    pos: [0, (0.2 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
     languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
+    color: new util.Color('black'),  opacity: undefined,
     depth: -2.0 
   });
   
@@ -400,9 +400,9 @@ async function experimentInit() {
     text: 'Assuming that the dot continues its trajectory \nafter leaving the circle, where would the dot have \ncrossed the line of the second ring?',
     font: 'Open Sans',
     units: 'height', 
-    pos: [0, (0.8 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
+    pos: [0, (0.2 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
     languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: 1.0,
+    color: new util.Color('black'),  opacity: 1.0,
     depth: -2.0 
   });
   
