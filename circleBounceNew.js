@@ -3692,7 +3692,6 @@ function MaskRoutineBegin(snapshot) {
     //if (nm === 2) {rotationSpeed = 0.0025}//{rotationSpeed = 0.0022}
     Mstarted = false
     Mended = false
-    var z = 0; 
     //rotationSpeed = (0.0035 * nm);
     var circleCount;
     circleCount = c;
@@ -3771,6 +3770,7 @@ function MaskRoutineBegin(snapshot) {
 }
 
 
+var z;
 var circleDirections;
 var bouncess;
 var angles;
@@ -3787,7 +3787,7 @@ function MaskRoutineEachFrame() {
     var y; 
     var t1;
     var t2;
-    z += 1
+    var z;
     if (Mstarted === false) {
                 console.log('t1 =',RotationClock.getTime());
                 t1 = RotationClock.getTime();
@@ -3801,7 +3801,7 @@ function MaskRoutineEachFrame() {
     frameCount = Math.round((t_now-t1)*60);
     frameDifferenceFrac = (t_now-t_previous)*60;
     frameDelta = frameCount-frameCountPrevious;  
-    
+    z = framecount**2
     if (defineVars) {
     var angless = (function () {
         var _pj_a = [], _pj_b = util.range(circleCount);
