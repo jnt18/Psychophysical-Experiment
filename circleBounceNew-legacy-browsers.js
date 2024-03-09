@@ -2576,7 +2576,7 @@ function RotationRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 2;
-    console.log('l:', l, 's:', s, 'q:', q, 'cM:', cM )
+    console.log('l:', l, 's:', s, 'q:', q, 'cR:', cR )
     // setup some python lists for storing info about the mouse
     // current position of the mouse:
     mouse.x = [];
