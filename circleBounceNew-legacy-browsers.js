@@ -389,7 +389,7 @@ async function experimentInit() {
   text_15 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_15',
-    text: 'Assuming that the dot continues its trajectory after leaving the circle, where would the dot have \ncrossed the line of the second ring?',
+    text: 'Assuming that the dot continues its trajectory \nafter leaving the circle, where would the dot have \ncrossed the line of the second ring?',
     font: 'Open Sans',
     units: 'height', 
     pos: [0, (0.8 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -3818,7 +3818,7 @@ function MaskRoutineEachFrame() {
         var _pj_a = [], _pj_b = util.range(circleCount);
         for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c < _pj_d); _pj_c += 1) {
             var i = _pj_b[_pj_c];
-            _pj_a.push(((((((i / circleCount) * 0.5) * Math.PI) / q) + s) - Math.PI));
+            _pj_a.push(((((((i / circleCount) * 0.5) * Math.PI) / q) + s) - Math.PI)+(l*t1)/100);
         }
         return _pj_a;
     })();
