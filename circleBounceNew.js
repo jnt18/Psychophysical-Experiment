@@ -1,6 +1,6 @@
-﻿/************************ 
- * Circlebouncenew *
- ************************/
+﻿/************************* 
+ * Circlebouncenew2 *
+ *************************/
 
 import { core, data, sound, util, visual, hardware } from './lib/psychojs-2023.2.3.js';
 const { PsychoJS } = core;
@@ -12,7 +12,7 @@ const { round } = util;
 
 
 // store info about the experiment session:
-let expName = 'circleBounceNew';  // from the Builder filename that created this script
+let expName = 'circleBounceNew2';  // from the Builder filename that created this script
 let expInfo = {
     '': '',
 };
