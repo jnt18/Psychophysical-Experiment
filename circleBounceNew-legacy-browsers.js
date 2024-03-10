@@ -2578,7 +2578,7 @@ function RotationRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 2;
-    console.log('l:', l, 's:', s, 'q:', q, 'c:', c )
+    console.log('l:', l, 's:', s, 'q:', q, 'c:', cR )
     // setup some python lists for storing info about the mouse
     // current position of the mouse:
     mouse.x = [];
@@ -3767,7 +3767,7 @@ function MaskRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 1;
-    console.log('l:', l, 's:', s, 'q:', q, 'c:', c, 'circleCount:', circleCount )
+    console.log('l:', l, 's:', s, 'q:', q, 'cM:', c, 'circleCount:', circleCount )
     continueCondition = true;
     // setup some python lists for storing info about the mouse_5
     // current position of the mouse:
