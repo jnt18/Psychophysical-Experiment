@@ -3854,17 +3854,18 @@ function MaskRoutineEachFrame() {
         circles[i].opacity = 1;
     }
     
-    console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
+    console.log('Inside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
     defineVars = false;
     }
     //console.log(circlePositions, angles)
     //_pj = {};
     //_pj_snippets(_pj);
-    
+    console.log('Outside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
     for (var _, _pj_c = 0, _pj_a = util.range(Number.parseInt(iterationS)), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         _ = _pj_a[_pj_c];
         for (var i, _pj_f = 0, _pj_d = util.range(cM), _pj_e = _pj_d.length; (_pj_f < _pj_e); _pj_f += 1) {
             i = _pj_d[_pj_f];
+            console.log(i, ':opacity', circles[i].opacity)
             x = ((radius * Math.cos(angles[i]+l*z)) + (circlePositions[i] * Math.cos(angles[i]+l*z)));
             //console.log(circles[0].pos, circlePositions[0], angles[0], circleDirection[0])
             //x = ((radius * Math.cos(angles[0])) + (circlePositions[0] * Math.cos(angles[0])));
