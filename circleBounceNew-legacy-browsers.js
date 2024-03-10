@@ -3872,9 +3872,8 @@ function MaskRoutineEachFrame() {
                 }
             }
             if ((bounces <= (0.5 * cM))) {
-                for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
+                for (var iDot, _pj_i = 0, _pj_g = util.range(cM-1), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
                     iDot = _pj_g[_pj_i];
-                    console.log(iDot, circles[iDot].opacity);
                     circles[iDot].opacity = 0;
                 }
             }
@@ -3883,7 +3882,7 @@ function MaskRoutineEachFrame() {
                 console.log('t1 =',MaskClock.getTime());
                 t1 = MaskClock.getTime();
                 Mstarted = true};
-                for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
+                for (var iDot, _pj_i = 0, _pj_g = util.range(cM-1), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
                     iDot = _pj_g[_pj_i];
                     if ((circles[iDot].opacity === 0)) {
                         circles[iDot].opacity = 1;
