@@ -3783,11 +3783,11 @@ var z;
 var circleDirections;
 var bouncess;
 var angles;
-circles = [];
-for (var i = 0; i < cM; i++) {
-  circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
-  circles[i].opacity = 1;
-}
+//circles = [];
+//for (var i = 0; i < cM; i++) {
+  //circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
+  //circles[i].opacity = 1;
+//}
 function MaskRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'Mask' ---
