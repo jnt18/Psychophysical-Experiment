@@ -3767,7 +3767,7 @@ function MaskRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 1;
-    console.log('l:', l, 's:', s, 'q:', q, 'cM:', cM, 'circleCount:', circleCount, 'length of circles:', len(circles))
+    console.log('l:', l, 's:', s, 'q:', q, 'cM:', cM, 'circleCount:', circleCount, 'length of circles:', circles.length)
     continueCondition = true;
     // setup some python lists for storing info about the mouse_5
     // current position of the mouse:
