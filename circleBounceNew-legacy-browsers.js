@@ -3803,13 +3803,20 @@ function MaskRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     // Run 'Each Frame' code from code_3
-    if (continueCondition = true) {
+    
     var _pj;
     var x;
     var y; 
     var t1;
     var t2;
     var z;
+    var circles = [];
+    for (var iDot, _pj_c = 0, _pj_a = util.range(cM), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
+        iDot = _pj_a[_pj_c];
+        circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
+        circles[iDot].opacity = 1;
+        //circles[iDot].autoDraw = true;
+    }
     if (Mstarted === false) {
                 console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
                 t1 = RotationClock.getTime();
@@ -3905,7 +3912,7 @@ function MaskRoutineEachFrame() {
     }
     t_previous = t_now;
     frameCountPrevious = frameCount;
-    }
+    
     // *mouse_5* updates
     if (t >= 0.0 && mouse_5.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
