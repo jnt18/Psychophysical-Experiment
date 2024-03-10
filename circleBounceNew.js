@@ -3791,7 +3791,6 @@ function MaskRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     // Run 'Each Frame' code from code_3
-    
     var _pj;
     var x;
     var y; 
