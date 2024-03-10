@@ -3709,7 +3709,10 @@ function MaskRoutineBegin(snapshot) {
     Mended = false
     //rotationSpeed = (0.0035 * nm);
     var circleCount;
-    circleCount = c;
+    if (c === 1) {circleCount = 15};
+    if (c === 15) {circleCount = 1};
+    if (c === 6) {circleCount = 6};
+    //circleCount = c;
     iterationS = 4;
     
     startDelay = ((radius / circleCount) / 2);
