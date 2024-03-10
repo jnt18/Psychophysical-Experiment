@@ -3783,10 +3783,10 @@ var z;
 var circleDirections;
 var bouncess;
 var angles;
-circless = [];
+circles = [];
 for (var i = 0; i < cM; i++) {
-  circless.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
-  circless[i].opacity = 1;
+  circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
+  circles[i].opacity = 1;
 }
 function MaskRoutineEachFrame() {
   return async function () {
@@ -3907,7 +3907,7 @@ function MaskRoutineEachFrame() {
     }
     t_previous = t_now;
     frameCountPrevious = frameCount;
-    circless = circles;
+    //circless = circles;
     
     // *mouse_5* updates
     if (t >= 0.0 && mouse_5.status === PsychoJS.Status.NOT_STARTED) {
