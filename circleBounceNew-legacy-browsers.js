@@ -3848,15 +3848,17 @@ function MaskRoutineEachFrame() {
     bounces = bouncess
     angles = angless
     circlePositions = circlePositionss
-    var circles = [];
+    var circless = [];
     for (var i = 0; i < cM; i++) {
         circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
         circles[i].opacity = 1;
     }
     
+    
     console.log('Inside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
     defineVars = false;
     }
+    circles = circless 
     //console.log(circlePositions, angles)
     //_pj = {};
     //_pj_snippets(_pj);
