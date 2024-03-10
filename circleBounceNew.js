@@ -3783,7 +3783,6 @@ var z;
 var circleDirections;
 var bouncess;
 var angles;
-var circless;
 function MaskRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'Mask' ---
@@ -3798,7 +3797,6 @@ function MaskRoutineEachFrame() {
     var t1;
     var t2;
     var z;
-    var circless = [];
     
     if (Mstarted === false) {
                 //console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
@@ -3836,16 +3834,12 @@ function MaskRoutineEachFrame() {
     bounces = bouncess
     angles = angless
     circlePositions = circlePositionss
-    circless = [];
-    for (var i = 0; i < cM; i++) {
-        circless.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
-        circless[i].opacity = 1;
-    }
+    
     
     defineVars = false;
     }
-    console.log('Inside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circless:', circless.length);
-    circles = circless 
+    console.log('Inside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
+    //circles = circless 
     //console.log(circlePositions, angles)
     //_pj = {};
     //_pj_snippets(_pj);
@@ -3903,8 +3897,8 @@ function MaskRoutineEachFrame() {
         }
     }
     t_previous = t_now;
-    frameCountPrevious = frameCount;
-    circless = circles;
+    frameCountPrevious = frameCount
+    //circless = circles;
     
     // *mouse_5* updates
     if (t >= 0.0 && mouse_5.status === PsychoJS.Status.NOT_STARTED) {
