@@ -3783,6 +3783,7 @@ var z;
 var circleDirections;
 var bouncess;
 var angles;
+var circless;
 function MaskRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'Mask' ---
@@ -3835,7 +3836,7 @@ function MaskRoutineEachFrame() {
     bounces = bouncess
     angles = angless
     circlePositions = circlePositionss
-    var circless = [];
+    circless = [];
     for (var i = 0; i < cM; i++) {
         circless.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
         circless[i].opacity = 1;
