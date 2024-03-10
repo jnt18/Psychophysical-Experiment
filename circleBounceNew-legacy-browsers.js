@@ -3850,17 +3850,17 @@ function MaskRoutineEachFrame() {
     
     defineVars = false;
     }
-    console.log('Inside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
+    //console.log('Inside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
     //circles = circless 
     //console.log(circlePositions, angles)
     //_pj = {};
     //_pj_snippets(_pj);
-    console.log('Outside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
+    //console.log('Outside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
     for (var _, _pj_c = 0, _pj_a = util.range(Number.parseInt(iterationS)), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         _ = _pj_a[_pj_c];
         for (var i, _pj_f = 0, _pj_d = util.range(cM), _pj_e = _pj_d.length; (_pj_f < _pj_e); _pj_f += 1) {
             i = _pj_d[_pj_f];
-            console.log(i, ':opacity', 'cM', cM, 'length of circles:', circles.length);
+            //console.log(i, ':opacity', 'cM', cM, 'length of circles:', circles.length);
             x = ((radius * Math.cos(angles[i]+l*z)) + (circlePositions[i] * Math.cos(angles[i]+l*z)));
             //console.log(circles[0].pos, circlePositions[0], angles[0], circleDirection[0])
             //x = ((radius * Math.cos(angles[0])) + (circlePositions[0] * Math.cos(angles[0])));
@@ -3883,7 +3883,7 @@ function MaskRoutineEachFrame() {
             //}
             if ((bounces > (0.5 * cM))) {
                 if (Mstarted === false) {
-                console.log('t1 =',MaskClock.getTime());
+                //console.log('t1 =',MaskClock.getTime());
                 t1 = MaskClock.getTime();
                 Mstarted = true};
                 for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
@@ -3896,7 +3896,7 @@ function MaskRoutineEachFrame() {
             if ((bounces >= (1.5 * cM))) {
                 if (Mended === false) {
                 t2 = MaskClock.getTime();
-                console.log('M time taken:', t2, t1)
+                //console.log('M time taken:', t2, t1)
                 Mended = true};
                 for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
                     iDot = _pj_g[_pj_i];
