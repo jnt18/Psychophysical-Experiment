@@ -3661,6 +3661,7 @@ function StartRoutineEnd(snapshot) {
 
 var Mstarted;
 var Mended;
+var c;
 var iterationS;
 var startDelay;
 var bounces;
@@ -3700,13 +3701,11 @@ function MaskRoutineBegin(snapshot) {
     //rotationSpeed = (0.0035 * nm);
     var circleCount;
     if (c === 1) {
-        circleCount = 15;
+        c = 15;
     } else if (c === 15) {
-        circleCount = 1;
-    } else if (c === 6) {
-        circleCount = 6;
+        c = 1;
     }
-    //circleCount = c;
+    circleCount = c;
     iterationS = 4;
     
     startDelay = ((radius / circleCount) / 2);
