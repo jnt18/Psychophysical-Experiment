@@ -2839,6 +2839,7 @@ function LineRoutineBegin(snapshot) {
     psychoJS.experiment.addData('Line.started', globalClock.getTime());
     // Run 'Begin Routine' code from code_7
     s2 = (s + (Condition * Math.PI));
+    if (Condition === 1 && l === 1) {s2 -= Math.PI}
     mouse_angle = ((s2 + ((2.5 * Math.PI) / 15)) + Math.PI);
     
     start = [((0.7 * radius) * Math.cos((s2 + ((2.5 * Math.PI) / 15)))), ((0.7 * radius) * Math.sin((s2 + ((2.5 * Math.PI) / 15))))];
