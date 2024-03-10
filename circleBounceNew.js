@@ -1,4 +1,4 @@
-﻿/************************ 
+/************************ 
  * Circlebouncenew *
  ************************/
 
@@ -3783,7 +3783,7 @@ var z;
 var circleDirections;
 var bouncess;
 var angles;
-var circless;
+var circless = [];
 function MaskRoutineEachFrame() {
   return async function () {
     //--- Loop for each frame of Routine 'Mask' ---
@@ -3798,7 +3798,6 @@ function MaskRoutineEachFrame() {
     var t1;
     var t2;
     var z;
-    var circless = [];
     
     if (Mstarted === false) {
                 //console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
