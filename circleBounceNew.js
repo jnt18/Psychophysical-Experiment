@@ -3842,10 +3842,9 @@ function MaskRoutineEachFrame() {
         circless[i].opacity = 1;
     }
     
-    
-    console.log('Inside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circless:', circless.length);
     defineVars = false;
     }
+    console.log('Inside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circless:', circless.length);
     circles = circless 
     //console.log(circlePositions, angles)
     //_pj = {};
