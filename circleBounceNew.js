@@ -3862,6 +3862,7 @@ function MaskRoutineEachFrame() {
             if ((bounces <= (0.5 * cM))) {
                 for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
                     iDot = _pj_g[_pj_i];
+                    console.log(iDot, circles[iDot].opacity);
                     circles[iDot].opacity = 0;
                 }
             }
