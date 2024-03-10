@@ -3859,7 +3859,7 @@ function MaskRoutineEachFrame() {
                     circlePositions[i] = ((- 0.8) + (dotRadius / Math.sqrt(2)));
                 }
             }
-            if ((bounces <= (0.5 * circleCount))) {
+            if ((bounces <= (0.5 * cM))) {
                 for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
                     iDot = _pj_g[_pj_i];
                     circles[iDot].opacity = 0;
