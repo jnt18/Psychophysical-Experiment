@@ -3798,7 +3798,7 @@ function MaskRoutineEachFrame() {
     var t1;
     var t2;
     var z;
-    var circles = [];
+    
     
     if (Mstarted === false) {
                 console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
@@ -3836,6 +3836,7 @@ function MaskRoutineEachFrame() {
     bounces = bouncess
     angles = angless
     circlePositions = circlePositionss
+    var circles = [];
     for (var iDot, _pj_c = 0, _pj_a = util.range(cM), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         iDot = _pj_a[_pj_c];
         circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
