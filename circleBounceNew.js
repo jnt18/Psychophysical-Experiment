@@ -3567,7 +3567,7 @@ function MaskRoutineEachFrame() {
     var t2;
     var z;
     if (Mstarted === false) {
-                console.log('t1 =',RotationClock.getTime(), 'cM': cM, 'length of circles:', circles.length);
+                console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
                 t1 = RotationClock.getTime();
                 t_previous = t1;
                 frameCountPrevious=0;
