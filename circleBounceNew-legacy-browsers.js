@@ -3810,7 +3810,7 @@ function MaskRoutineEachFrame() {
     var t1;
     var t2;
     var z;
-    var circless;
+    var circless = [];
     
     if (Mstarted === false) {
                 //console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
