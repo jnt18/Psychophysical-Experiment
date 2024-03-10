@@ -3855,6 +3855,7 @@ function MaskRoutineEachFrame() {
         circles[iDot].opacity = 1;
         //circles[iDot].autoDraw = true;
     }
+    console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
     defineVars = false;
     }
     //console.log(circlePositions, angles)
