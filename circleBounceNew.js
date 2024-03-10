@@ -3860,9 +3860,12 @@ function MaskRoutineEachFrame() {
                 }
             }
             if ((bounces <= (0.5 * cM))) {
-                for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
-                    iDot = _pj_g[_pj_i];
-                    circles[iDot].opacity = 0;
+                for (var circle, _pj_c = 0, _pj_a = circles, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
+                    circle = _pj_a[_pj_c];
+                    circle.opacity = 0;
+                //for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
+                    //iDot = _pj_g[_pj_i];
+                    //circles[iDot].opacity = 0;
                 }
             }
             if ((bounces > (0.5 * cM))) {
@@ -3870,10 +3873,14 @@ function MaskRoutineEachFrame() {
                 console.log('t1 =',MaskClock.getTime());
                 t1 = MaskClock.getTime();
                 Mstarted = true};
-                for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
-                    iDot = _pj_g[_pj_i];
-                    if ((circles[iDot].opacity === 0)) {
-                        circles[iDot].opacity = 1;
+                for (var circle, _pj_c = 0, _pj_a = circles, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
+                    circle = _pj_a[_pj_c];
+                //for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
+                    //iDot = _pj_g[_pj_i];
+                    //if ((circles[iDot].opacity === 0)) {
+                        //circles[iDot].opacity = 1;
+                      if ((circle.opacity === 0)) {
+                        circle.opacity = 1;
                     }
                 }
             }
