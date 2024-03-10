@@ -3916,6 +3916,7 @@ function MaskRoutineEachFrame() {
     }
     t_previous = t_now;
     frameCountPrevious = frameCount;
+    circless = circles;
     
     // *mouse_5* updates
     if (t >= 0.0 && mouse_5.status === PsychoJS.Status.NOT_STARTED) {
