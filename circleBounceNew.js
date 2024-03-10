@@ -2545,13 +2545,7 @@ function RotationRoutineBegin(snapshot) {
     blueDotPositions = [];
     angle = s;
     //circleCount = c;
-    if (c === 1) {
-        circleCount = 15;
-    } else if (c === 15) {
-        circleCount = 1;
-    } else {
-        circleCount = c;
-    }
+    circleCount = cR;
     
     bluecirclePosition = (- 0.6);
     circles = [];
@@ -3708,7 +3702,7 @@ function MaskRoutineBegin(snapshot) {
     //rotationSpeed = (0.0035 * nm);
     var circleCount;
     
-    circleCount = c;
+    circleCount = cM;
         
     iterationS = 4;
     
