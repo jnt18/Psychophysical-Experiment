@@ -3803,6 +3803,7 @@ function MaskRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     // Run 'Each Frame' code from code_3
+    if (continueCondition = true) {
     var _pj;
     var x;
     var y; 
@@ -3904,7 +3905,7 @@ function MaskRoutineEachFrame() {
     }
     t_previous = t_now;
     frameCountPrevious = frameCount;
-    
+    }
     // *mouse_5* updates
     if (t >= 0.0 && mouse_5.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
@@ -3970,7 +3971,7 @@ function MaskRoutineEnd(snapshot) {
     console.log('managed to end each frame tab of Mask')
     defineVars = true;
     bar.autoDraw = false;
-    
+    continueCondition = false;
     // store data for psychoJS.experiment (ExperimentHandler)
     psychoJS.experiment.addData('mouse_5.x', mouse_5.x);
     psychoJS.experiment.addData('mouse_5.y', mouse_5.y);
