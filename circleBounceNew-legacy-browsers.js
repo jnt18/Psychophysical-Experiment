@@ -2826,8 +2826,6 @@ function RotationRoutineEachFrame() {
                 ended = true};
             circles[i].autoDraw = false;
             RfinaldotPos = circles[0].pos;        
-            psychoJS.experiment.addData('Rotation first dot x position', RfinaldotPos.pos[0]);
-            psychoJS.experiment.addData('Rotation first dot y position:', RfinaldotPos.pos[1])
             continueRoutine = false;
         } else {
             var dotPos = [Math.cos(tangle - rotation) * dist, Math.sin(tangle - rotation) * dist];
@@ -2928,6 +2926,8 @@ function RotationRoutineEnd(snapshot) {
         return _pj_a;
     })();
     
+    psychoJS.experiment.addData('Rotation first dot x position', RfinaldotPos[0]);
+            psychoJS.experiment.addData('Rotation first dot y position:', RfinaldotPos[1])
     // store data for psychoJS.experiment (ExperimentHandler)
     psychoJS.experiment.addData('mouse.x', mouse.x);
     psychoJS.experiment.addData('mouse.y', mouse.y);
@@ -4081,8 +4081,7 @@ function MaskRoutineEachFrame() {
                     circles[iDot].opacity = 0;
                     circles[iDot].autoDraw = false;
                     MfinaldotPos = circles[0].pos;
-                    psychoJS.experiment.addData('Mask first dot x position', MfinaldotPos.pos[0]);
-                    psychoJS.experiment.addData('Mask first dot y position:', MfinaldotPos.pos[1])
+                    
                     continueRoutine = false;
                 }
             }
@@ -4160,7 +4159,8 @@ function MaskRoutineEnd(snapshot) {
     bar.autoDraw = false;
     continueCondition = false;
     
-    
+    psychoJS.experiment.addData('Mask first dot x position', MfinaldotPos[0]);
+    psychoJS.experiment.addData('Mask first dot y position:', MfinaldotPos[1])
     // store data for psychoJS.experiment (ExperimentHandler)
     psychoJS.experiment.addData('mouse_5.x', mouse_5.x);
     psychoJS.experiment.addData('mouse_5.y', mouse_5.y);
