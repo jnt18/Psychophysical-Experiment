@@ -393,7 +393,7 @@ async function experimentInit() {
     text: 'Assuming that the dot continues\nits trajectory after leaving the circle, \nwhere would the dot have \ncrossed the line of this ring?',
     font: 'Open Sans',
     units: 'height', 
-    pos: [0, (0.25 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
+    pos: [0, (0.3 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('black'),  opacity: undefined,
     depth: -2.0 
@@ -411,7 +411,7 @@ async function experimentInit() {
     text: 'Assuming that the dot continues \nits trajectory after leaving the circle, \nwhere would the dot have \ncrossed the line of the second ring?',
     font: 'Open Sans',
     units: 'height', 
-    pos: [0, (0.25 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
+    pos: [0, (0.3 * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('black'),  opacity: 1.0,
     depth: -2.0 
@@ -3951,6 +3951,7 @@ function MaskRoutineEachFrame() {
     var t1;
     var t2;
     var z;
+    circleCount = c 
     
     if (Mstarted === false) {
                 //console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
