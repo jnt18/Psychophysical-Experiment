@@ -3092,11 +3092,11 @@ function LineRoutineEnd(snapshot) {
     psychoJS.experiment.addData('Practice c0 x position:', circle0.pos[0]);
     psychoJS.experiment.addData('Practice c0 y position:', circle0.pos[1])
     }
-    if (condition === 1) {
+    else if (condition === 1) {
     psychoJS.experiment.addData('Mask c0 x position:', circle0.pos[0]);
     psychoJS.experiment.addData('Mask c0 y position:', circle0.pos[1])
     }
-    if (condition === 2) {
+    else if (condition === 2) {
     psychoJS.experiment.addData('Rotation c0 x position:', circle0.pos[0]);
     psychoJS.experiment.addData('Rotation c0 y position:', circle0.pos[1])
     }
@@ -3272,11 +3272,11 @@ function Halo_1RoutineEnd(snapshot) {
     psychoJS.experiment.addData('Practice c1 y position:', circle1.pos[1])
     }
     
-    if (condition === 1) {
+    else if (condition === 1) {
     psychoJS.experiment.addData('Mask c1 x position:', circle1.pos[0]);
     psychoJS.experiment.addData('Mask c1 y position:', circle1.pos[1])
     }
-    if (condition === 2) {
+    else if (condition === 2) {
     psychoJS.experiment.addData('Rotation c1 x position:', circle1.pos[0]);
     psychoJS.experiment.addData('Rotation c1 y position:', circle1.pos[1])
     }
@@ -3453,11 +3453,11 @@ function Halo_2RoutineEnd(snapshot) {
     psychoJS.experiment.addData('Practice c2 y position:', circle2.pos[1])
     }
     
-    if (condition === 1) {
+    else if (condition === 1) {
     psychoJS.experiment.addData('Mask c2 x position:', circle2.pos[0]);
     psychoJS.experiment.addData('Mask c2 y position:', circle2.pos[1])
     }
-    if (condition === 2) {
+    else if (condition === 2) {
     psychoJS.experiment.addData('Rotation c2 x position:', circle2.pos[0]);
     psychoJS.experiment.addData('Rotation c2 y position:', circle2.pos[1])
     }
@@ -3660,11 +3660,11 @@ function Halo_3RoutineEnd(snapshot) {
     psychoJS.experiment.addData('Practice c3 x position:', circle3.pos[0]);
     psychoJS.experiment.addData('Practice c3 y position:', circle3.pos[1])
     }
-    if (condition === 1) {
+    else if (condition === 1) {
     psychoJS.experiment.addData('Mask c3 x position:', circle3.pos[0]);
     psychoJS.experiment.addData('Mask c3 y position:', circle3.pos[1])
     }
-    if (condition === 2) {
+    else if (condition === 2) {
     psychoJS.experiment.addData('Rotation c3 x position:', circle3.pos[0]);
     psychoJS.experiment.addData('Rotation c3 y position:', circle3.pos[1])
     }
