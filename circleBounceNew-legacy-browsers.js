@@ -445,7 +445,7 @@ async function experimentInit() {
   text_7 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_7',
-    text: 'Please read these instructions carefully,\nas otherwise it is easy to get confused!\n\nIn the following practice trials there will be\nmore than one dot to see. \nYou only need to focus on the first one. \n\nAll questions refer to the dot that was \nthe first to cross the circle lines,\nin other words the first dot to leave the circle.\n\nSometimes it might be a very close call which dot is the first, in that case pick any dot to follow.\n\nClick to continue!',
+    text: "Please read these instructions carefully,\nas otherwise it is easy to get confused!\n\nIn the following practice trials there will be\nmore than one dot to see. \nYou only need to focus on the first one. \n\nAll questions refer to the dot that was \nthe first to cross the circle lines,\nin other words the first dot to leave the circle.\n\nSometimes it's a very close call which dot is the first, in that case pick any dot to follow.\n\nClick to continue!",
     font: 'Open Sans',
     units: 'height', 
     pos: [0, 0], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -2679,6 +2679,9 @@ function RotationRoutineBegin(snapshot) {
         circles.push(new visual.Polygon({"win": psychoJS.window, "radius": dotRadius, "edges": v, "fillColor": black, "lineColor": black}));
         circles[i].autoDraw = true;
     }
+    // this is just to test saving the position of the red circle
+    circles[0].color = blue
+    
     frameCount = 0;
     d = (180 / Math.PI);
     //barground.opacity = 1;
@@ -2689,8 +2692,8 @@ function RotationRoutineBegin(snapshot) {
         barfor.opacity = 1;
     xpro = barfor.pos[0];
     ypro = barfor.pos[1];
-    barfor.pos = [xpro+(Progress*0.0016 / 48), ypro];
-    barfor.size = [(Progress*0.16 / 48), 0.08];
+    barfor.pos = [xpro+(Progress*0.0016 / 52), ypro];
+    barfor.size = [(Progress*0.16 / 52), 0.08];
     //}
     Condition = 2;
     console.log('l:', l, 's:', s, 'q:', q, 'cR:', c)
@@ -3908,6 +3911,8 @@ function MaskRoutineBegin(snapshot) {
         circles[iDot].opacity = 1;
         //circles[iDot].autoDraw = true;
     }
+    // this is just to test saving the position of the red circle
+    circles[0].color = blue
     var angles = (function () {
         var _pj_a = [], _pj_b = util.range(circleCount);
         for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c < _pj_d); _pj_c += 1) {
