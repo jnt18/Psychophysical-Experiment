@@ -445,7 +445,7 @@ async function experimentInit() {
   text_7 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_7',
-    text: "Please read these instructions carefully,\nas otherwise it is easy to get confused!\n\nIn the following practice trials there will be\nmore than one dot to see. \nYou only need to focus on the first one. \n\nAll questions refer to the dot that was \nthe first to cross the circle lines,\nin other words the first dot to leave the circle.\n\nSometimes it's a very close call which dot is the first, in that case pick any dot to follow.\n\nClick to continue!",
+    text: "Please read these instructions carefully,\nas otherwise it is easy to get confused!\n\nIn the following practice trials there will be\nmore than one dot to see. \nYou only need to focus on the first one. \n\nAll questions refer to the dot that was \nthe first to cross the circle lines,\nin other words the first dot to leave the circle.\n\nSometimes it's a very close call which dot is the first, \nin that case pick any dot to follow.\n\nClick to continue!",
     font: 'Open Sans',
     units: 'height', 
     pos: [0, 0], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -2825,6 +2825,7 @@ function RotationRoutineEachFrame() {
                 console.log('R time taken:', t2, t1)
                 ended = true};
             circles[i].autoDraw = false;
+            RfinaldotPos = circles[0].pos;
             continueRoutine = false;
         } else {
             var dotPos = [Math.cos(tangle - rotation) * dist, Math.sin(tangle - rotation) * dist];
@@ -2924,6 +2925,9 @@ function RotationRoutineEnd(snapshot) {
         }
         return _pj_a;
     })();
+    
+    psychoJS.experiment.addData('Rotation first dot x position', RfinaldotPos.pos[0]);
+    psychoJS.experiment.addData('Rotation first dot y position:', RfinaldotPos.pos[1])
     // store data for psychoJS.experiment (ExperimentHandler)
     psychoJS.experiment.addData('mouse.x', mouse.x);
     psychoJS.experiment.addData('mouse.y', mouse.y);
@@ -4074,6 +4078,7 @@ function MaskRoutineEachFrame() {
                     iDot = _pj_g[_pj_i];
                     circles[iDot].opacity = 0;
                     circles[iDot].autoDraw = false;
+                    MfinaldotPos = circles[0].pos;
                     continueRoutine = false;
                 }
             }
@@ -4150,6 +4155,9 @@ function MaskRoutineEnd(snapshot) {
     defineVars = true;
     bar.autoDraw = false;
     continueCondition = false;
+    
+    psychoJS.experiment.addData('Mask first dot x position', MfinaldotPos.pos[0]);
+    psychoJS.experiment.addData('Mask first dot y position:', MfinaldotPos.pos[1])
     // store data for psychoJS.experiment (ExperimentHandler)
     psychoJS.experiment.addData('mouse_5.x', mouse_5.x);
     psychoJS.experiment.addData('mouse_5.y', mouse_5.y);
