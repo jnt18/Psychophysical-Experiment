@@ -209,7 +209,6 @@ var transparent;
 var win;
 var text_7;
 var mouse_10;
-var textbox;
 var RotationClock;
 var Progress;
 var bar;
@@ -446,7 +445,7 @@ async function experimentInit() {
   text_7 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_7',
-    text: 'In the following practice trials there will be\nmore than one dot to see. \nYou only need to focus on the first one. \n\n\n\n\n\nSometimes it might be a very close call which dot is the first, in that case pick any dot to follow.\n\nClick to continue!',
+    text: 'Please read these instructions carefully,\nas otherwise it is easy to get confused!\n\nIn the following practice trials there will be\nmore than one dot to see. \nYou only need to focus on the first one. \n\nAll questions refer to the dot that was \nthe first to cross the circle lines. \n\nSometimes it might be a very close call which dot is the first, in that case pick any dot to follow.\n\nClick to continue!',
     font: 'Open Sans',
     units: 'height', 
     pos: [0, 0], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -459,30 +458,6 @@ async function experimentInit() {
     win: psychoJS.window,
   });
   mouse_10.mouseClock = new util.Clock();
-  textbox = new visual.TextBox({
-    win: psychoJS.window,
-    name: 'textbox',
-    text: 'All questions refer to the dot that was \nthe first to cross the circle lines.',
-    placeholder: 'Type here...',
-    font: 'Arial',
-    pos: [0, 0], 
-    letterHeight: 0.02,
-    lineSpacing: 1.0,
-    size: [0.5, 0.5],  units: undefined, 
-    color: 'red', colorSpace: 'rgb',
-    fillColor: undefined, borderColor: undefined,
-    languageStyle: 'LTR',
-    bold: true, italic: true,
-    opacity: undefined,
-    padding: 0.0,
-    alignment: 'center',
-    overflow: 'visible',
-    editable: false,
-    multiline: true,
-    anchor: 'center',
-    depth: -3.0 
-  });
-  
   // Initialize components for Routine "Rotation"
   RotationClock = new util.Clock();
   // Run 'Begin Experiment' code from code
@@ -2268,7 +2243,6 @@ function Instructions2RoutineBegin(snapshot) {
     Instructions2Components = [];
     Instructions2Components.push(text_7);
     Instructions2Components.push(mouse_10);
-    Instructions2Components.push(textbox);
     
     Instructions2Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -2323,16 +2297,6 @@ function Instructions2RoutineEachFrame() {
         }
       }
     }
-    
-    // *textbox* updates
-    if (t >= 0.0 && textbox.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      textbox.tStart = t;  // (not accounting for frame time here)
-      textbox.frameNStart = frameN;  // exact frame index
-      
-      textbox.setAutoDraw(true);
-    }
-    
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
