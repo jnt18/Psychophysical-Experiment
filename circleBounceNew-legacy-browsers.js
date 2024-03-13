@@ -2684,7 +2684,7 @@ function RotationRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 2;
-    console.log('l:', l, 's:', s, 'q:', q, 'cR:', cR )
+    console.log('l:', l, 's:', s, 'q:', q, 'cR:', c)
     // setup some python lists for storing info about the mouse
     // current position of the mouse:
     mouse.x = [];
@@ -3984,7 +3984,7 @@ function MaskRoutineEachFrame() {
                     circlePositions[i] = ((- 0.8) + (dotRadius / Math.sqrt(2)));
                 }
             }
-            for (var iDot = 0; iDot < cM; iDot++) {
+            for (var iDot = 0; iDot < c; iDot++) {
                 circles[iDot].opacity = 0;
                 }
             //}
@@ -3993,7 +3993,7 @@ function MaskRoutineEachFrame() {
                 //console.log('t1 =',MaskClock.getTime());
                 t1 = MaskClock.getTime();
                 Mstarted = true};
-                for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
+                for (var iDot, _pj_i = 0, _pj_g = util.range(c), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
                     iDot = _pj_g[_pj_i];
                     if ((circles[iDot].opacity === 0)) {
                         circles[iDot].opacity = 1;
