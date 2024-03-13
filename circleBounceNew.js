@@ -3830,14 +3830,14 @@ function MaskRoutineBegin(snapshot) {
     l5.autoDraw = true;
     bar.autoDraw = true;
     dif_trajectory = [];
-    for (var iDot, _pj_c = 0, _pj_a = util.range(cM), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
+    for (var iDot, _pj_c = 0, _pj_a = util.range(c), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         iDot = _pj_a[_pj_c];
         circles.push(new visual.Polygon({"win": psychoJS.window, "units": psychoJS.window.units, "radius": dotRadius, "edges": v, "lineWidth": (1.0 / 2), "lineColor": black, "fillColor": black}));
         circles[iDot].opacity = 1;
         //circles[iDot].autoDraw = true;
     }
     var angles = (function () {
-        var _pj_a = [], _pj_b = util.range(cM);
+        var _pj_a = [], _pj_b = util.range(c);
         for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c < _pj_d); _pj_c += 1) {
             var i = _pj_b[_pj_c];
             _pj_a.push(((((((i / cM) * 0.5) * Math.PI) / q) + s) - Math.PI));
@@ -3861,7 +3861,7 @@ function MaskRoutineBegin(snapshot) {
     barfor.size = [(Progress*0.16 / 48), 0.08];
     //}
     Condition = 1;
-    console.log('l:', l, 's:', s, 'q:', q, 'cM:', cM, 'circleCount:', circleCount, 'length of circles:', circles.length)
+    console.log('l:', l, 's:', s, 'q:', q, 'cM:', c, 'circleCount:', circleCount, 'length of circles:', circles.length)
     continueCondition = true;
     // setup some python lists for storing info about the mouse_5
     // current position of the mouse:
@@ -3935,7 +3935,7 @@ function MaskRoutineEachFrame() {
         }
         return _pj_a;
     })();
-    circleDirections = new Array(cM).fill(1);
+    circleDirections = new Array(c).fill(1);
     bouncess = 0;
     bounces = bouncess
     angles = angless
