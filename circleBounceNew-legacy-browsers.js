@@ -3986,7 +3986,7 @@ function MaskRoutineEachFrame() {
     var t1;
     var t2;
     var z;
-    circleCount = c 
+    //circleCount = c; 
     var MfinaldotPos;
     
     if (Mstarted === false) {
