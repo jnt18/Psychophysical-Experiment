@@ -1664,7 +1664,7 @@ function Line0RoutineEnd(snapshot) {
     l5.autoDraw = false;
     Line.autoDraw = false;
     circle0.autoDraw = false;
-    thisExp.addData('c0 position:', circle0.pos)
+    circleBounceNew.addData('c0 position:', circle0.pos)
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_15.x) {  psychoJS.experiment.addData('mouse_15.x', mouse_15.x[0])};
     if (mouse_15.y) {  psychoJS.experiment.addData('mouse_15.y', mouse_15.y[0])};
