@@ -3080,7 +3080,7 @@ function LineRoutineEnd(snapshot) {
     l5.autoDraw = false;
     Line.autoDraw = false;
     circle0.autoDraw = false;
-    if (practice === true) {
+    if (Practice === true) {
     psychoJS.experiment.addData('Practice c0 x position:', circle0.pos[0]);
     psychoJS.experiment.addData('Practice c0 y position:', circle0.pos[1])
     }
@@ -3258,7 +3258,7 @@ function Halo_1RoutineEnd(snapshot) {
     l5.autoDraw = false;
     circle0.autoDraw = false;
     circle1.autoDraw = false;
-    if (practice === true) {
+    if (Practice === true) {
     psychoJS.experiment.addData('Practice c1 x position:', circle1.pos[0]);
     psychoJS.experiment.addData('Practice c1 y position:', circle1.pos[1])
     }
@@ -3438,7 +3438,7 @@ function Halo_2RoutineEnd(snapshot) {
     circle0.autoDraw = false;
     circle1.autoDraw = false;
     circle2.autoDraw = false;
-    if (practice === true) {
+    if (Practice === true) {
     psychoJS.experiment.addData('Practice c2 x position:', circle2.pos[0]);
     psychoJS.experiment.addData('Practice c2 y position:', circle2.pos[1])
     }
@@ -3645,7 +3645,7 @@ function Halo_3RoutineEnd(snapshot) {
     circle2.autoDraw = false;
     circle3.autoDraw = false;
     
-    if (practice === true) {
+    if (Practice === true) {
     psychoJS.experiment.addData('Practice c3 x position:', circle3.pos[0]);
     psychoJS.experiment.addData('Practice c3 y position:', circle3.pos[1])
     }
