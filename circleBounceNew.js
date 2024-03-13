@@ -106,6 +106,23 @@ flowScheduler.add(trialsLoopEnd);
 
 
 
+const trials_2LoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(trials_2LoopBegin(trials_2LoopScheduler));
+flowScheduler.add(trials_2LoopScheduler);
+flowScheduler.add(trials_2LoopEnd);
+
+
+
+
+
+
+
+
+
+
+flowScheduler.add(Halo_3RoutineBegin());
+flowScheduler.add(Halo_3RoutineEachFrame());
+flowScheduler.add(Halo_3RoutineEnd());
 flowScheduler.add(DebriefRoutineBegin());
 flowScheduler.add(DebriefRoutineEachFrame());
 flowScheduler.add(DebriefRoutineEnd());
@@ -121,6 +138,7 @@ psychoJS.start({
     // resources:
     {'name': 'Book5.xlsx', 'path': 'Book5.xlsx'},
     {'name': 'Book5.xlsx', 'path': 'Book5.xlsx'},
+    {'name': 'OneDot.xlsx', 'path': 'OneDot.xlsx'},
   ]
 });
 
@@ -2498,6 +2516,93 @@ function trialsLoopEndIteration(scheduler, snapshot) {
 }
 
 
+var trials_2;
+function trials_2LoopBegin(trials_2LoopScheduler, snapshot) {
+  return async function() {
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    
+    // set up handler to look after randomisation of conditions etc
+    trials_2 = new TrialHandler({
+      psychoJS: psychoJS,
+      nReps: 2, method: TrialHandler.Method.RANDOM,
+      extraInfo: expInfo, originPath: undefined,
+      trialList: 'OneDot.xlsx',
+      seed: undefined, name: 'trials_2'
+    });
+    psychoJS.experiment.addLoop(trials_2); // add the loop to the experiment
+    currentLoop = trials_2;  // we're now the current loop
+    
+    // Schedule all the trials in the trialList:
+    for (const thisTrial_2 of trials_2) {
+      snapshot = trials_2.getSnapshot();
+      trials_2LoopScheduler.add(importConditions(snapshot));
+      trials_2LoopScheduler.add(RotationRoutineBegin(snapshot));
+      trials_2LoopScheduler.add(RotationRoutineEachFrame());
+      trials_2LoopScheduler.add(RotationRoutineEnd(snapshot));
+      trials_2LoopScheduler.add(LineRoutineBegin(snapshot));
+      trials_2LoopScheduler.add(LineRoutineEachFrame());
+      trials_2LoopScheduler.add(LineRoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_1RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_1RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_1RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_2RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_2RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_2RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_3RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_3RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_3RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(MaskRoutineBegin(snapshot));
+      trials_2LoopScheduler.add(MaskRoutineEachFrame());
+      trials_2LoopScheduler.add(MaskRoutineEnd(snapshot));
+      trials_2LoopScheduler.add(LineRoutineBegin(snapshot));
+      trials_2LoopScheduler.add(LineRoutineEachFrame());
+      trials_2LoopScheduler.add(LineRoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_1RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_1RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_1RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_2RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_2RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_2RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(trials_2LoopEndIteration(trials_2LoopScheduler, snapshot));
+    }
+    
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+async function trials_2LoopEnd() {
+  // terminate loop
+  psychoJS.experiment.removeLoop(trials_2);
+  // update the current loop from the ExperimentHandler
+  if (psychoJS.experiment._unfinishedLoops.length>0)
+    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
+  else
+    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
+  return Scheduler.Event.NEXT;
+}
+
+
+function trials_2LoopEndIteration(scheduler, snapshot) {
+  // ------Prepare for next entry------
+  return async function () {
+    if (typeof snapshot !== 'undefined') {
+      // ------Check if user ended loop early------
+      if (snapshot.finished) {
+        // Check for and save orphaned data
+        if (psychoJS.experiment.isEntryEmpty()) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        scheduler.stop();
+      } else {
+        psychoJS.experiment.nextEntry(snapshot);
+      }
+    return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
 var oscillationSpeed;
 var minDist;
 var blueDotPositions;
@@ -2545,7 +2650,7 @@ function RotationRoutineBegin(snapshot) {
     blueDotPositions = [];
     angle = s;
     //circleCount = c;
-    circleCount = cR;
+    circleCount = c;
     
     bluecirclePosition = (- 0.6);
     circles = [];
@@ -3702,7 +3807,7 @@ function MaskRoutineBegin(snapshot) {
     //rotationSpeed = (0.0035 * nm);
     var circleCount;
     
-    circleCount = cM;
+    circleCount = c;
         
     iterationS = 4;
     
@@ -3814,7 +3919,7 @@ function MaskRoutineEachFrame() {
     z = Math.sqrt(t_now)
     if (defineVars) {
     var angless = (function () {
-        var _pj_a = [], _pj_b = util.range(cM);
+        var _pj_a = [], _pj_b = util.range(circleCount);
         for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c < _pj_d); _pj_c += 1) {
             var i = _pj_b[_pj_c];
             _pj_a.push(((((((i / circleCount) * 0.5) * (Math.PI+(1.5*l*z))) / q) + s) - Math.PI));
@@ -3822,7 +3927,7 @@ function MaskRoutineEachFrame() {
         return _pj_a;
     })();
     var circlePositionss = (function () {
-        var _pj_a = [], _pj_b = util.range(cM);
+        var _pj_a = [], _pj_b = util.range(circleCount);
         for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c < _pj_d); _pj_c += 1) {
             var i = _pj_b[_pj_c];
             _pj_a.push(((- (i + 1)) * startDelay));
@@ -3846,7 +3951,7 @@ function MaskRoutineEachFrame() {
     //console.log('Outside define Vars: t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
     for (var _, _pj_c = 0, _pj_a = util.range(Number.parseInt(iterationS)), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         _ = _pj_a[_pj_c];
-        for (var i, _pj_f = 0, _pj_d = util.range(cM), _pj_e = _pj_d.length; (_pj_f < _pj_e); _pj_f += 1) {
+        for (var i, _pj_f = 0, _pj_d = util.range(circleCount), _pj_e = _pj_d.length; (_pj_f < _pj_e); _pj_f += 1) {
             i = _pj_d[_pj_f];
             //console.log(i, ':opacity', 'cM', cM, 'length of circles:', circles.length);
             x = ((radius * Math.cos(angles[i]+l*z)) + (circlePositions[i] * Math.cos(angles[i]+l*z)));
@@ -3869,7 +3974,7 @@ function MaskRoutineEachFrame() {
                 circles[iDot].opacity = 0;
                 }
             //}
-            if ((bounces > (0.5 * cM))) {
+            if ((bounces > (0.5 * circleCount))) {
                 if (Mstarted === false) {
                 //console.log('t1 =',MaskClock.getTime());
                 t1 = MaskClock.getTime();
@@ -3881,12 +3986,12 @@ function MaskRoutineEachFrame() {
                     }
                 }
             }
-            if ((bounces >= (1.5 * cM))) {
+            if ((bounces >= (1.5 * circleCount))) {
                 if (Mended === false) {
                 t2 = MaskClock.getTime();
                 //console.log('M time taken:', t2, t1)
                 Mended = true};
-                for (var iDot, _pj_i = 0, _pj_g = util.range(cM), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
+                for (var iDot, _pj_i = 0, _pj_g = util.range(circleCount), _pj_h = _pj_g.length; (_pj_i < _pj_h); _pj_i += 1) {
                     iDot = _pj_g[_pj_i];
                     circles[iDot].opacity = 0;
                     circles[iDot].autoDraw = false;
