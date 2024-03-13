@@ -313,7 +313,7 @@
         <Param val="//change = (- util.sum(mouse_15.getRel()));&amp;#10;//mouse_angle += (3 * change);&amp;#10;position = mouse.getPos()&amp;#10;mouse_angle = Math.atan2((position[1]-start[1]), (position[0]-start[0]))&amp;#10;xposition = ((0.7*radius) * Math.cos(mouse_angle)) + start[0];&amp;#10;yposition = ((0.7*radius) * Math.sin(mouse_angle)) + start[1];&amp;#10;circle0.pos = [xposition, yposition];&amp;#10;circle0.draw()" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="l5.autoDraw = false;&amp;#10;Line.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;circleBounceNew.addData('c0 position:', circle0.pos)" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="l5.autoDraw = false;&amp;#10;Line.autoDraw = false;&amp;#10;circle0.autoDraw = false;&amp;#10;psychoJS.experiment.addData('c0 position:', circle0.pos)" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="Line.autoDraw = False" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_14" valType="code" updates="None" name="name"/>
