@@ -2680,7 +2680,7 @@ function RotationRoutineBegin(snapshot) {
         circles[i].autoDraw = true;
     }
     // this is just to test saving the position of the red circle
-    circles[0].color = blue
+    circles[0].color = green
     
     frameCount = 0;
     d = (180 / Math.PI);
@@ -3912,7 +3912,7 @@ function MaskRoutineBegin(snapshot) {
         //circles[iDot].autoDraw = true;
     }
     // this is just to test saving the position of the red circle
-    circles[0].color = blue
+    circles[0].color = green
     var angles = (function () {
         var _pj_a = [], _pj_b = util.range(circleCount);
         for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c < _pj_d); _pj_c += 1) {
