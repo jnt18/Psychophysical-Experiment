@@ -2653,7 +2653,7 @@ function RotationRoutineBegin(snapshot) {
     var frameCount;
     var frameCountPrevious;
     var t_previous;
-    var RfinaldotPos;
+    
     
     //rotationSpeed = (0.1 / nr);
     //if (nr === 1) {rotationSpeed = 0.02};//{rotationSpeed = 0.026};
@@ -2748,7 +2748,7 @@ function RotationRoutineEachFrame() {
     var blueDotAngle;
     //var t1;
     var t2;
-    
+    var RfinaldotPos;
     //var t_now;
     //var frameCount;
     //var frameCountPrevious;
@@ -3871,7 +3871,7 @@ function MaskRoutineBegin(snapshot) {
     var frameCount;
     var frameCountPrevious;
     var t_previous;
-    var MfinaldotPos;
+    
     //initializationClock.reset();
     var circles = [];
     var bounces = [];
@@ -3986,6 +3986,7 @@ function MaskRoutineEachFrame() {
     var t2;
     var z;
     circleCount = c 
+    var MfinaldotPos;
     
     if (Mstarted === false) {
                 //console.log('t1 =', RotationClock.getTime(), 'cM', cM, 'length of circles:', circles.length);
