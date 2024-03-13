@@ -1665,7 +1665,10 @@ function Line0RoutineEnd(snapshot) {
     l5.autoDraw = false;
     Line.autoDraw = false;
     circle0.autoDraw = false;
-    psychoJS.experiment.addData('c0 position:', circle0.pos)
+    
+    psychoJS.experiment.addData('Demo c0 x position:', circle0.pos[0]);
+    psychoJS.experiment.addData('Demo c0 y position:', circle0.pos[1])
+     
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_15.x) {  psychoJS.experiment.addData('mouse_15.x', mouse_15.x[0])};
     if (mouse_15.y) {  psychoJS.experiment.addData('mouse_15.y', mouse_15.y[0])};
@@ -1823,7 +1826,9 @@ function Halo_01RoutineEnd(snapshot) {
     l5.autoDraw = false;
     circle0.autoDraw = false;
     circle1.autoDraw = false;
-    thisExp.addData('c1 position:', circle1.pos)
+    
+    psychoJS.experiment.addData('Demo c1 x position:', circle1.pos[0]);
+    psychoJS.experiment.addData('Demo c1 y position:', circle1.pos[1])
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_16.x) {  psychoJS.experiment.addData('mouse_16.x', mouse_16.x[0])};
     if (mouse_16.y) {  psychoJS.experiment.addData('mouse_16.y', mouse_16.y[0])};
@@ -1986,7 +1991,8 @@ function Halo_02RoutineEnd(snapshot) {
     circle0.autoDraw = false;
     circle1.autoDraw = false;
     circle2.autoDraw = false;
-    thisExp.addData('c2 position:', circle2.pos)
+    psychoJS.experiment.addData('Demo c2 x position:', circle2.pos[0]);
+    psychoJS.experiment.addData('Demo c2 y position:', circle2.pos[1])
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_17.x) {  psychoJS.experiment.addData('mouse_17.x', mouse_17.x[0])};
     if (mouse_17.y) {  psychoJS.experiment.addData('mouse_17.y', mouse_17.y[0])};
@@ -2188,7 +2194,8 @@ function Halo_03RoutineEnd(snapshot) {
     circle2.autoDraw = false;
     circle3.autoDraw = false;
     averageCircle.autDraw = false
-    thisExp.addData('c3 position:', circle3.pos)
+    psychoJS.experiment.addData('Demo c3 x position:', circle3.pos[0]);
+    psychoJS.experiment.addData('Demo c3 y position:', circle3.pos[1])
     
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_18.x) {  psychoJS.experiment.addData('mouse_18.x', mouse_18.x[0])};
@@ -3073,7 +3080,18 @@ function LineRoutineEnd(snapshot) {
     l5.autoDraw = false;
     Line.autoDraw = false;
     circle0.autoDraw = false;
-    thisExp.addData('c0 position:', circle0.pos)
+    if (practice === true) {
+    psychoJS.experiment.addData('Practice c0 x position:', circle0.pos[0]);
+    psychoJS.experiment.addData('Practice c0 y position:', circle0.pos[1])
+    }
+    if (condition === 1) {
+    psychoJS.experiment.addData('Mask c0 x position:', circle0.pos[0]);
+    psychoJS.experiment.addData('Mask c0 y position:', circle0.pos[1])
+    }
+    if (condition === 2) {
+    psychoJS.experiment.addData('Rotation c0 x position:', circle0.pos[0]);
+    psychoJS.experiment.addData('Rotation c0 y position:', circle0.pos[1])
+    }
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_7.x) {  psychoJS.experiment.addData('mouse_7.x', mouse_7.x[0])};
     if (mouse_7.y) {  psychoJS.experiment.addData('mouse_7.y', mouse_7.y[0])};
@@ -3240,7 +3258,19 @@ function Halo_1RoutineEnd(snapshot) {
     l5.autoDraw = false;
     circle0.autoDraw = false;
     circle1.autoDraw = false;
-    thisExp.addData('c1 position:', circle1.pos)
+    if (practice === true) {
+    psychoJS.experiment.addData('Practice c1 x position:', circle1.pos[0]);
+    psychoJS.experiment.addData('Practice c1 y position:', circle1.pos[1])
+    }
+    
+    if (condition === 1) {
+    psychoJS.experiment.addData('Mask c1 x position:', circle1.pos[0]);
+    psychoJS.experiment.addData('Mask c1 y position:', circle1.pos[1])
+    }
+    if (condition === 2) {
+    psychoJS.experiment.addData('Rotation c1 x position:', circle1.pos[0]);
+    psychoJS.experiment.addData('Rotation c1 y position:', circle1.pos[1])
+    }
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_2.x) {  psychoJS.experiment.addData('mouse_2.x', mouse_2.x[0])};
     if (mouse_2.y) {  psychoJS.experiment.addData('mouse_2.y', mouse_2.y[0])};
@@ -3408,7 +3438,19 @@ function Halo_2RoutineEnd(snapshot) {
     circle0.autoDraw = false;
     circle1.autoDraw = false;
     circle2.autoDraw = false;
-    thisExp.addData('c2 position:', circle2.pos)
+    if (practice === true) {
+    psychoJS.experiment.addData('Practice c2 x position:', circle2.pos[0]);
+    psychoJS.experiment.addData('Practice c2 y position:', circle2.pos[1])
+    }
+    
+    if (condition === 1) {
+    psychoJS.experiment.addData('Mask c2 x position:', circle2.pos[0]);
+    psychoJS.experiment.addData('Mask c2 y position:', circle2.pos[1])
+    }
+    if (condition === 2) {
+    psychoJS.experiment.addData('Rotation c2 x position:', circle2.pos[0]);
+    psychoJS.experiment.addData('Rotation c2 y position:', circle2.pos[1])
+    }
     // store data for psychoJS.experiment (ExperimentHandler)
     if (mouse_3.x) {  psychoJS.experiment.addData('mouse_3.x', mouse_3.x[0])};
     if (mouse_3.y) {  psychoJS.experiment.addData('mouse_3.y', mouse_3.y[0])};
@@ -3602,7 +3644,19 @@ function Halo_3RoutineEnd(snapshot) {
     circle1.autoDraw = false;
     circle2.autoDraw = false;
     circle3.autoDraw = false;
-    thisExp.addData('c3 position:', circle3.pos)
+    
+    if (practice === true) {
+    psychoJS.experiment.addData('Practice c3 x position:', circle3.pos[0]);
+    psychoJS.experiment.addData('Practice c3 y position:', circle3.pos[1])
+    }
+    if (condition === 1) {
+    psychoJS.experiment.addData('Mask c3 x position:', circle3.pos[0]);
+    psychoJS.experiment.addData('Mask c3 y position:', circle3.pos[1])
+    }
+    if (condition === 2) {
+    psychoJS.experiment.addData('Rotation c3 x position:', circle3.pos[0]);
+    psychoJS.experiment.addData('Rotation c3 y position:', circle3.pos[1])
+    }
     
     //for (var i, _pj_c = 0, _pj_a = util.range(c), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         //i = _pj_a[_pj_c];
