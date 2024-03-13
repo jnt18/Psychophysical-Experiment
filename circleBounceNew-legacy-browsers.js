@@ -445,7 +445,7 @@ async function experimentInit() {
   text_7 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_7',
-    text: 'Please read these instructions carefully,\nas otherwise it is easy to get confused!\n\nIn the following practice trials there will be\nmore than one dot to see. \nYou only need to focus on the first one. \n\nAll questions refer to the dot that was \nthe first to cross the circle lines. \n\nSometimes it might be a very close call which dot is the first, in that case pick any dot to follow.\n\nClick to continue!',
+    text: 'Please read these instructions carefully,\nas otherwise it is easy to get confused!\n\nIn the following practice trials there will be\nmore than one dot to see. \nYou only need to focus on the first one. \n\nAll questions refer to the dot that was \nthe first to cross the circle lines,\nin other words the first dot to leave the circle.\n\nSometimes it might be a very close call which dot is the first, in that case pick any dot to follow.\n\nClick to continue!',
     font: 'Open Sans',
     units: 'height', 
     pos: [0, 0], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -572,7 +572,7 @@ async function experimentInit() {
   text_6 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_6',
-    text: 'Those were the practice trials. \nClick to start the experiment!',
+    text: "Those were the practice trials. \n\nRemember that 'first dot' refers to \nthe first dot to leave the circle. \n\nClick to start the experiment!",
     font: 'Open Sans',
     units: 'height', 
     pos: [0, 0], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -3092,11 +3092,11 @@ function LineRoutineEnd(snapshot) {
     psychoJS.experiment.addData('Practice c0 x position:', circle0.pos[0]);
     psychoJS.experiment.addData('Practice c0 y position:', circle0.pos[1])
     }
-    else if (condition === 1) {
+    else if (Condition === 1) {
     psychoJS.experiment.addData('Mask c0 x position:', circle0.pos[0]);
     psychoJS.experiment.addData('Mask c0 y position:', circle0.pos[1])
     }
-    else if (condition === 2) {
+    else if (Condition === 2) {
     psychoJS.experiment.addData('Rotation c0 x position:', circle0.pos[0]);
     psychoJS.experiment.addData('Rotation c0 y position:', circle0.pos[1])
     }
@@ -3272,11 +3272,11 @@ function Halo_1RoutineEnd(snapshot) {
     psychoJS.experiment.addData('Practice c1 y position:', circle1.pos[1])
     }
     
-    else if (condition === 1) {
+    else if (Condition === 1) {
     psychoJS.experiment.addData('Mask c1 x position:', circle1.pos[0]);
     psychoJS.experiment.addData('Mask c1 y position:', circle1.pos[1])
     }
-    else if (condition === 2) {
+    else if (Condition === 2) {
     psychoJS.experiment.addData('Rotation c1 x position:', circle1.pos[0]);
     psychoJS.experiment.addData('Rotation c1 y position:', circle1.pos[1])
     }
@@ -3453,11 +3453,11 @@ function Halo_2RoutineEnd(snapshot) {
     psychoJS.experiment.addData('Practice c2 y position:', circle2.pos[1])
     }
     
-    else if (condition === 1) {
+    else if (Condition === 1) {
     psychoJS.experiment.addData('Mask c2 x position:', circle2.pos[0]);
     psychoJS.experiment.addData('Mask c2 y position:', circle2.pos[1])
     }
-    else if (condition === 2) {
+    else if (Condition === 2) {
     psychoJS.experiment.addData('Rotation c2 x position:', circle2.pos[0]);
     psychoJS.experiment.addData('Rotation c2 y position:', circle2.pos[1])
     }
@@ -3660,11 +3660,11 @@ function Halo_3RoutineEnd(snapshot) {
     psychoJS.experiment.addData('Practice c3 x position:', circle3.pos[0]);
     psychoJS.experiment.addData('Practice c3 y position:', circle3.pos[1])
     }
-    else if (condition === 1) {
+    else if (Condition === 1) {
     psychoJS.experiment.addData('Mask c3 x position:', circle3.pos[0]);
     psychoJS.experiment.addData('Mask c3 y position:', circle3.pos[1])
     }
-    else if (condition === 2) {
+    else if (Condition === 2) {
     psychoJS.experiment.addData('Rotation c3 x position:', circle3.pos[0]);
     psychoJS.experiment.addData('Rotation c3 y position:', circle3.pos[1])
     }
