@@ -2865,7 +2865,7 @@ function RotationRoutineBegin(snapshot) {
     //barground.opacity = 1;
     //barfor.opacity = 1;
     if ((Practice !== true)) {
-        psychoJS.experiment.addData('Trial', 1);
+        psychoJS.experiment.addData('Trial', 2);
         Progress += 1;}
         barground.opacity = 1;
         barfor.opacity = 1;
