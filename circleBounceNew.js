@@ -4066,10 +4066,10 @@ function MaskRoutineBegin(snapshot) {
     startDelay = ((radius / circleCount) / 2)*(3/qs)**2;
     console.log('startDelay:', startDelay) };
     if (qs === 3) {
-    startDelay = ((radius / circleCount) / 2)*(3/qs)**2;
+    startDelay = ((radius / circleCount) / 2)*1.8;
     console.log('startDelay:', startDelay) };
     if (qs === 4) {
-    startDelay = ((radius / circleCount) / 2)*50*(3/qs);
+    startDelay = ((radius / circleCount) / 2)*0.1*(3/qs);
     console.log('startDelay:', startDelay) };
     
     
