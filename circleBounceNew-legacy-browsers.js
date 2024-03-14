@@ -215,6 +215,7 @@ var StartClock;
 var mouse_9;
 var text_6;
 var MaskClock;
+var defineVars;
 var circlePositions;
 var dotRadius;
 var l1;
@@ -569,7 +570,7 @@ async function experimentInit() {
   MaskClock = new util.Clock();
   // Run 'Begin Experiment' code from code_3
   //var initializationClock = new util.Clock();
-  //defineVars = true;
+  defineVars = true;
   //circlePositions = [-0.03333333333333333, -0.06666666666666667,-0.1,-0.13333333333333333,-0.16666666666666666,-0.2];
   circlePositions = []
   //radius = 0.4;
@@ -4023,7 +4024,6 @@ function StartRoutineEnd(snapshot) {
 }
 
 
-var defineVars;
 var Mstarted;
 var Mended;
 var iterationS;
@@ -4050,7 +4050,7 @@ function MaskRoutineBegin(snapshot) {
     var frameCount;
     var frameCountPrevious;
     var t_previous;
-    defineVars = true;
+    //defineVars = true;
     //initializationClock.reset();
     var circles = [];
     var bounces = [];
@@ -4333,7 +4333,7 @@ function MaskRoutineEnd(snapshot) {
     psychoJS.experiment.addData('Mask.stopped', globalClock.getTime());
     // Run 'End Routine' code from code_3
     console.log('managed to end each frame tab of Mask')
-    //defineVars = true;
+    defineVars = true;
     bar.autoDraw = false;
     continueCondition = false;
     
