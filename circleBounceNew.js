@@ -14,7 +14,9 @@ const { round } = util;
 // store info about the experiment session:
 let expName = 'circleBounceNew';  // from the Builder filename that created this script
 let expInfo = {
-    '': '',
+    'participant': '',
+    'study_id': '',
+    'session': '',
 };
 
 // Start code blocks for 'Before Experiment'
@@ -1193,6 +1195,11 @@ function ConsentRoutineEnd(snapshot) {
             NoConsentReps = 1;
         }
     }
+    
+    psychoJS.experiment.addData('participant', expInfo['participant']);
+    psychoJS.experiment.addData('study_id', expInfo['study_id'])
+    psychoJS.experiment.addData('session', expInfo['session'])
+    
     
     // the Routine "Consent" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();

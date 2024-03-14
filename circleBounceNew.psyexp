@@ -8,7 +8,7 @@
     <Param val="u'data/%s_%s' % (expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="" valType="str" updates="None" name="End Message"/>
-    <Param val="{'': ''}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'participant': '', 'study_id': '', 'session': ''}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
@@ -22,7 +22,7 @@
     <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
     <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
     <Param val="1" valType="num" updates="None" name="Screen"/>
-    <Param val="False" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
     <Param val="height" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
@@ -1503,12 +1503,12 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="if ((consent_resp.keys === &quot;y&quot;)) {&amp;#10;    TrialReps = 1;&amp;#10;    NoConsentReps = 0;&amp;#10;} else {&amp;#10;    if ((consent_resp.keys === &quot;n&quot;)) {&amp;#10;        TrialReps = 0;&amp;#10;        NoConsentReps = 1;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="if ((consent_resp.keys === &quot;y&quot;)) {&amp;#10;    TrialReps = 1;&amp;#10;    NoConsentReps = 0;&amp;#10;} else {&amp;#10;    if ((consent_resp.keys === &quot;n&quot;)) {&amp;#10;        TrialReps = 0;&amp;#10;        NoConsentReps = 1;&amp;#10;    }&amp;#10;}&amp;#10;&amp;#10;psychoJS.experiment.addData('participant', expInfo['participant']);&amp;#10;psychoJS.experiment.addData('study_id', expInfo['study_id'])&amp;#10;psychoJS.experiment.addData('session', expInfo['session'])&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="if consent_resp.keys == 'y':&amp;#10;    TrialReps = 1&amp;#10;    NoConsentReps = 0&amp;#10;    &amp;#10;elif consent_resp.keys == 'n':&amp;#10;    TrialReps = 0&amp;#10;    NoConsentReps = 1&amp;#10;    " valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_2" valType="code" updates="None" name="name"/>
