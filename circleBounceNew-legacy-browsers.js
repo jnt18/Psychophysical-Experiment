@@ -4072,7 +4072,7 @@ function MaskRoutineBegin(snapshot) {
         
     iterationS = 4;
     
-    startDelay = ((radius / circleCount) / 2)*3/q;
+    startDelay = ((radius / circleCount) / 2)*(3/q)**2;
     console.log('startDelay:', startDelay)
     
     circles = [];
