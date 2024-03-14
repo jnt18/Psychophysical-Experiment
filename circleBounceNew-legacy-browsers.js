@@ -4028,6 +4028,7 @@ function StartRoutineEnd(snapshot) {
 var Mstarted;
 var Mended;
 var iterationS;
+var q;
 var startDelay;
 var bounces;
 var dif_trajectory;
@@ -4071,15 +4072,18 @@ function MaskRoutineBegin(snapshot) {
     circleCount = c;
         
     iterationS = 4;
+    if (n===15) {q = 2};
+    
     if (q === 2) {
     startDelay = ((radius / circleCount) / 2)*(3/q)**2;
-    console.log('startDelay:', startDelay) }
+    console.log('startDelay:', startDelay) };
     if (q === 3) {
     startDelay = ((radius / circleCount) / 2)*(3/q)**2;
-    console.log('startDelay:', startDelay) }
+    console.log('startDelay:', startDelay) };
     if (q === 4) {
-    startDelay = ((radius / circleCount) / 2)*5*(3/q);
-    console.log('startDelay:', startDelay) }
+    startDelay = ((radius / circleCount) / 2)*10*(3/q);
+    console.log('startDelay:', startDelay) };
+    
     
     circles = [];
     bounces = [];
