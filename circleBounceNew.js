@@ -57,44 +57,10 @@ flowScheduler.add(PIS3RoutineEnd());
 flowScheduler.add(ConsentRoutineBegin());
 flowScheduler.add(ConsentRoutineEachFrame());
 flowScheduler.add(ConsentRoutineEnd());
-flowScheduler.add(Instructions_2RoutineBegin());
-flowScheduler.add(Instructions_2RoutineEachFrame());
-flowScheduler.add(Instructions_2RoutineEnd());
-flowScheduler.add(Instruction_AnimationRoutineBegin());
-flowScheduler.add(Instruction_AnimationRoutineEachFrame());
-flowScheduler.add(Instruction_AnimationRoutineEnd());
-flowScheduler.add(Line0RoutineBegin());
-flowScheduler.add(Line0RoutineEachFrame());
-flowScheduler.add(Line0RoutineEnd());
-flowScheduler.add(Halo_01RoutineBegin());
-flowScheduler.add(Halo_01RoutineEachFrame());
-flowScheduler.add(Halo_01RoutineEnd());
-flowScheduler.add(Halo_02RoutineBegin());
-flowScheduler.add(Halo_02RoutineEachFrame());
-flowScheduler.add(Halo_02RoutineEnd());
-flowScheduler.add(Halo_03RoutineBegin());
-flowScheduler.add(Halo_03RoutineEachFrame());
-flowScheduler.add(Halo_03RoutineEnd());
-flowScheduler.add(Instructions2RoutineBegin());
-flowScheduler.add(Instructions2RoutineEachFrame());
-flowScheduler.add(Instructions2RoutineEnd());
-const PractLoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(PractLoopBegin(PractLoopScheduler));
-flowScheduler.add(PractLoopScheduler);
-flowScheduler.add(PractLoopEnd);
-
-
-
-
-
-
-flowScheduler.add(StartRoutineBegin());
-flowScheduler.add(StartRoutineEachFrame());
-flowScheduler.add(StartRoutineEnd());
-const trialsLoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(trialsLoopBegin(trialsLoopScheduler));
-flowScheduler.add(trialsLoopScheduler);
-flowScheduler.add(trialsLoopEnd);
+const show_trialsLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(show_trialsLoopBegin(show_trialsLoopScheduler));
+flowScheduler.add(show_trialsLoopScheduler);
+flowScheduler.add(show_trialsLoopEnd);
 
 
 
@@ -106,10 +72,6 @@ flowScheduler.add(trialsLoopEnd);
 
 
 
-const trials_2LoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(trials_2LoopBegin(trials_2LoopScheduler));
-flowScheduler.add(trials_2LoopScheduler);
-flowScheduler.add(trials_2LoopEnd);
 
 
 
@@ -120,12 +82,32 @@ flowScheduler.add(trials_2LoopEnd);
 
 
 
-flowScheduler.add(Halo_3RoutineBegin());
-flowScheduler.add(Halo_3RoutineEachFrame());
-flowScheduler.add(Halo_3RoutineEnd());
-flowScheduler.add(DebriefRoutineBegin());
-flowScheduler.add(DebriefRoutineEachFrame());
-flowScheduler.add(DebriefRoutineEnd());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const NoConsentLoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(NoConsentLoopBegin(NoConsentLoopScheduler));
+flowScheduler.add(NoConsentLoopScheduler);
+flowScheduler.add(NoConsentLoopEnd);
+
+
 flowScheduler.add(quitPsychoJS, '', true);
 
 // quit if user presses Cancel in dialog box:
@@ -164,7 +146,8 @@ async function updateInfo() {
 
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
-  
+  psychoJS.setRedirectUrls('https://app.prolific.com/submissions/complete?cc=C187I4LR', 'https://app.prolific.com/submissions/complete?cc=CHVQGN2A');
+
 
   
   psychoJS.experiment.dataFileName = (("." + "/") + `data/${expName}_${expInfo["date"]}`);
@@ -186,7 +169,7 @@ var text_17;
 var mouse_19;
 var ConsentClock;
 var text_18;
-var key_resp;
+var consent_resp;
 var Instructions_2Clock;
 var radius;
 var text_8;
@@ -252,6 +235,8 @@ var DebriefClock;
 var mouse_14;
 var text_9;
 var text_11;
+var no_consent_screenClock;
+var text_20;
 var globalClock;
 var routineTimer;
 async function experimentInit() {
@@ -278,7 +263,7 @@ async function experimentInit() {
   text_16 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_16',
-    text: 'Participant Information Sheet\n\nHow will my data be stored and who will have access to it? \nThe data will be stored in OneDrive file to be accessible only by the participating researchers.\n\nHow will my data be used and in what form will it be shared further?\nThe data will be analysed as part of the research study. It may then be published in my dissertation which will be finalised by April 2023. \n\n\nWhen will my data be destroyed?\nThe data will be retained until I have fully completed my dissertation (including grading), and then destroyed. \n\nWill my participation be confidential?\nYes, we will use an anonymous recruitment policy in Pavlovia so your participation is not known to anyone. \n\nUse of your personal data for research and your data protection rights \nThe University of St Andrews (the ‘Data Controller’) is bound by the UK 2018 Data Protection Act and the General Data Protection Regulation (GDPR), which require a lawful basis for all processing of personal data (in this case it is the ‘performance of a task carried out in the public interest’ – namely, for research purposes) and an additional lawful basis for processing personal data containing special characteristics (in this case it is ‘public interest research’). You have a range of rights under data protection legislation. For more information on data protection legislation and your rights visit https://www.st-andrews.ac.uk/terms/data-protection/rights/. For any queries, email dataprot@st-andrews.ac.uk.\n\nClick to continue.\n\n2/3',
+    text: 'Participant Information Sheet\n\nHow will my data be stored and who will have access to it? \nThe data will be stored in OneDrive file to be accessible only by the participating researchers.\n\nHow will my data be used and in what form will it be shared further?\nThe data will be analysed as part of the research study. It may then be published in my dissertation which will be finalised by April 2023. \n\n\nWhen will my data be destroyed?\nThe data will be retained until I have fully completed my dissertation (including grading), and then destroyed. \n\nWill my participation be confidential?\nYes, we use an anonymous recruitment policy in Prolific so your participation is not known to anyone. \n\nUse of your personal data for research and your data protection rights \nThe University of St Andrews (the ‘Data Controller’) is bound by the UK 2018 Data Protection Act and the General Data Protection Regulation (GDPR), which require a lawful basis for all processing of personal data (in this case it is the ‘performance of a task carried out in the public interest’ – namely, for research purposes) and an additional lawful basis for processing personal data containing special characteristics (in this case it is ‘public interest research’). You have a range of rights under data protection legislation. For more information on data protection legislation and your rights visit https://www.st-andrews.ac.uk/terms/data-protection/rights/. For any queries, email dataprot@st-andrews.ac.uk.\n\nClick to continue.\n\n2/3',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0.0,
@@ -314,7 +299,7 @@ async function experimentInit() {
   text_18 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_18',
-    text: "Consent Form\n\nThe University of St Andrews attaches high priority to the ethical conduct of research.  We therefore ask you to consider the following points before signing this form. Pressing the 'y'-key confirms that you are willing to participate in this study, however, it does not commit you to anything you do not wish to do and you are free to withdraw your participation at any time by pressing the 'escape'-key twice. \n\nOnly press the 'y'-key if you understand and agree with the following statements:\n\no I understand the contents of the Participant Information Sheet \n\no I have been given the opportunity to ask questions about the study and have had them answered satisfactorily.\n\no I understand that my participation is entirely voluntary and that I can withdraw from the study at any time without giving an explanation and with no disbenefit. \n\no I understand who will have access to my data, how it will be stored, in what form it will be shared, and what will happen to it at the end of the study. \n\no I understand that once the experiment is over my data cannot be withdrawn because it has been anonymised.\n\no I agree to take part in the above study\n\nPress the 'y'-key if you understand and agree to start the experiment or press the 'escape'-key to exit.",
+    text: "Consent Form\n\nThe University of St Andrews attaches high priority to the ethical conduct of research.  We therefore ask you to consider the following points before signing this form. Pressing the 'y'-key confirms that you are willing to participate in this study, however, it does not commit you to anything you do not wish to do and you are free to withdraw your participation at any time by pressing the 'escape'-key twice. \n\nOnly press the 'y'-key if you understand and agree with the following statements:\n\no I understand the contents of the Participant Information Sheet \n\no I have been given the opportunity to ask questions about the study and have had them answered satisfactorily.\n\no I understand that my participation is entirely voluntary and that I can withdraw from the study at any time without giving an explanation and with no disbenefit. \n\no I understand who will have access to my data, how it will be stored, in what form it will be shared, and what will happen to it at the end of the study. \n\no I understand that once the experiment is over my data cannot be withdrawn because it has been anonymised.\n\no I agree to take part in the above study\n\nPress the 'y'-key if you understand and agree to start the experiment or press the 'n'-key to exit.",
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0.0,
@@ -323,7 +308,7 @@ async function experimentInit() {
     depth: 0.0 
   });
   
-  key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  consent_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "Instructions_2"
   Instructions_2Clock = new util.Clock();
@@ -642,6 +627,20 @@ async function experimentInit() {
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: 1.0,
     depth: -3.0 
+  });
+  
+  // Initialize components for Routine "no_consent_screen"
+  no_consent_screenClock = new util.Clock();
+  text_20 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_20',
+    text: "Thank you for your response. \nPress the 'escape' key on your keyboard or close the browser to exit. ",
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.02,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -1.0 
   });
   
   // Create some handy timers
@@ -1061,7 +1060,7 @@ function PIS3RoutineEnd(snapshot) {
 }
 
 
-var _key_resp_allKeys;
+var _consent_resp_allKeys;
 var ConsentComponents;
 function ConsentRoutineBegin(snapshot) {
   return async function () {
@@ -1074,13 +1073,13 @@ function ConsentRoutineBegin(snapshot) {
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
     psychoJS.experiment.addData('Consent.started', globalClock.getTime());
-    key_resp.keys = undefined;
-    key_resp.rt = undefined;
-    _key_resp_allKeys = [];
+    consent_resp.keys = undefined;
+    consent_resp.rt = undefined;
+    _consent_resp_allKeys = [];
     // keep track of which components have finished
     ConsentComponents = [];
     ConsentComponents.push(text_18);
-    ConsentComponents.push(key_resp);
+    ConsentComponents.push(consent_resp);
     
     for (const thisComponent of ConsentComponents)
       if ('status' in thisComponent)
@@ -1108,25 +1107,25 @@ function ConsentRoutineEachFrame() {
     }
     
     
-    // *key_resp* updates
-    if (t >= 0.0 && key_resp.status === PsychoJS.Status.NOT_STARTED) {
+    // *consent_resp* updates
+    if (t >= 0.0 && consent_resp.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      key_resp.tStart = t;  // (not accounting for frame time here)
-      key_resp.frameNStart = frameN;  // exact frame index
+      consent_resp.tStart = t;  // (not accounting for frame time here)
+      consent_resp.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { key_resp.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { key_resp.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { key_resp.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { consent_resp.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { consent_resp.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { consent_resp.clearEvents(); });
     }
     
-    if (key_resp.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp.getKeys({keyList: ['y'], waitRelease: false});
-      _key_resp_allKeys = _key_resp_allKeys.concat(theseKeys);
-      if (_key_resp_allKeys.length > 0) {
-        key_resp.keys = _key_resp_allKeys[_key_resp_allKeys.length - 1].name;  // just the last key pressed
-        key_resp.rt = _key_resp_allKeys[_key_resp_allKeys.length - 1].rt;
-        key_resp.duration = _key_resp_allKeys[_key_resp_allKeys.length - 1].duration;
+    if (consent_resp.status === PsychoJS.Status.STARTED) {
+      let theseKeys = consent_resp.getKeys({keyList: ['y', 'n'], waitRelease: false});
+      _consent_resp_allKeys = _consent_resp_allKeys.concat(theseKeys);
+      if (_consent_resp_allKeys.length > 0) {
+        consent_resp.keys = _consent_resp_allKeys[_consent_resp_allKeys.length - 1].name;  // just the last key pressed
+        consent_resp.rt = _consent_resp_allKeys[_consent_resp_allKeys.length - 1].rt;
+        consent_resp.duration = _consent_resp_allKeys[_consent_resp_allKeys.length - 1].duration;
         // a response ends the routine
         continueRoutine = false;
       }
@@ -1159,6 +1158,8 @@ function ConsentRoutineEachFrame() {
 }
 
 
+var TrialReps;
+var NoConsentReps;
 function ConsentRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'Consent' ---
@@ -1170,16 +1171,27 @@ function ConsentRoutineEnd(snapshot) {
     psychoJS.experiment.addData('Consent.stopped', globalClock.getTime());
     // update the trial handler
     if (currentLoop instanceof MultiStairHandler) {
-      currentLoop.addResponse(key_resp.corr, level);
+      currentLoop.addResponse(consent_resp.corr, level);
     }
-    psychoJS.experiment.addData('key_resp.keys', key_resp.keys);
-    if (typeof key_resp.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp.rt', key_resp.rt);
-        psychoJS.experiment.addData('key_resp.duration', key_resp.duration);
+    psychoJS.experiment.addData('consent_resp.keys', consent_resp.keys);
+    if (typeof consent_resp.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('consent_resp.rt', consent_resp.rt);
+        psychoJS.experiment.addData('consent_resp.duration', consent_resp.duration);
         routineTimer.reset();
         }
     
-    key_resp.stop();
+    consent_resp.stop();
+    // Run 'End Routine' code from code_2
+    if ((consent_resp.keys === "y")) {
+        TrialReps = 1;
+        NoConsentReps = 0;
+    } else {
+        if ((consent_resp.keys === "n")) {
+            TrialReps = 0;
+            NoConsentReps = 1;
+        }
+    }
+    
     // the Routine "Consent" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -1189,6 +1201,423 @@ function ConsentRoutineEnd(snapshot) {
     }
     return Scheduler.Event.NEXT;
   }
+}
+
+
+var show_trials;
+function show_trialsLoopBegin(show_trialsLoopScheduler, snapshot) {
+  return async function() {
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    
+    // set up handler to look after randomisation of conditions etc
+    show_trials = new TrialHandler({
+      psychoJS: psychoJS,
+      nReps: TrialReps, method: TrialHandler.Method.RANDOM,
+      extraInfo: expInfo, originPath: undefined,
+      trialList: undefined,
+      seed: undefined, name: 'show_trials'
+    });
+    psychoJS.experiment.addLoop(show_trials); // add the loop to the experiment
+    currentLoop = show_trials;  // we're now the current loop
+    
+    // Schedule all the trials in the trialList:
+    for (const thisShow_trial of show_trials) {
+      snapshot = show_trials.getSnapshot();
+      show_trialsLoopScheduler.add(importConditions(snapshot));
+      show_trialsLoopScheduler.add(Instructions_2RoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(Instructions_2RoutineEachFrame());
+      show_trialsLoopScheduler.add(Instructions_2RoutineEnd(snapshot));
+      show_trialsLoopScheduler.add(Instruction_AnimationRoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(Instruction_AnimationRoutineEachFrame());
+      show_trialsLoopScheduler.add(Instruction_AnimationRoutineEnd(snapshot));
+      show_trialsLoopScheduler.add(Line0RoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(Line0RoutineEachFrame());
+      show_trialsLoopScheduler.add(Line0RoutineEnd(snapshot));
+      show_trialsLoopScheduler.add(Halo_01RoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(Halo_01RoutineEachFrame());
+      show_trialsLoopScheduler.add(Halo_01RoutineEnd(snapshot));
+      show_trialsLoopScheduler.add(Halo_02RoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(Halo_02RoutineEachFrame());
+      show_trialsLoopScheduler.add(Halo_02RoutineEnd(snapshot));
+      show_trialsLoopScheduler.add(Halo_03RoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(Halo_03RoutineEachFrame());
+      show_trialsLoopScheduler.add(Halo_03RoutineEnd(snapshot));
+      show_trialsLoopScheduler.add(Instructions2RoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(Instructions2RoutineEachFrame());
+      show_trialsLoopScheduler.add(Instructions2RoutineEnd(snapshot));
+      const PractLoopScheduler = new Scheduler(psychoJS);
+      show_trialsLoopScheduler.add(PractLoopBegin(PractLoopScheduler, snapshot));
+      show_trialsLoopScheduler.add(PractLoopScheduler);
+      show_trialsLoopScheduler.add(PractLoopEnd);
+      show_trialsLoopScheduler.add(StartRoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(StartRoutineEachFrame());
+      show_trialsLoopScheduler.add(StartRoutineEnd(snapshot));
+      const trialsLoopScheduler = new Scheduler(psychoJS);
+      show_trialsLoopScheduler.add(trialsLoopBegin(trialsLoopScheduler, snapshot));
+      show_trialsLoopScheduler.add(trialsLoopScheduler);
+      show_trialsLoopScheduler.add(trialsLoopEnd);
+      const trials_2LoopScheduler = new Scheduler(psychoJS);
+      show_trialsLoopScheduler.add(trials_2LoopBegin(trials_2LoopScheduler, snapshot));
+      show_trialsLoopScheduler.add(trials_2LoopScheduler);
+      show_trialsLoopScheduler.add(trials_2LoopEnd);
+      show_trialsLoopScheduler.add(Halo_3RoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(Halo_3RoutineEachFrame());
+      show_trialsLoopScheduler.add(Halo_3RoutineEnd(snapshot));
+      show_trialsLoopScheduler.add(DebriefRoutineBegin(snapshot));
+      show_trialsLoopScheduler.add(DebriefRoutineEachFrame());
+      show_trialsLoopScheduler.add(DebriefRoutineEnd(snapshot));
+      show_trialsLoopScheduler.add(show_trialsLoopEndIteration(show_trialsLoopScheduler, snapshot));
+    }
+    
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+var Pract;
+function PractLoopBegin(PractLoopScheduler, snapshot) {
+  return async function() {
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    
+    // set up handler to look after randomisation of conditions etc
+    Pract = new TrialHandler({
+      psychoJS: psychoJS,
+      nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+      extraInfo: expInfo, originPath: undefined,
+      trialList: TrialHandler.importConditions(psychoJS.serverManager, 'Book5.xlsx', '0, 1, 2'),
+      seed: undefined, name: 'Pract'
+    });
+    psychoJS.experiment.addLoop(Pract); // add the loop to the experiment
+    currentLoop = Pract;  // we're now the current loop
+    
+    // Schedule all the trials in the trialList:
+    for (const thisPract of Pract) {
+      snapshot = Pract.getSnapshot();
+      PractLoopScheduler.add(importConditions(snapshot));
+      PractLoopScheduler.add(RotationRoutineBegin(snapshot));
+      PractLoopScheduler.add(RotationRoutineEachFrame());
+      PractLoopScheduler.add(RotationRoutineEnd(snapshot));
+      PractLoopScheduler.add(LineRoutineBegin(snapshot));
+      PractLoopScheduler.add(LineRoutineEachFrame());
+      PractLoopScheduler.add(LineRoutineEnd(snapshot));
+      PractLoopScheduler.add(Halo_1RoutineBegin(snapshot));
+      PractLoopScheduler.add(Halo_1RoutineEachFrame());
+      PractLoopScheduler.add(Halo_1RoutineEnd(snapshot));
+      PractLoopScheduler.add(Halo_2RoutineBegin(snapshot));
+      PractLoopScheduler.add(Halo_2RoutineEachFrame());
+      PractLoopScheduler.add(Halo_2RoutineEnd(snapshot));
+      PractLoopScheduler.add(Halo_3RoutineBegin(snapshot));
+      PractLoopScheduler.add(Halo_3RoutineEachFrame());
+      PractLoopScheduler.add(Halo_3RoutineEnd(snapshot));
+      PractLoopScheduler.add(PractLoopEndIteration(PractLoopScheduler, snapshot));
+    }
+    
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+async function PractLoopEnd() {
+  // terminate loop
+  psychoJS.experiment.removeLoop(Pract);
+  // update the current loop from the ExperimentHandler
+  if (psychoJS.experiment._unfinishedLoops.length>0)
+    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
+  else
+    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
+  return Scheduler.Event.NEXT;
+}
+
+
+function PractLoopEndIteration(scheduler, snapshot) {
+  // ------Prepare for next entry------
+  return async function () {
+    if (typeof snapshot !== 'undefined') {
+      // ------Check if user ended loop early------
+      if (snapshot.finished) {
+        // Check for and save orphaned data
+        if (psychoJS.experiment.isEntryEmpty()) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        scheduler.stop();
+      } else {
+        psychoJS.experiment.nextEntry(snapshot);
+      }
+    return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+var trials;
+function trialsLoopBegin(trialsLoopScheduler, snapshot) {
+  return async function() {
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    
+    // set up handler to look after randomisation of conditions etc
+    trials = new TrialHandler({
+      psychoJS: psychoJS,
+      nReps: 4, method: TrialHandler.Method.RANDOM,
+      extraInfo: expInfo, originPath: undefined,
+      trialList: 'Book5.xlsx',
+      seed: undefined, name: 'trials'
+    });
+    psychoJS.experiment.addLoop(trials); // add the loop to the experiment
+    currentLoop = trials;  // we're now the current loop
+    
+    // Schedule all the trials in the trialList:
+    for (const thisTrial of trials) {
+      snapshot = trials.getSnapshot();
+      trialsLoopScheduler.add(importConditions(snapshot));
+      trialsLoopScheduler.add(RotationRoutineBegin(snapshot));
+      trialsLoopScheduler.add(RotationRoutineEachFrame());
+      trialsLoopScheduler.add(RotationRoutineEnd(snapshot));
+      trialsLoopScheduler.add(LineRoutineBegin(snapshot));
+      trialsLoopScheduler.add(LineRoutineEachFrame());
+      trialsLoopScheduler.add(LineRoutineEnd(snapshot));
+      trialsLoopScheduler.add(Halo_1RoutineBegin(snapshot));
+      trialsLoopScheduler.add(Halo_1RoutineEachFrame());
+      trialsLoopScheduler.add(Halo_1RoutineEnd(snapshot));
+      trialsLoopScheduler.add(Halo_2RoutineBegin(snapshot));
+      trialsLoopScheduler.add(Halo_2RoutineEachFrame());
+      trialsLoopScheduler.add(Halo_2RoutineEnd(snapshot));
+      trialsLoopScheduler.add(Halo_3RoutineBegin(snapshot));
+      trialsLoopScheduler.add(Halo_3RoutineEachFrame());
+      trialsLoopScheduler.add(Halo_3RoutineEnd(snapshot));
+      trialsLoopScheduler.add(MaskRoutineBegin(snapshot));
+      trialsLoopScheduler.add(MaskRoutineEachFrame());
+      trialsLoopScheduler.add(MaskRoutineEnd(snapshot));
+      trialsLoopScheduler.add(LineRoutineBegin(snapshot));
+      trialsLoopScheduler.add(LineRoutineEachFrame());
+      trialsLoopScheduler.add(LineRoutineEnd(snapshot));
+      trialsLoopScheduler.add(Halo_1RoutineBegin(snapshot));
+      trialsLoopScheduler.add(Halo_1RoutineEachFrame());
+      trialsLoopScheduler.add(Halo_1RoutineEnd(snapshot));
+      trialsLoopScheduler.add(Halo_2RoutineBegin(snapshot));
+      trialsLoopScheduler.add(Halo_2RoutineEachFrame());
+      trialsLoopScheduler.add(Halo_2RoutineEnd(snapshot));
+      trialsLoopScheduler.add(Halo_3RoutineBegin(snapshot));
+      trialsLoopScheduler.add(Halo_3RoutineEachFrame());
+      trialsLoopScheduler.add(Halo_3RoutineEnd(snapshot));
+      trialsLoopScheduler.add(trialsLoopEndIteration(trialsLoopScheduler, snapshot));
+    }
+    
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+async function trialsLoopEnd() {
+  // terminate loop
+  psychoJS.experiment.removeLoop(trials);
+  // update the current loop from the ExperimentHandler
+  if (psychoJS.experiment._unfinishedLoops.length>0)
+    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
+  else
+    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
+  return Scheduler.Event.NEXT;
+}
+
+
+function trialsLoopEndIteration(scheduler, snapshot) {
+  // ------Prepare for next entry------
+  return async function () {
+    if (typeof snapshot !== 'undefined') {
+      // ------Check if user ended loop early------
+      if (snapshot.finished) {
+        // Check for and save orphaned data
+        if (psychoJS.experiment.isEntryEmpty()) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        scheduler.stop();
+      } else {
+        psychoJS.experiment.nextEntry(snapshot);
+      }
+    return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+var trials_2;
+function trials_2LoopBegin(trials_2LoopScheduler, snapshot) {
+  return async function() {
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    
+    // set up handler to look after randomisation of conditions etc
+    trials_2 = new TrialHandler({
+      psychoJS: psychoJS,
+      nReps: 1, method: TrialHandler.Method.RANDOM,
+      extraInfo: expInfo, originPath: undefined,
+      trialList: 'OneDot.xlsx',
+      seed: undefined, name: 'trials_2'
+    });
+    psychoJS.experiment.addLoop(trials_2); // add the loop to the experiment
+    currentLoop = trials_2;  // we're now the current loop
+    
+    // Schedule all the trials in the trialList:
+    for (const thisTrial_2 of trials_2) {
+      snapshot = trials_2.getSnapshot();
+      trials_2LoopScheduler.add(importConditions(snapshot));
+      trials_2LoopScheduler.add(RotationRoutineBegin(snapshot));
+      trials_2LoopScheduler.add(RotationRoutineEachFrame());
+      trials_2LoopScheduler.add(RotationRoutineEnd(snapshot));
+      trials_2LoopScheduler.add(LineRoutineBegin(snapshot));
+      trials_2LoopScheduler.add(LineRoutineEachFrame());
+      trials_2LoopScheduler.add(LineRoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_1RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_1RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_1RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_2RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_2RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_2RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_3RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_3RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_3RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(MaskRoutineBegin(snapshot));
+      trials_2LoopScheduler.add(MaskRoutineEachFrame());
+      trials_2LoopScheduler.add(MaskRoutineEnd(snapshot));
+      trials_2LoopScheduler.add(LineRoutineBegin(snapshot));
+      trials_2LoopScheduler.add(LineRoutineEachFrame());
+      trials_2LoopScheduler.add(LineRoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_1RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_1RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_1RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_2RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_2RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_2RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(trials_2LoopEndIteration(trials_2LoopScheduler, snapshot));
+    }
+    
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+async function trials_2LoopEnd() {
+  // terminate loop
+  psychoJS.experiment.removeLoop(trials_2);
+  // update the current loop from the ExperimentHandler
+  if (psychoJS.experiment._unfinishedLoops.length>0)
+    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
+  else
+    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
+  return Scheduler.Event.NEXT;
+}
+
+
+function trials_2LoopEndIteration(scheduler, snapshot) {
+  // ------Prepare for next entry------
+  return async function () {
+    if (typeof snapshot !== 'undefined') {
+      // ------Check if user ended loop early------
+      if (snapshot.finished) {
+        // Check for and save orphaned data
+        if (psychoJS.experiment.isEntryEmpty()) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        scheduler.stop();
+      } else {
+        psychoJS.experiment.nextEntry(snapshot);
+      }
+    return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+async function show_trialsLoopEnd() {
+  // terminate loop
+  psychoJS.experiment.removeLoop(show_trials);
+  // update the current loop from the ExperimentHandler
+  if (psychoJS.experiment._unfinishedLoops.length>0)
+    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
+  else
+    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
+  return Scheduler.Event.NEXT;
+}
+
+
+function show_trialsLoopEndIteration(scheduler, snapshot) {
+  // ------Prepare for next entry------
+  return async function () {
+    if (typeof snapshot !== 'undefined') {
+      // ------Check if user ended loop early------
+      if (snapshot.finished) {
+        // Check for and save orphaned data
+        if (psychoJS.experiment.isEntryEmpty()) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        scheduler.stop();
+      } else {
+        psychoJS.experiment.nextEntry(snapshot);
+      }
+    return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+var NoConsent;
+function NoConsentLoopBegin(NoConsentLoopScheduler, snapshot) {
+  return async function() {
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    
+    // set up handler to look after randomisation of conditions etc
+    NoConsent = new TrialHandler({
+      psychoJS: psychoJS,
+      nReps: NoConsentReps, method: TrialHandler.Method.RANDOM,
+      extraInfo: expInfo, originPath: undefined,
+      trialList: undefined,
+      seed: undefined, name: 'NoConsent'
+    });
+    psychoJS.experiment.addLoop(NoConsent); // add the loop to the experiment
+    currentLoop = NoConsent;  // we're now the current loop
+    
+    // Schedule all the trials in the trialList:
+    for (const thisNoConsent of NoConsent) {
+      snapshot = NoConsent.getSnapshot();
+      NoConsentLoopScheduler.add(importConditions(snapshot));
+      NoConsentLoopScheduler.add(no_consent_screenRoutineBegin(snapshot));
+      NoConsentLoopScheduler.add(no_consent_screenRoutineEachFrame());
+      NoConsentLoopScheduler.add(no_consent_screenRoutineEnd(snapshot));
+      NoConsentLoopScheduler.add(NoConsentLoopEndIteration(NoConsentLoopScheduler, snapshot));
+    }
+    
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+async function NoConsentLoopEnd() {
+  // terminate loop
+  psychoJS.experiment.removeLoop(NoConsent);
+  // update the current loop from the ExperimentHandler
+  if (psychoJS.experiment._unfinishedLoops.length>0)
+    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
+  else
+    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
+  return Scheduler.Event.NEXT;
+}
+
+
+function NoConsentLoopEndIteration(scheduler, snapshot) {
+  // ------Prepare for next entry------
+  return async function () {
+    if (typeof snapshot !== 'undefined') {
+      // ------Check if user ended loop early------
+      if (snapshot.finished) {
+        // Check for and save orphaned data
+        if (psychoJS.experiment.isEntryEmpty()) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        scheduler.stop();
+      } else {
+        psychoJS.experiment.nextEntry(snapshot);
+      }
+    return Scheduler.Event.NEXT;
+    }
+  };
 }
 
 
@@ -2356,258 +2785,6 @@ function Instructions2RoutineEnd(snapshot) {
     }
     return Scheduler.Event.NEXT;
   }
-}
-
-
-var Pract;
-function PractLoopBegin(PractLoopScheduler, snapshot) {
-  return async function() {
-    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
-    
-    // set up handler to look after randomisation of conditions etc
-    Pract = new TrialHandler({
-      psychoJS: psychoJS,
-      nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
-      extraInfo: expInfo, originPath: undefined,
-      trialList: TrialHandler.importConditions(psychoJS.serverManager, 'Book5.xlsx', '0, 1, 2'),
-      seed: undefined, name: 'Pract'
-    });
-    psychoJS.experiment.addLoop(Pract); // add the loop to the experiment
-    currentLoop = Pract;  // we're now the current loop
-    
-    // Schedule all the trials in the trialList:
-    for (const thisPract of Pract) {
-      snapshot = Pract.getSnapshot();
-      PractLoopScheduler.add(importConditions(snapshot));
-      PractLoopScheduler.add(RotationRoutineBegin(snapshot));
-      PractLoopScheduler.add(RotationRoutineEachFrame());
-      PractLoopScheduler.add(RotationRoutineEnd(snapshot));
-      PractLoopScheduler.add(LineRoutineBegin(snapshot));
-      PractLoopScheduler.add(LineRoutineEachFrame());
-      PractLoopScheduler.add(LineRoutineEnd(snapshot));
-      PractLoopScheduler.add(Halo_1RoutineBegin(snapshot));
-      PractLoopScheduler.add(Halo_1RoutineEachFrame());
-      PractLoopScheduler.add(Halo_1RoutineEnd(snapshot));
-      PractLoopScheduler.add(Halo_2RoutineBegin(snapshot));
-      PractLoopScheduler.add(Halo_2RoutineEachFrame());
-      PractLoopScheduler.add(Halo_2RoutineEnd(snapshot));
-      PractLoopScheduler.add(Halo_3RoutineBegin(snapshot));
-      PractLoopScheduler.add(Halo_3RoutineEachFrame());
-      PractLoopScheduler.add(Halo_3RoutineEnd(snapshot));
-      PractLoopScheduler.add(PractLoopEndIteration(PractLoopScheduler, snapshot));
-    }
-    
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-async function PractLoopEnd() {
-  // terminate loop
-  psychoJS.experiment.removeLoop(Pract);
-  // update the current loop from the ExperimentHandler
-  if (psychoJS.experiment._unfinishedLoops.length>0)
-    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
-  else
-    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
-  return Scheduler.Event.NEXT;
-}
-
-
-function PractLoopEndIteration(scheduler, snapshot) {
-  // ------Prepare for next entry------
-  return async function () {
-    if (typeof snapshot !== 'undefined') {
-      // ------Check if user ended loop early------
-      if (snapshot.finished) {
-        // Check for and save orphaned data
-        if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
-        }
-        scheduler.stop();
-      } else {
-        psychoJS.experiment.nextEntry(snapshot);
-      }
-    return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-var trials;
-function trialsLoopBegin(trialsLoopScheduler, snapshot) {
-  return async function() {
-    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
-    
-    // set up handler to look after randomisation of conditions etc
-    trials = new TrialHandler({
-      psychoJS: psychoJS,
-      nReps: 4, method: TrialHandler.Method.RANDOM,
-      extraInfo: expInfo, originPath: undefined,
-      trialList: 'Book5.xlsx',
-      seed: undefined, name: 'trials'
-    });
-    psychoJS.experiment.addLoop(trials); // add the loop to the experiment
-    currentLoop = trials;  // we're now the current loop
-    
-    // Schedule all the trials in the trialList:
-    for (const thisTrial of trials) {
-      snapshot = trials.getSnapshot();
-      trialsLoopScheduler.add(importConditions(snapshot));
-      trialsLoopScheduler.add(RotationRoutineBegin(snapshot));
-      trialsLoopScheduler.add(RotationRoutineEachFrame());
-      trialsLoopScheduler.add(RotationRoutineEnd(snapshot));
-      trialsLoopScheduler.add(LineRoutineBegin(snapshot));
-      trialsLoopScheduler.add(LineRoutineEachFrame());
-      trialsLoopScheduler.add(LineRoutineEnd(snapshot));
-      trialsLoopScheduler.add(Halo_1RoutineBegin(snapshot));
-      trialsLoopScheduler.add(Halo_1RoutineEachFrame());
-      trialsLoopScheduler.add(Halo_1RoutineEnd(snapshot));
-      trialsLoopScheduler.add(Halo_2RoutineBegin(snapshot));
-      trialsLoopScheduler.add(Halo_2RoutineEachFrame());
-      trialsLoopScheduler.add(Halo_2RoutineEnd(snapshot));
-      trialsLoopScheduler.add(Halo_3RoutineBegin(snapshot));
-      trialsLoopScheduler.add(Halo_3RoutineEachFrame());
-      trialsLoopScheduler.add(Halo_3RoutineEnd(snapshot));
-      trialsLoopScheduler.add(MaskRoutineBegin(snapshot));
-      trialsLoopScheduler.add(MaskRoutineEachFrame());
-      trialsLoopScheduler.add(MaskRoutineEnd(snapshot));
-      trialsLoopScheduler.add(LineRoutineBegin(snapshot));
-      trialsLoopScheduler.add(LineRoutineEachFrame());
-      trialsLoopScheduler.add(LineRoutineEnd(snapshot));
-      trialsLoopScheduler.add(Halo_1RoutineBegin(snapshot));
-      trialsLoopScheduler.add(Halo_1RoutineEachFrame());
-      trialsLoopScheduler.add(Halo_1RoutineEnd(snapshot));
-      trialsLoopScheduler.add(Halo_2RoutineBegin(snapshot));
-      trialsLoopScheduler.add(Halo_2RoutineEachFrame());
-      trialsLoopScheduler.add(Halo_2RoutineEnd(snapshot));
-      trialsLoopScheduler.add(Halo_3RoutineBegin(snapshot));
-      trialsLoopScheduler.add(Halo_3RoutineEachFrame());
-      trialsLoopScheduler.add(Halo_3RoutineEnd(snapshot));
-      trialsLoopScheduler.add(trialsLoopEndIteration(trialsLoopScheduler, snapshot));
-    }
-    
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-async function trialsLoopEnd() {
-  // terminate loop
-  psychoJS.experiment.removeLoop(trials);
-  // update the current loop from the ExperimentHandler
-  if (psychoJS.experiment._unfinishedLoops.length>0)
-    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
-  else
-    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
-  return Scheduler.Event.NEXT;
-}
-
-
-function trialsLoopEndIteration(scheduler, snapshot) {
-  // ------Prepare for next entry------
-  return async function () {
-    if (typeof snapshot !== 'undefined') {
-      // ------Check if user ended loop early------
-      if (snapshot.finished) {
-        // Check for and save orphaned data
-        if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
-        }
-        scheduler.stop();
-      } else {
-        psychoJS.experiment.nextEntry(snapshot);
-      }
-    return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-var trials_2;
-function trials_2LoopBegin(trials_2LoopScheduler, snapshot) {
-  return async function() {
-    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
-    
-    // set up handler to look after randomisation of conditions etc
-    trials_2 = new TrialHandler({
-      psychoJS: psychoJS,
-      nReps: 1, method: TrialHandler.Method.RANDOM,
-      extraInfo: expInfo, originPath: undefined,
-      trialList: 'OneDot.xlsx',
-      seed: undefined, name: 'trials_2'
-    });
-    psychoJS.experiment.addLoop(trials_2); // add the loop to the experiment
-    currentLoop = trials_2;  // we're now the current loop
-    
-    // Schedule all the trials in the trialList:
-    for (const thisTrial_2 of trials_2) {
-      snapshot = trials_2.getSnapshot();
-      trials_2LoopScheduler.add(importConditions(snapshot));
-      trials_2LoopScheduler.add(RotationRoutineBegin(snapshot));
-      trials_2LoopScheduler.add(RotationRoutineEachFrame());
-      trials_2LoopScheduler.add(RotationRoutineEnd(snapshot));
-      trials_2LoopScheduler.add(LineRoutineBegin(snapshot));
-      trials_2LoopScheduler.add(LineRoutineEachFrame());
-      trials_2LoopScheduler.add(LineRoutineEnd(snapshot));
-      trials_2LoopScheduler.add(Halo_1RoutineBegin(snapshot));
-      trials_2LoopScheduler.add(Halo_1RoutineEachFrame());
-      trials_2LoopScheduler.add(Halo_1RoutineEnd(snapshot));
-      trials_2LoopScheduler.add(Halo_2RoutineBegin(snapshot));
-      trials_2LoopScheduler.add(Halo_2RoutineEachFrame());
-      trials_2LoopScheduler.add(Halo_2RoutineEnd(snapshot));
-      trials_2LoopScheduler.add(Halo_3RoutineBegin(snapshot));
-      trials_2LoopScheduler.add(Halo_3RoutineEachFrame());
-      trials_2LoopScheduler.add(Halo_3RoutineEnd(snapshot));
-      trials_2LoopScheduler.add(MaskRoutineBegin(snapshot));
-      trials_2LoopScheduler.add(MaskRoutineEachFrame());
-      trials_2LoopScheduler.add(MaskRoutineEnd(snapshot));
-      trials_2LoopScheduler.add(LineRoutineBegin(snapshot));
-      trials_2LoopScheduler.add(LineRoutineEachFrame());
-      trials_2LoopScheduler.add(LineRoutineEnd(snapshot));
-      trials_2LoopScheduler.add(Halo_1RoutineBegin(snapshot));
-      trials_2LoopScheduler.add(Halo_1RoutineEachFrame());
-      trials_2LoopScheduler.add(Halo_1RoutineEnd(snapshot));
-      trials_2LoopScheduler.add(Halo_2RoutineBegin(snapshot));
-      trials_2LoopScheduler.add(Halo_2RoutineEachFrame());
-      trials_2LoopScheduler.add(Halo_2RoutineEnd(snapshot));
-      trials_2LoopScheduler.add(trials_2LoopEndIteration(trials_2LoopScheduler, snapshot));
-    }
-    
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-async function trials_2LoopEnd() {
-  // terminate loop
-  psychoJS.experiment.removeLoop(trials_2);
-  // update the current loop from the ExperimentHandler
-  if (psychoJS.experiment._unfinishedLoops.length>0)
-    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
-  else
-    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
-  return Scheduler.Event.NEXT;
-}
-
-
-function trials_2LoopEndIteration(scheduler, snapshot) {
-  // ------Prepare for next entry------
-  return async function () {
-    if (typeof snapshot !== 'undefined') {
-      // ------Check if user ended loop early------
-      if (snapshot.finished) {
-        // Check for and save orphaned data
-        if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
-        }
-        scheduler.stop();
-      } else {
-        psychoJS.experiment.nextEntry(snapshot);
-      }
-    return Scheduler.Event.NEXT;
-    }
-  };
 }
 
 
@@ -4419,6 +4596,98 @@ function DebriefRoutineEnd(snapshot) {
 }
 
 
+var no_consent_screenComponents;
+function no_consent_screenRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'no_consent_screen' ---
+    t = 0;
+    no_consent_screenClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    psychoJS.experiment.addData('no_consent_screen.started', globalClock.getTime());
+    // Run 'Begin Routine' code from code_18
+    //psychoJS.setRedirectUrls('https://www.psychopy.org/online/prolificIntegration.html', 'https://discourse.psychopy.org/t/completedurl-incompleteurl/5597/21');
+    //this._completionUrl = 'https://discourse.psychopy.org/t/completedurl-incompleteurl/5597/21';
+    // keep track of which components have finished
+    no_consent_screenComponents = [];
+    no_consent_screenComponents.push(text_20);
+    
+    for (const thisComponent of no_consent_screenComponents)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function no_consent_screenRoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'no_consent_screen' ---
+    // get current time
+    t = no_consent_screenClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *text_20* updates
+    if (t >= 0.0 && text_20.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_20.tStart = t;  // (not accounting for frame time here)
+      text_20.frameNStart = frameN;  // exact frame index
+      
+      text_20.setAutoDraw(true);
+    }
+    
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of no_consent_screenComponents)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function no_consent_screenRoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'no_consent_screen' ---
+    for (const thisComponent of no_consent_screenComponents) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    psychoJS.experiment.addData('no_consent_screen.stopped', globalClock.getTime());
+    // the Routine "no_consent_screen" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
 function importConditions(currentLoop) {
   return async function () {
     psychoJS.importAttributes(currentLoop.getCurrentTrial());
@@ -4432,6 +4701,10 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
+  
+  
   
   
   

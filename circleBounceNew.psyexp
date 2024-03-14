@@ -3,7 +3,7 @@
   <Settings>
     <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
-    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="https://app.prolific.com/submissions/complete?cc=C187I4LR" valType="str" updates="None" name="Completed URL"/>
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
     <Param val="u'data/%s_%s' % (expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
@@ -12,7 +12,7 @@
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
-    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="https://app.prolific.com/submissions/complete?cc=CHVQGN2A" valType="str" updates="None" name="Incomplete URL"/>
     <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
     <Param val="[]" valType="list" updates="None" name="Resources"/>
     <Param val="True" valType="bool" updates="None" name="Save csv file"/>
@@ -1411,7 +1411,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Participant Information Sheet&amp;#10;&amp;#10;How will my data be stored and who will have access to it? &amp;#10;The data will be stored in OneDrive file to be accessible only by the participating researchers.&amp;#10;&amp;#10;How will my data be used and in what form will it be shared further?&amp;#10;The data will be analysed as part of the research study. It may then be published in my dissertation which will be finalised by April 2023. &amp;#10;&amp;#10;&amp;#10;When will my data be destroyed?&amp;#10;The data will be retained until I have fully completed my dissertation (including grading), and then destroyed. &amp;#10;&amp;#10;Will my participation be confidential?&amp;#10;Yes, we will use an anonymous recruitment policy in Pavlovia so your participation is not known to anyone. &amp;#10;&amp;#10;Use of your personal data for research and your data protection rights &amp;#10;The University of St Andrews (the ‘Data Controller’) is bound by the UK 2018 Data Protection Act and the General Data Protection Regulation (GDPR), which require a lawful basis for all processing of personal data (in this case it is the ‘performance of a task carried out in the public interest’ – namely, for research purposes) and an additional lawful basis for processing personal data containing special characteristics (in this case it is ‘public interest research’). You have a range of rights under data protection legislation. For more information on data protection legislation and your rights visit https://www.st-andrews.ac.uk/terms/data-protection/rights/. For any queries, email dataprot@st-andrews.ac.uk.&amp;#10;&amp;#10;Click to continue.&amp;#10;&amp;#10;2/3" valType="str" updates="constant" name="text"/>
+        <Param val="Participant Information Sheet&amp;#10;&amp;#10;How will my data be stored and who will have access to it? &amp;#10;The data will be stored in OneDrive file to be accessible only by the participating researchers.&amp;#10;&amp;#10;How will my data be used and in what form will it be shared further?&amp;#10;The data will be analysed as part of the research study. It may then be published in my dissertation which will be finalised by April 2023. &amp;#10;&amp;#10;&amp;#10;When will my data be destroyed?&amp;#10;The data will be retained until I have fully completed my dissertation (including grading), and then destroyed. &amp;#10;&amp;#10;Will my participation be confidential?&amp;#10;Yes, we use an anonymous recruitment policy in Prolific so your participation is not known to anyone. &amp;#10;&amp;#10;Use of your personal data for research and your data protection rights &amp;#10;The University of St Andrews (the ‘Data Controller’) is bound by the UK 2018 Data Protection Act and the General Data Protection Regulation (GDPR), which require a lawful basis for all processing of personal data (in this case it is the ‘performance of a task carried out in the public interest’ – namely, for research purposes) and an additional lawful basis for processing personal data containing special characteristics (in this case it is ‘public interest research’). You have a range of rights under data protection legislation. For more information on data protection legislation and your rights visit https://www.st-andrews.ac.uk/terms/data-protection/rights/. For any queries, email dataprot@st-andrews.ac.uk.&amp;#10;&amp;#10;Click to continue.&amp;#10;&amp;#10;2/3" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -1473,18 +1473,18 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Consent Form&amp;#10;&amp;#10;The University of St Andrews attaches high priority to the ethical conduct of research.  We therefore ask you to consider the following points before signing this form. Pressing the 'y'-key confirms that you are willing to participate in this study, however, it does not commit you to anything you do not wish to do and you are free to withdraw your participation at any time by pressing the 'escape'-key twice. &amp;#10;&amp;#10;Only press the 'y'-key if you understand and agree with the following statements:&amp;#10;&amp;#10;o I understand the contents of the Participant Information Sheet &amp;#10;&amp;#10;o I have been given the opportunity to ask questions about the study and have had them answered satisfactorily.&amp;#10;&amp;#10;o I understand that my participation is entirely voluntary and that I can withdraw from the study at any time without giving an explanation and with no disbenefit. &amp;#10;&amp;#10;o I understand who will have access to my data, how it will be stored, in what form it will be shared, and what will happen to it at the end of the study. &amp;#10;&amp;#10;o I understand that once the experiment is over my data cannot be withdrawn because it has been anonymised.&amp;#10;&amp;#10;o I agree to take part in the above study&amp;#10;&amp;#10;Press the 'y'-key if you understand and agree to start the experiment or press the 'escape'-key to exit." valType="str" updates="constant" name="text"/>
+        <Param val="Consent Form&amp;#10;&amp;#10;The University of St Andrews attaches high priority to the ethical conduct of research.  We therefore ask you to consider the following points before signing this form. Pressing the 'y'-key confirms that you are willing to participate in this study, however, it does not commit you to anything you do not wish to do and you are free to withdraw your participation at any time by pressing the 'escape'-key twice. &amp;#10;&amp;#10;Only press the 'y'-key if you understand and agree with the following statements:&amp;#10;&amp;#10;o I understand the contents of the Participant Information Sheet &amp;#10;&amp;#10;o I have been given the opportunity to ask questions about the study and have had them answered satisfactorily.&amp;#10;&amp;#10;o I understand that my participation is entirely voluntary and that I can withdraw from the study at any time without giving an explanation and with no disbenefit. &amp;#10;&amp;#10;o I understand who will have access to my data, how it will be stored, in what form it will be shared, and what will happen to it at the end of the study. &amp;#10;&amp;#10;o I understand that once the experiment is over my data cannot be withdrawn because it has been anonymised.&amp;#10;&amp;#10;o I agree to take part in the above study&amp;#10;&amp;#10;Press the 'y'-key if you understand and agree to start the experiment or press the 'n'-key to exit." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
-      <KeyboardComponent name="key_resp" plugin="None">
-        <Param val="'y'" valType="list" updates="constant" name="allowedKeys"/>
+      <KeyboardComponent name="consent_resp" plugin="None">
+        <Param val="'y','n'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="True" valType="bool" updates="constant" name="discard previous"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="consent_resp" valType="code" updates="None" name="name"/>
         <Param val="press" valType="str" updates="constant" name="registerOn"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
@@ -1496,6 +1496,23 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <CodeComponent name="code_2" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="if ((consent_resp.keys === &quot;y&quot;)) {&amp;#10;    TrialReps = 1;&amp;#10;    NoConsentReps = 0;&amp;#10;} else {&amp;#10;    if ((consent_resp.keys === &quot;n&quot;)) {&amp;#10;        TrialReps = 0;&amp;#10;        NoConsentReps = 1;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="if consent_resp.keys == 'y':&amp;#10;    TrialReps = 1&amp;#10;    NoConsentReps = 0&amp;#10;    &amp;#10;elif consent_resp.keys == 'n':&amp;#10;    TrialReps = 0&amp;#10;    NoConsentReps = 1&amp;#10;    " valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_2" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="PIS3">
       <RoutineSettingsComponent name="PIS3" plugin="None">
@@ -1559,12 +1576,82 @@
         <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
       </MouseComponent>
     </Routine>
+    <Routine name="no_consent_screen">
+      <RoutineSettingsComponent name="no_consent_screen" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="no_consent_screen" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_18" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="//psychoJS.setRedirectUrls('https://www.psychopy.org/online/prolificIntegration.html', 'https://discourse.psychopy.org/t/completedurl-incompleteurl/5597/21');&amp;#10;//this._completionUrl = 'https://discourse.psychopy.org/t/completedurl-incompleteurl/5597/21';" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="PsychoJS.setRedirectUrls('https://www.psychopy.org/online/prolificIntegration.html', 'https://discourse.psychopy.org/t/completedurl-incompleteurl/5597/21')" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_18" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="text_20" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.02" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_20" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Thank you for your response. &amp;#10;Press the 'escape' key on your keyboard or close the browser to exit. " valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="PIS1"/>
     <Routine name="PIS2"/>
     <Routine name="PIS3"/>
     <Routine name="Consent"/>
+    <LoopInitiator loopType="TrialHandler" name="show_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="TrialReps" valType="num"/>
+      <Param name="name" updates="None" val="show_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="Instructions_2"/>
     <Routine name="Instruction_Animation"/>
     <Routine name="Line0"/>
@@ -1635,5 +1722,19 @@
     <LoopTerminator name="trials_2"/>
     <Routine name="Halo_3"/>
     <Routine name="Debrief"/>
+    <LoopTerminator name="show_trials"/>
+    <LoopInitiator loopType="TrialHandler" name="NoConsent">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="NoConsentReps" valType="num"/>
+      <Param name="name" updates="None" val="NoConsent" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="no_consent_screen"/>
+    <LoopTerminator name="NoConsent"/>
   </Flow>
 </PsychoPy2experiment>
