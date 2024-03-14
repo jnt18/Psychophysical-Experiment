@@ -140,7 +140,7 @@ async function updateInfo() {
 
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
-  psychoJS.setRedirectUrls('https://app.prolific.com/submissions/complete?cc=C187I4LR', 'https://app.prolific.com/submissions/complete?cc=CHVQGN2A');
+  psychoJS.setRedirectUrls('https://app.prolific.com/submissions/complete?cc=C13TLNR3', 'https://app.prolific.com/submissions/complete?cc=CK8VGWDQ');
 
 
   
@@ -4085,7 +4085,7 @@ function MaskRoutineBegin(snapshot) {
     //if (c===15) {qs = 2};
     
     if (qs === 2) {
-        startDelay = ((radius / circleCount) / 2)*1.2;
+        startDelay = ((radius / circleCount) / 2)*1.4;
         console.log('startDelay:', startDelay);
     } else if (qs === 3 && c === 15) {
         startDelay = ((radius / circleCount) / 2)*0.7;
