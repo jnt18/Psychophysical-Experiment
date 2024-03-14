@@ -4074,7 +4074,7 @@ function MaskRoutineBegin(snapshot) {
         
     iterationS = 4;
     qs = q;
-    if (n===15) {qs = 2};
+    if (c===15) {qs = 2};
     
     if (qs === 2) {
     startDelay = ((radius / circleCount) / 2)*(3/qs)**2;
