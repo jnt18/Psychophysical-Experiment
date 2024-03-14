@@ -571,6 +571,7 @@ async function experimentInit() {
   // Run 'Begin Experiment' code from code_3
   //var initializationClock = new util.Clock();
   defineVars = true;
+  console.log('defineVars at begin experiment:', defineVars)
   //circlePositions = [-0.03333333333333333, -0.06666666666666667,-0.1,-0.13333333333333333,-0.16666666666666666,-0.2];
   circlePositions = []
   //radius = 0.4;
@@ -1444,7 +1445,7 @@ function trials_2LoopBegin(trials_2LoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     trials_2 = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 2, method: TrialHandler.Method.RANDOM,
+      nReps: 1, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'OneDot.xlsx',
       seed: undefined, name: 'trials_2'
@@ -4051,6 +4052,7 @@ function MaskRoutineBegin(snapshot) {
     var frameCountPrevious;
     var t_previous;
     //defineVars = true;
+    console.log('defineVars at begin routine:', defineVars)
     //initializationClock.reset();
     var circles = [];
     var bounces = [];
@@ -4333,7 +4335,9 @@ function MaskRoutineEnd(snapshot) {
     psychoJS.experiment.addData('Mask.stopped', globalClock.getTime());
     // Run 'End Routine' code from code_3
     console.log('managed to end each frame tab of Mask')
+    console.log('defineVars at end routine before resetting:', defineVars)
     defineVars = true;
+    console.log('defineVars at end routine after resetting:', defineVars)
     bar.autoDraw = false;
     continueCondition = false;
     
