@@ -614,7 +614,7 @@ async function experimentInit() {
   text_11 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_11',
-    text: 'Thank you for participating!\nClick to exit the experiment',
+    text: "Thank you for participating!\nClick to exit the experiment and wait untiil\ndata is downloaded before pressing 'ok'.",
     font: 'Open Sans',
     units: 'height', 
     pos: [0, ((- 0.8) * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -1445,7 +1445,7 @@ function trials_2LoopBegin(trials_2LoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     trials_2 = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 2, method: TrialHandler.Method.RANDOM,
+      nReps: 1, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'OneDot.xlsx',
       seed: undefined, name: 'trials_2'
@@ -4072,7 +4072,8 @@ function MaskRoutineBegin(snapshot) {
         
     iterationS = 4;
     
-    startDelay = ((radius / circleCount) / 2);
+    startDelay = ((radius / circleCount) / 2)*q/3;
+    console.log('startDelay:', startDelay)
     
     circles = [];
     bounces = [];
