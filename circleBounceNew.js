@@ -624,7 +624,7 @@ async function experimentInit() {
   text_11 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_11',
-    text: "Thank you for participating!\nClick to exit the experiment and wait untiil\ndata is downloaded before pressing 'ok'.",
+    text: "Thank you for participating!\nClick to exit the experiment and wait until\ndata is downloaded before pressing 'ok'.",
     font: 'Open Sans',
     units: 'height', 
     pos: [0, ((- 0.8) * radius)], height: 0.02,  wrapWidth: 0.5, ori: 0.0,
@@ -4071,7 +4071,7 @@ function MaskRoutineBegin(snapshot) {
     //if (c===15) {qs = 2};
     
     if (qs === 2) {
-        startDelay = ((radius / circleCount) / 2)*0.9;
+        startDelay = ((radius / circleCount) / 2)*1.2;
         console.log('startDelay:', startDelay);
     } else if (qs === 3 && c === 15) {
         startDelay = ((radius / circleCount) / 2)*0.7;
