@@ -4014,7 +4014,7 @@ function StartRoutineEnd(snapshot) {
 var Mstarted;
 var Mended;
 var iterationS;
-var q;
+var qs;
 var startDelay;
 var bounces;
 var dif_trajectory;
@@ -4038,6 +4038,7 @@ function MaskRoutineBegin(snapshot) {
     var frameCount;
     var frameCountPrevious;
     var t_previous;
+    var qs;
     //defineVars = true;
     console.log('defineVars at begin routine:', defineVars)
     //initializationClock.reset();
@@ -4058,16 +4059,17 @@ function MaskRoutineBegin(snapshot) {
     circleCount = c;
         
     iterationS = 4;
-    if (n===15) {q = 2};
+    qs = q;
+    if (n===15) {qs = 2};
     
-    if (q === 2) {
-    startDelay = ((radius / circleCount) / 2)*(3/q)**2;
+    if (qs === 2) {
+    startDelay = ((radius / circleCount) / 2)*(3/qs)**2;
     console.log('startDelay:', startDelay) };
-    if (q === 3) {
-    startDelay = ((radius / circleCount) / 2)*(3/q)**2;
+    if (qs === 3) {
+    startDelay = ((radius / circleCount) / 2)*(3/qs)**2;
     console.log('startDelay:', startDelay) };
-    if (q === 4) {
-    startDelay = ((radius / circleCount) / 2)*10*(3/q);
+    if (qs === 4) {
+    startDelay = ((radius / circleCount) / 2)*10*(3/qs);
     console.log('startDelay:', startDelay) };
     
     
