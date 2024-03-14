@@ -1257,9 +1257,6 @@ function show_trialsLoopBegin(show_trialsLoopScheduler, snapshot) {
       show_trialsLoopScheduler.add(trials_2LoopBegin(trials_2LoopScheduler, snapshot));
       show_trialsLoopScheduler.add(trials_2LoopScheduler);
       show_trialsLoopScheduler.add(trials_2LoopEnd);
-      show_trialsLoopScheduler.add(Halo_3RoutineBegin(snapshot));
-      show_trialsLoopScheduler.add(Halo_3RoutineEachFrame());
-      show_trialsLoopScheduler.add(Halo_3RoutineEnd(snapshot));
       show_trialsLoopScheduler.add(DebriefRoutineBegin(snapshot));
       show_trialsLoopScheduler.add(DebriefRoutineEachFrame());
       show_trialsLoopScheduler.add(DebriefRoutineEnd(snapshot));
@@ -1446,7 +1443,7 @@ function trials_2LoopBegin(trials_2LoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     trials_2 = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 1, method: TrialHandler.Method.RANDOM,
+      nReps: 2, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'OneDot.xlsx',
       seed: undefined, name: 'trials_2'
@@ -1486,6 +1483,9 @@ function trials_2LoopBegin(trials_2LoopScheduler, snapshot) {
       trials_2LoopScheduler.add(Halo_2RoutineBegin(snapshot));
       trials_2LoopScheduler.add(Halo_2RoutineEachFrame());
       trials_2LoopScheduler.add(Halo_2RoutineEnd(snapshot));
+      trials_2LoopScheduler.add(Halo_3RoutineBegin(snapshot));
+      trials_2LoopScheduler.add(Halo_3RoutineEachFrame());
+      trials_2LoopScheduler.add(Halo_3RoutineEnd(snapshot));
       trials_2LoopScheduler.add(trials_2LoopEndIteration(trials_2LoopScheduler, snapshot));
     });
     
