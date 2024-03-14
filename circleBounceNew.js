@@ -4063,16 +4063,16 @@ function MaskRoutineBegin(snapshot) {
     //if (c===15) {qs = 2};
     
     if (qs === 2) {
-        startDelay = ((radius / circleCount) / 2)*1.8;
+        startDelay = ((radius / circleCount) / 2)*0.7;
         console.log('startDelay:', startDelay);
     } else if (qs === 3 && c === 15) {
-        startDelay = ((radius / circleCount) / 2)*0.8;
+        startDelay = ((radius / circleCount) / 2)*0.7;
         console.log('startDelay:', startDelay);
     } else if (qs === 3) {
-        startDelay = ((radius / circleCount) / 2)*(3/qs);
+        startDelay = ((radius / circleCount) / 2);
         console.log('startDelay:', startDelay);
     } else if (qs === 4) {
-        startDelay = ((radius / circleCount) / 2)*0.1*(3/qs);
+        startDelay = ((radius / circleCount) / 2)*0.3;
         console.log('startDelay:', startDelay);
     } else {
         startDelay = ((radius / circleCount) / 2);
