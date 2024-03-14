@@ -2873,6 +2873,7 @@ function RotationRoutineBegin(snapshot) {
     //barground.opacity = 1;
     //barfor.opacity = 1;
     if ((Practice !== true)) {
+        psychoJS.experiment.addData('Trial', 1);
         Progress += 1;}
         barground.opacity = 1;
         barfor.opacity = 1;
@@ -4084,7 +4085,7 @@ function MaskRoutineBegin(snapshot) {
     //if (c===15) {qs = 2};
     
     if (qs === 2) {
-        startDelay = ((radius / circleCount) / 2)*0.7;
+        startDelay = ((radius / circleCount) / 2)*0.75;
         console.log('startDelay:', startDelay);
     } else if (qs === 3 && c === 15) {
         startDelay = ((radius / circleCount) / 2)*0.7;
